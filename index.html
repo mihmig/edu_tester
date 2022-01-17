@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js?45682347652875628"></script>
+    <title>Тесты</title>
+</head>
+<body onload="init();">
+<div id="home" class="page">
+    <p class="pageName">
+    Предметы
+    </p>
+    <p>
+       <button id="mathButton" onclick="openPage('math')">Математика</button>
+    </p>
+    <p>
+        <button id="informaticsButton" onclick="openPage('informatics')">Информатика</button>
+    </p>
+    <p>
+        <button id="physicsButton" onclick="openPage('physics')">Физика</button>
+    </p>
+</div>
+<div id="math" class="page">
+    <p><button onclick="openPage('mathV1')">Вариант 1</button></p>
+    <p><button onclick="openPage('mathV2')">Вариант 2</button></p>
+    <p><button onclick="openPage('mathV3')">Вариант 3</button></p>
+    <p><button onclick="openPage('mathV4')">Вариант 4</button></p>
+    <p><button onclick="openPage('mathV5')">Вариант 5</button></p>
+    <p><button onclick="openPage('home')">Назад</button></p>
+</div>
+<div id="informatics" class="page">
+    <p><button onclick="openPage('infV1')">Вариант 1</button></p>
+    <p><button onclick="openPage('infV2')">Вариант 2</button></p>
+    <p><button onclick="openPage('infV3')">Вариант 3</button></p>
+    <p><button onclick="openPage('infV4')">Вариант 4</button></p>
+    <p><button onclick="openPage('infV5')">Вариант 5</button></p>
+    <button onclick="openPage('home')">Назад</button>
+</div>
+<div id="physics" class="page">
+    <button onclick="openPage('home')">Назад</button>
+</div>
+<div id="mathV1" class="page">
+    <p>
+    <ol>
+    <li>
+        Известно, что a &lt; b &lt; 0. Выберите наименьшее из чисел.
+      <select id="mathV1Q1">
+          <option selected disabled> </option>
+          <option value="1">a-1</option>
+          <option value="2">b-1</option>
+          <option value="3">ab</option>
+          <option value="4">-b</option>
+      </select>
+    </li>
+    <li>
+        О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.
+        <select id="mathV1Q2">
+            <option selected disabled> </option>
+            <option value="1">d=a</option>
+            <option value="2">d&gt;a</option>
+            <option value="3">d&lt;a</option>
+            <option value="4">Сравнить невозможно</option>
+        </select>
+    </li>
+    <li>
+        Какому промежутку принадлежит число  &Sqrt;53?
+        <select id="mathV1Q3">
+            <option selected disabled> </option>
+            <option value="1">[4;5]</option>
+            <option value="2">[5;6]</option>
+            <option value="3">[6;7]</option>
+            <option value="4">[7;8]</option>
+        </select>
+    </li>
+    <li>
+        Какому из данных промежутков принадлежит число  5 &#8260; 9?
+        <select id="mathV1Q4">
+            <option selected disabled> </option>
+            <option value="1">[0,5;0,6]</option>
+            <option value="2">[0,6;0,7]</option>
+            <option value="3">[0,7;0,8]</option>
+            <option value="4">[0,8;0,9]</option>
+        </select>
+    </li>
+    <li>
+        Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?
+        <select id="mathV1Q5">
+            <option selected disabled> </option>
+            <option value="1">a-b</option>
+            <option value="2">a-c</option>
+            <option value="3">b-c</option>
+            <option value="4">c-b</option>
+        </select>
+    </li>
+</ol>
+    <p><button onclick="check('mathV1')">Проверить</button></p>
+    <p><button onclick="openPage('math')">Назад</button></p>
+</div>
+<div id="mathV2" class="page">
+    <ol>
+        <li>
+            Решите неравенство  x&sup2; &lt; 361.
+            <select id="mathV2Q1">
+                <option selected disabled> </option>
+                <option value="1">(-&infin;;-19)&cup;(19;&infin;)</option>
+                <option value="2">(-&infin;;-19]&cup;[19;&infin;)</option>
+                <option value="3">(-19;19)</option>
+                <option value="4">[-19;19]</option>
+            </select>
+        </li>
+        <li>
+            Решите неравенство x&sup2; -36 &gt; 0.
+            <select id="mathV2Q2">
+                <option selected disabled> </option>
+                <option value="1">(&infin;;&infin;)</option>
+                <option value="2">(−&infin;;−6)&cup;(6;&infin;)</option>
+                <option value="3">(−6;6)</option>
+                <option value="4">нет решений</option>
+            </select>
+        </li>
+        <li>
+            Решите неравенство x&sup2; + x &ge; 0.
+            <select id="mathV2Q3">
+                <option selected disabled> </option>
+                <option value="1">(-&infin;-1]&cup;[0;&infin;)</option>
+                <option value="2">[-1;0]</option>
+                <option value="3">(-1;0)</option>
+                <option value="4"> (-&infin;; 0]&cup;[1;&infin;)</option>
+            </select>
+        </li>
+        <li>
+            Решите неравенство 9x - 4(2x + 1) &gt; -8.
+            <select id="mathV2Q4">
+                <option selected disabled> </option>
+                <option value="1">(−4;&infin;)</option>
+                <option value="2">(−12;&infin;)</option>
+                <option value="3">(−&infin;;−4)</option>
+                <option value="4">(−&infin;;−12)</option>
+            </select>
+        </li>
+        <li>
+            Решите неравенство  -x&sup2; -2x &le; 0.
+            <select id="mathV2Q5">
+                <option selected disabled> </option>
+                <option value="1">(-&infin;;-2)&cup;(0;&infin;)</option>
+                <option value="2">(-&infin;;-2]&cup;[0;&infin;)</option>
+                <option value="3">(-2;0)</option>
+                <option value="4">[-2;0]</option>
+            </select>
+        </li>
+    </ol>
+    <p><button onclick="check('mathV2')">Проверить</button></p>
+    <p><button onclick="openPage('math')">Назад</button></p>
+</div>
+<div id="mathV3" class="page">
+    <ol>
+        <li>
+            Какие из следующих утверждений верны?
+            <p>1)Существуют три прямые, которые проходят через одну точку.</p>
+            <p>2)Боковые стороны любой трапеции равны.</p>
+            <p>3)Сумма углов равнобедренного треугольника равна 180 градусам</p>
+            <select id="mathV3Q1">
+                <option selected disabled> </option>
+                <option value="1">1 и 2</option>
+                <option value="2">1 и 3</option>
+                <option value="3">2 и 3</option>
+            </select>
+        </li>
+        <li>
+            Какие из следующих утверждений верны?
+            <p>1)Все высоты равностороннего треугольника равны.</p>
+            <p>2)Угол, вписанный в окружность, равен соответствующему центральному углу, опирающемуся на ту же дугу.</p>
+            <p>3)В любой ромб можно вписать окружность.</p>
+            <select id="mathV3Q2">
+                <option selected disabled> </option>
+                <option value="1">1 и 2</option>
+                <option value="2">1 и 3</option>
+                <option value="3">2 и 3</option>
+            </select>
+        </li>
+        <li>
+            Укажите номера верных утверждений.
+            <p>1)Через точку, не лежащую на данной прямой, можно провести прямую, параллельную этой прямой.</p>
+            <p>2)Треугольник со сторонами 1, 2, 4 существует.</p>
+            <p>3)Если в ромбе один из углов равен 90°, то такой ромб — квадрат.</p>
+            <p>4)В любом параллелограмме диагонали равны.</p>
+            <select id="mathV3Q3">
+                <option selected disabled> </option>
+                <option value="1">1 и 2</option>
+                <option value="2">1 и 3</option>
+                <option value="3">1 и 4</option>
+                <option value="4">2 и 3</option>
+                <option value="5">2 и 4</option>
+                <option value="6">3 и 4</option>
+            </select>
+        </li>
+        <li>
+            Укажите номера верных утверждений.
+            <p>1)Существует квадрат, который не является прямоугольником.</p>
+            <p>2)Если два угла треугольника равны, то равны и противолежащие им стороны.</p>
+            <p>3)Внутренние накрест лежащие углы, образованные двумя параллельными прямыми и секущей, равны.</p>
+            <select id="mathV3Q4">
+                <option selected disabled> </option>
+                <option value="1">1 и 2</option>
+                <option value="2">1 и 3</option>
+                <option value="3">2 и 3</option>
+            </select>
+        </li>
+        <li>
+            Какие из следующих утверждений верны?
+            <p>1)Один из углов треугольника всегда не превышает 60 градусов.</p>
+            <p>2)Диагонали трапеции пересекаются и делятся точкой пересечения пополам.</p>
+            <p>3)Все диаметры окружности равны между собой.</p>
+            <select id="mathV3Q5">
+                <option selected disabled> </option>
+                <option value="1">1 и 2</option>
+                <option value="2">1 и 3</option>
+                <option value="3">2 и 3</option>
+            </select>
+        </li>
+    </ol>
+    <p><button onclick="check('mathV3')">Проверить</button></p>
+    <p><button onclick="openPage('math')">Назад</button></p>
+</div>
+<div id="mathV4" class="page">
+    <ol>
+        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" size="15" id="mathV4Q1"></li>
+        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" size="15" id="mathV4Q2"></li>
+        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" size="15" id="mathV4Q3"></li>
+        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" size="15" id="mathV4Q4"></li>
+        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" size="15" id="mathV4Q5"></li>
+    </ol>
+    <p><button onclick="check('mathV4')">Проверить</button></p>
+    <p><button onclick="openPage('math')">Назад</button></p>
+</div>
+<div id="mathV5" class="page">
+    <ol>
+        <li>
+            <p>Решите систему неравенств</p>
+            <p>5x + 13 &le; 0</p>
+            <p>x + 5 &ge; 0</p>
+            <select id="mathV5Q1">
+                <option selected disabled> </option>
+                <option value="1">[-13&#8260;5;-4]</option>
+                <option value="2">[-4;13&#8260;5]</option>
+                <option value="3">(-&infin;;-4]&cup;[-13&#8260;5;&infin;)</option>
+                <option value="4">(-&infin;;13 &#8260; 5]</option>
+            </select>
+        </li>
+        <li>
+            <p>Решите систему неравенств</p>
+            <p>x&sup2; &le; 4</p>
+            <p>x + 3 &ge; 0</p>
+            <select id="mathV5Q2">
+                <option selected disabled> </option>
+                <option value="1">(-&infin;;-3]</option>
+                <option value="2">(-&infin;;-3]&cup;[2;&infin;)</option>
+                <option value="3">[-2;-2]</option>
+                <option value="4">[-2;3]</option>
+            </select>
+        </li>
+        <li>
+            <p>Решите систему неравенств</p>
+            <p>x &gt; 3</p>
+            <p>4 - x &gt; 0</p>
+            <select id="mathV5Q3">
+                <option selected disabled> </option>
+                <option value="1">(-&infin;;4)</option>
+                <option value="2">нет решений</option>
+                <option value="3">(3;&infin;)</option>
+                <option value="4">(3;4)</option>
+            </select>
+        </li>
+        <li>
+            <p>Решите систему неравенств</p>
+            <p>-35 + 5x &gt; 0</p>
+            <p>6 - 3x &gt; -18</p>
+            <select id="mathV5Q4">
+                <option selected disabled> </option>
+                <option value="1">(7;8)</option>
+                <option value="2">(-&infin;;8)</option>
+                <option value="3">нет решений</option>
+                <option value="4">(7;&infin;)</option>
+            </select>
+        </li>
+        <li>
+            <p>Решите систему неравенств</p>
+            <p>x - 4 &gt; 0</p>
+            <p>x - 0,3 &gt; 1</p>
+            <select id="mathV5Q5">
+                <option selected disabled> </option>
+                <option value="1">[13 &#8260; 10;&infin;)</option>
+                <option value="2">[4;&infin;)</option>
+                <option value="3">[13 &#8260; 10;4)</option>
+                <option value="4">(-&infin;;13 &#8260; 10]&cup;[4;&infin;)</option>
+            </select>
+        </li>
+    </ol>
+    <p><button onclick="check('mathV5')">Проверить</button></p>
+    <p><button onclick="openPage('math')">Назад</button></p>
+</div>
+<div id="infV1" class="page">
+    <p>
+    <ol>
+        <li>
+            Напишите наименьшее целое число x, для которого истинно высказывание:
+            не (X &lt; 2) и (X &lt; 5).
+            <input type="text" size="15" id="infV1Q1">
+        </li>
+    <li>
+        Напишите наименьшее целое число x, для которого истинно высказывание:
+        не (X &lt; 7) и (X чётное).
+        <input type="text" size="15" id="infV1Q2">
+    </li>
+    <li>
+        Напишите наибольшее целое число x, для которого истинно высказывание:
+        не (X &le; 15) и (X &lt; 20).
+        <input type="text" size="15" id="infV1Q3">
+    </li>
+    <li>
+        Напишите наибольшее целое число x, для которого истинно высказывание:
+        не (X &le; 11) и не (X &ge; 17) и (X нечётное).
+        <input type="text" size="15" id="infV1Q4">
+    </li>
+    <li>
+        Напишите наименьшее натуральное трёхзначное число, для которого истинно высказывание:
+        не (Число нечётное) и (Число кратно 3).
+        <input type="text" size="15" id="infV1Q5">
+    </li>
+    </ol>
+    <p><button onclick="check('infV1')">Проверить</button></p>
+    <p><button onclick="openPage('informatics')">Назад</button></p>
+</div>
+<div id="infV2" class="page">
+    <p>
+    <ol>
+    <li>
+        <p>У исполнителя Бета две команды, которым присвоены номера:</p>
+        <p>1 прибавь 2</p>
+        <p>2 умножь на b</p>
+        <p>(b - неизвестное натуральное число; b &ge; 2).</p>
+        <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111 переводит число 7 в число 51. Определите значение b <input type="text" size="15" id="infV2Q1">.</p>
+    </li>
+    <li>
+        <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
+        <p>1 прибавь 1</p>
+        <p>2 раздели на b</p>
+        <p>(b — неизвестное натуральное число; b &ge; 2).</p>
+        <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b. Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111 переводит число 63 в число 11. Определите значение b <input type="text" size="15" id="infV2Q2">.</p>
+    </li>
+    <li>
+        <p>У исполнителя Омега две команды, которым присвоены номера:</p>
+        <p>1 прибавь 4</p>
+        <p>2 умножь на b</p>
+        <p>(b — неизвестное натуральное число; b &ge; 2).</p>
+        <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа 12111 переводит число 9 в число 77. Определите значение b <input type="text" size="15" id="infV2Q3">.</p>
+    </li>
+    <li>
+        <p>У исполнителя Квадратор две команды. которым присвоены номера:</p>
+        <p>1 возведи в квадрат</p>
+        <p>2 прибавь 3</p>
+        <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд <input type="text" size="15" id="infV2Q4">.</p>
+    </li>
+    <li>
+        <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
+        <p>1 возведи в квадрат</p>
+        <p>2 прибавь b</p>
+        <p>(b — неизвестное натуральное число).</p>
+        <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в число 37. Определите значение b <input type="text" size="15" id="infV2Q5">.</p>
+    </li>
+    </ol>
+    <p><button onclick="check('infV2')">Проверить</button></p>
+    <p><button onclick="openPage('informatics')">Назад</button></p>
+</div>
+<div id="infV3" class="page">
+    <p>
+    <ol>
+    <li>
+        <p>
+            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
+            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+        </p>
+        <p>
+        <table class="inputData">
+        <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
+        <tr><td>Рыбак&nbsp;|&nbsp;Рыбка</td> <td>780</td></tr>
+        <tr><td>Рыбак</td> <td>260</td></tr>
+        <tr><td>Рыбак &amp; Рыбка</td> <td>50</td></tr>
+        </table>
+        <p>Какое количество страниц (в тысячах) будет найдено по запросу Рыбка?
+            <input type="text" size="15" id="infV3Q1">
+        </p>
+        </li>
+    <li>
+        <p>
+            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
+            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+        </p>
+        <p>
+        <table class="inputData">
+            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
+            <tr><td>Сириус &amp; Вега</td> <td>260</td></tr>
+            <tr><td>Вега &amp; (Сириус | Арктур)</td> <td>467</td></tr>
+            <tr><td>Сириус &amp; Вега &amp; Арктур</td> <td>131</td></tr>
+        </table>
+        <p>Какое количество страниц (в тысячах) будет найдено по запросу Вега&amp;Арктур ?
+            <input type="text" size="15" id="infV3Q2">
+        </p>
+    </li>
+    <li>
+        <p>
+            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
+            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+        </p>
+        <p>
+        <table class="inputData">
+            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
+            <tr><td>Фрегат &amp; Эсминец</td> <td>500</td></tr>
+            <tr><td>Фрегат | Эсминец</td> <td>4500</td></tr>
+            <tr><td>Эсминец</td> <td>2500</td></tr>
+        </table>
+        <p>Сколько страниц (в тысячах) будет найдено по запросу Фрегат?
+            <input type="text" size="15" id="infV3Q3">
+        </p>
+    </li>
+    <li>
+        <p>
+            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
+            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+        </p>
+        <p>
+        <table class="inputData">
+            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
+            <tr><td>Сербия&amp;Хорватия</td> <td>500</td></tr>
+            <tr><td>Сербия | Хорватия</td> <td>300</td></tr>
+            <tr><td>Сербия</td> <td>2000</td></tr>
+        </table>
+        <p>Какое количество страниц (в тысячах) будет найдено по запросу Хорватия?
+            <input type="text" size="15" id="infV3Q4">
+        </p>
+    </li>
+    <li>
+        <p>
+            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
+            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+        </p>
+        <p>
+        <table class="inputData">
+            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
+            <tr><td>Лилия&amp;Цветок</td> <td>550</td></tr>
+            <tr><td>Лилия</td> <td>800</td></tr>
+            <tr><td>Цветок</td> <td>950</td></tr>
+        </table>
+        <p>
+            Какое количество страниц (в тысячах) будет найдено по запросу Лилия | Цветок?
+            <input type="text" size="15" id="infV3Q5">
+        </p>
+    </li>
+    </ol>
+    <p><button onclick="check('infV3')">Проверить</button></p>
+    <p><button onclick="openPage('informatics')">Назад</button></p>
+</div>
+<div id="infV4" class="page">
+    <p>
+    <ol>
+    <li>
+        <p>
+            Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах) приведена в таблице:
+        </p>
+        <p>
+        <table class="inputData">
+            <thead>
+            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td></tr>
+            </thead>
+            <tr><td>A</td> <td></td> <td>1</td> <td></td> <td></td> <td></td></tr>
+            <tr><td>B</td> <td>1</td> <td></td> <td>4</td> <td>8</td> <td>2</td></tr>
+            <tr><td>C</td> <td></td> <td>4</td> <td></td> <td></td> <td>4</td></tr>
+            <tr><td>D</td> <td></td> <td>8</td> <td></td> <td></td> <td>4</td></tr>
+            <tr><td>E</td> <td></td> <td>2</td> <td>4</td> <td>4</td> <td></td></tr>
+        </table>
+        <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
+            <input type="text" size="15" id="infV4Q1">
+        </p>
+    </li>
+    <li>
+        <p>
+            Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах) приведена в таблице:
+        </p>
+        <p>
+        <table class="inputData">
+        <thead>
+        <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td></tr>
+        </thead>
+        <tr><td>A</td> <td></td> <td>2</td> <td>5</td> <td>1</td> <td></td></tr>
+        <tr><td>B</td> <td>2</td> <td></td> <td>1</td> <td></td> <td></td></tr>
+        <tr><td>C</td> <td>5</td> <td>1</td> <td></td> <td>3</td> <td>2</td></tr>
+        <tr><td>D</td> <td>1</td> <td></td> <td>3</td> <td></td> <td></td></tr>
+        <tr><td>E</td> <td></td> <td></td> <td>2</td> <td></td> <td></td></tr>
+        </table>
+        <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
+            <input type="text" size="15" id="infV4Q2">
+        </p>
+    </li>
+    <li>
+        <p>
+            Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах) приведена в таблице:
+        </p>
+        <p>
+        <table class="inputData">
+            <thead>
+            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td></tr>
+            </thead>
+            <tr><td>A</td> <td></td> <td>5</td> <td>5</td> <td>4</td> <td></td> <td></td></tr>
+            <tr><td>B</td> <td>5</td> <td></td> <td>2</td> <td></td> <td></td> <td></td></tr>
+            <tr><td>C</td> <td>5</td> <td>2</td> <td></td> <td></td> <td></td> <td>1</td></tr>
+            <tr><td>D</td> <td>4</td> <td></td> <td></td> <td></td> <td>1</td> <td>3</td></tr>
+            <tr><td>E</td> <td></td> <td></td> <td></td> <td>1</td> <td></td> <td>1</td></tr>
+            <tr><td>F</td> <td></td> <td></td> <td>1</td> <td>3</td> <td>1</td> <td></td></tr>
+        </table>
+        <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
+            <input type="text" size="15" id="infV4Q3">
+        </p>
+    </li>
+    <li>
+        <p>
+            Между населёнными пунктами А, В, С, D построены дороги, протяжённость которых (в километрах) приведена в таблице:
+        </p>
+        <p>
+        <table class="inputData">
+            <thead>
+            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td></tr>
+            </thead>
+            <tr><td>A</td> <td></td> <td>2</td> <td>7</td> <td>4</td></tr>
+            <tr><td>B</td> <td>2</td> <td></td> <td>5</td> <td>1</td></tr>
+            <tr><td>C</td> <td>7</td> <td>5</td> <td></td> <td>2</td></tr>
+            <tr><td>D</td> <td>4</td> <td>1</td> <td>2</td> <td></td></tr>
+        </table>
+        <p>Определите длину кратчайшего пути между пунктами А и C. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
+            <input type="text" size="15" id="infV4Q4">
+        </p>
+    </li>
+    <li>
+        <p>
+            Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах) приведена в таблице:
+        </p>
+        <p>
+        <table class="inputData">
+            <thead>
+            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td></tr>
+            </thead>
+            <tr><td>A</td> <td></td> <td>8</td> <td>3</td> <td></td> <td></td> <td></td></tr>
+            <tr><td>B</td> <td>8</td> <td></td> <td></td> <td>3</td> <td></td> <td></td></tr>
+            <tr><td>C</td> <td>3</td> <td></td> <td></td> <td></td> <td>4</td> <td>3</td></tr>
+            <tr><td>D</td> <td></td> <td>3</td> <td></td> <td></td> <td>1</td> <td>3</td></tr>
+            <tr><td>E</td> <td></td> <td></td> <td>4</td> <td>1</td> <td></td> <td>2</td></tr>
+            <tr><td>F</td> <td></td> <td></td> <td>3</td> <td>3</td> <td>2</td> <td></td></tr>
+        </table>
+        <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
+            <input type="text" size="15" id="infV4Q5">
+        </p>
+    </li>
+    </ol>
+    <p><button onclick="check('infV4')">Проверить</button></p>
+    <p><button onclick="openPage('informatics')">Назад</button></p>
+</div>
+<div id="infV5" class="page">
+    <p>
+    <ol>
+        <li>
+            Переведите двоичное число 1100110 в десятичную систему счисления.
+            <input type="text" size="15" id="infV5Q1">
+        </li>
+        <li>
+            Переведите двоичное число 1110110 в десятичную систему счисления.
+            <input type="text" size="15" id="infV5Q2">
+        </li>
+        <li>
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и запишите его в ответе в десятичной системе счисления.
+            14(16), 26(8), 11000(2).
+            <input type="text" size="15" id="infV5Q3">
+        </li>
+        <li>
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и запишите его в ответе в десятичной системе счисления.
+            50(16), 106(8), 1001010(2).
+            <input type="text" size="15" id="infV5Q4">
+        </li>
+        <li>
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите минимальное и запишите его в ответе в десятичной системе счисления.
+            32(16), 60(8), 110110(2).
+            <input type="text" size="15" id="infV5Q5">
+        </li>
+    </ol>
+    <p><button onclick="check('infV5')">Проверить</button></p>
+    <p><button onclick="openPage('informatics')">Назад</button></p>
+</div>
+<div id="testPassedMessage" class="messageBoundingBox" onclick="hideMe(this)">
+    <div class="centered">
+        <h2>Тест пройден</h2>
+    </div>
+</div>
+<div id="testFailedMessage" class="messageBoundingBox" onclick="hideMe(this)">
+    <div class="centered">
+        <h2>Тест провален</h2>
+    </div>
+</div>
+</body>
+</html>
