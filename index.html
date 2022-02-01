@@ -38,6 +38,11 @@
     <button onclick="openPage('home')">Назад</button>
 </div>
 <div id="physics" class="page">
+    <p><button onclick="openPage('physicsV1')">Вариант 1</button></p>
+    <p><button onclick="openPage('physicsV2')">Вариант 2</button></p>
+    <p><button onclick="openPage('physicsV3')">Вариант 3</button></p>
+    <p><button onclick="openPage('physicsV4')">Вариант 4</button></p>
+    <p><button onclick="openPage('physicsV5')">Вариант 5</button></p>
     <button onclick="openPage('home')">Назад</button>
 </div>
 <div id="mathV1" class="page">
@@ -594,6 +599,753 @@
     <p><button onclick="check('infV5')">Проверить</button></p>
     <p><button onclick="openPage('informatics')">Назад</button></p>
 </div>
+<div id="physicsV1" class="page">
+    <p>
+    <ol>
+    <li>
+        Внутренняя энергия тела зависит
+        <select id="physicsV1Q1">
+            <option selected disabled> </option>
+            <option value="1">только от температуры этого тела</option>
+            <option value="2">только от массы этого тела</option>
+            <option value="3">только от агрегатного состояния вещества</option>
+            <option value="4">от температуры, массы тела и агрегатного состояния вещества</option>
+        </select>
+    </li>
+    <li>
+        В каком агрегатном состоянии находится вещество, если оно имеет собственные форму и объем?
+        <select id="physicsV1Q2">
+            <option selected disabled> </option>
+            <option value="1">только в твердом</option>
+            <option value="2">только в жидком</option>
+            <option value="3">только в газообразном</option>
+            <option value="4">в твердом или в жидком</option>
+        </select>
+    </li>
+    <li>
+        Турист разжёг костёр на привале в безветренную погоду. Находясь на некотором расстоянии от костра, турист ощущает тепло. Каким способом в основном происходит процесс передачи теплоты от костра к туристу?
+        <select id="physicsV1Q3">
+            <option selected disabled> </option>
+            <option value="1">путём теплопроводности</option>
+            <option value="2">путём конвекции</option>
+            <option value="3">путём излучения</option>
+            <option value="4">путём теплопроводности и конвекции</option>
+        </select>
+    </li>
+    <li>
+        Какие изменения энергии происходят в куске льда при его таянии?
+        <select id="physicsV1Q4">
+            <option selected disabled> </option>
+            <option value="1">увеличивается кинетическая энергия куска льда</option>
+            <option value="2">уменьшается внутренняя энергия куска льда</option>
+            <option value="3">увеличивается внутренняя энергия куска льда</option>
+            <option value="4">увеличивается внутренняя энергия воды, из которой состоит кусок льда</option>
+        </select>
+    </li>
+    <li>
+        При резком сжатии воздуха его внутренняя энергия
+        <select id="physicsV1Q5">
+            <option selected disabled> </option>
+            <option value="1">уменьшается</option>
+            <option value="2">увеличивается</option>
+            <option value="3">не изменяется</option>
+            <option value="4">может как увеличиваться, так и уменьшаться — в зависимости от быстроты сжатия</option>
+        </select>
+    </li>
+    </ol>
+    <p><button onclick="check('physicsV1')">Проверить</button></p>
+    <p><button onclick="openPage('physics')">Назад</button></p>
+</div>
+<div id="physicsV2" class="page">
+    <p>
+    <ol>
+        <li>
+            Для каждого физического понятия подберите соответствующий пример
+            <p>
+                физическая величина
+                <select id="physicsV2Q1">
+                    <option selected disabled> </option>
+                    <option value="1">инерциальная система отсчёта</option>
+                    <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
+                    <option value="3">мяч, выпущенный из рук, падает на землю</option>
+                    <option value="4">секундомер</option>
+                    <option value="5">средняя скорость</option>
+                </select>
+            </p>
+            <p>
+                физическое явление
+                <select id="physicsV2Q2">
+                    <option selected disabled> </option>
+                    <option value="1">инерциальная система отсчёта</option>
+                    <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
+                    <option value="3">мяч, выпущенный из рук, падает на землю</option>
+                    <option value="4">секундомер</option>
+                    <option value="5">средняя скорость</option>
+                </select>
+            </p>
+            <p>
+                физический закон
+                <select id="physicsV2Q3">
+                    <option selected disabled> </option>
+                    <option value="1">инерциальная система отсчёта</option>
+                    <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
+                    <option value="3">мяч, выпущенный из рук, падает на землю</option>
+                    <option value="4">секундомер</option>
+                    <option value="5">средняя скорость</option>
+                </select>
+            </p>
+        </li>
+    <li>
+        Установите соответствие между физическими величинами и единицами измерения этих величин в системе СИ.
+        <p>
+            импульс тела
+            <select id="physicsV2Q4">
+                <option selected disabled> </option>
+                <option value="1">вольт</option>
+                <option value="2">ньютон на секунду</option>
+                <option value="3">ватт</option>
+                <option value="4">ньютон</option>
+                <option value="5">джоуль</option>
+            </select>
+        </p>
+        <p>
+            мощность
+            <select id="physicsV2Q5">
+                <option selected disabled> </option>
+                <option value="1">вольт</option>
+                <option value="2">ньютон на секунду</option>
+                <option value="3">ватт</option>
+                <option value="4">ньютон</option>
+                <option value="5">джоуль</option>
+            </select>
+        </p>
+        <p>
+            работа
+            <select id="physicsV2Q6">
+                <option selected disabled> </option>
+                <option value="1">вольт</option>
+                <option value="2">ньютон на секунду</option>
+                <option value="3">ватт</option>
+                <option value="4">ньютон</option>
+                <option value="5">джоуль</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        Установите соответствие между устройствами и физическими явлениями, лежащими в основе принципа их действия.
+        <p>
+            компас
+            <select id="physicsV2Q7">
+                <option selected disabled> </option>
+                <option value="1">взаимодействие постоянных магнитов</option>
+                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
+                <option value="3">электризация тел при ударе</option>
+                <option value="4">взаимодействие наэлектризованных тел</option>
+                <option value="5">действие магнитного поля на проводник с током</option>
+            </select>
+        </p>
+        <p>
+            электрометр
+            <select id="physicsV2Q8">
+                <option selected disabled> </option>
+                <option value="1">взаимодействие постоянных магнитов</option>
+                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
+                <option value="3">электризация тел при ударе</option>
+                <option value="4">взаимодействие наэлектризованных тел</option>
+                <option value="5">действие магнитного поля на проводник с током</option>
+            </select>
+        </p>
+        <p>
+            электродвигатель
+            <select id="physicsV2Q9">
+                <option selected disabled> </option>
+                <option value="1">взаимодействие постоянных магнитов</option>
+                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
+                <option value="3">электризация тел при ударе</option>
+                <option value="4">взаимодействие наэлектризованных тел</option>
+                <option value="5">действие магнитного поля на проводник с током</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        Установите соответствие между размерностями физических величин и их наименованиями в системе.
+        <p>
+            [1 Кл/1 с]
+            <select id="physicsV2Q10">
+                <option selected disabled> </option>
+                <option value="1">Ампер</option>
+                <option value="2">Ньютон</option>
+                <option value="3">Джоуль</option>
+                <option value="4">Ом</option>
+                <option value="5">Ватт</option>
+            </select>
+        </p>
+        <p>
+            [1 B/1 А]
+            <select id="physicsV2Q11">
+                <option selected disabled> </option>
+                <option value="1">Ампер</option>
+                <option value="2">Ньютон</option>
+                <option value="3">Джоуль</option>
+                <option value="4">Ом</option>
+                <option value="5">Ватт</option>
+            </select>
+        </p>
+        <p>
+            [1 Кл·1 B]
+            <select id="physicsV2Q12">
+                <option selected disabled> </option>
+                <option value="1">Ампер</option>
+                <option value="2">Ньютон</option>
+                <option value="3">Джоуль</option>
+                <option value="4">Ом</option>
+                <option value="5">Ватт</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        Для каждого физического понятия подберите соответствующий пример.
+        <p>
+            физическая величина
+            <select id="physicsV2Q13">
+                <option selected disabled> </option>
+                <option value="1">интерференция</option>
+                <option value="2">спектроскоп</option>
+                <option value="3">частота</option>
+                <option value="4">герц</option>
+                <option value="5">дисперсия</option>
+            </select>
+        </p>
+        <p>
+            физическое явление
+            <select id="physicsV2Q14">
+                <option selected disabled> </option>
+                <option value="1">интерференция</option>
+                <option value="2">спектроскоп</option>
+                <option value="3">частота</option>
+                <option value="4">герц</option>
+                <option value="5">дисперсия</option>
+            </select>
+        </p>
+        <p>
+            физический закон
+            <select id="physicsV2Q15">
+                <option selected disabled> </option>
+                <option value="1">интерференция</option>
+                <option value="2">спектроскоп</option>
+                <option value="3">частота</option>
+                <option value="4">герц</option>
+                <option value="5">дисперсия</option>
+            </select>
+        </p>
+    </li>
+    </ol>
+    <p><button onclick="check('physicsV2')">Проверить</button></p>
+    <p><button onclick="openPage('physics')">Назад</button></p>
+</div>
+<div id="physicsV3" class="page">
+    <p>
+    <ol>
+    <li>
+        <p>
+            Два проводника, имеющие одинаковые сопротивления R1 = R2 = r, соединены параллельно. Установите соответствие между физическими величинами и формулами, по которым рассчитываются соответствующие величины. I1 и I2— силы тока, U1 и U2— напряжения на этих сопротивлениях.
+        </p>
+        <p>
+            сила тока в общей цепи
+            <select id="physicsV3Q1">
+                <option selected disabled> </option>
+                <option value="1">U = U1 + U2</option>
+                <option value="2">I = I1 + I2</option>
+                <option value="3">R = r &#8260; 2</option>
+                <option value="4">R = 2r</option>
+            </select>
+        </p>
+        <p>
+            общее сопротивление участка цепи
+            <select id="physicsV3Q2">
+                <option selected disabled> </option>
+                <option value="1">U = U1 + U2</option>
+                <option value="2">I = I1 + I2</option>
+                <option value="3">R = r &#8260; 2</option>
+                <option value="4">R = 2r</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        <p>
+            Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
+        </p>
+        <p>
+            сила тока
+            <select id="physicsV3Q3">
+                <option selected disabled> </option>
+                <option value="1">q &#8260; t</option>
+                <option value="2">q * U</option>
+                <option value="3">U * I</option>
+                <option value="4">U &#8260; I</option>
+            </select>
+        </p>
+        <p>
+            мощность тока
+            <select id="physicsV3Q4">
+                <option selected disabled> </option>
+                <option value="1">q &#8260; t</option>
+                <option value="2">q * U</option>
+                <option value="3">U * I</option>
+                <option value="4">U &#8260; I</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        <p>
+            Установите соответствие между формулами для расчёта физических величин и названиями этих величин.
+        </p>
+        <p>
+            ma
+            <select id="physicsV3Q5">
+                <option selected disabled> </option>
+                <option value="1">давление тела</option>
+                <option value="2">модуль равнодействующей силы</option>
+                <option value="3">механическая энергия</option>
+                <option value="4">мощность</option>
+            </select>
+        </p>
+        <p>
+            A &#8260; t
+            <select id="physicsV3Q6">
+                <option selected disabled> </option>
+                <option value="1">давление тела</option>
+                <option value="2">модуль равнодействующей силы</option>
+                <option value="3">механическая энергия</option>
+                <option value="4">мощность</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        <p>
+            Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
+        </p>
+        <p>
+            удельная теплоёмкость вещества
+            <select id="physicsV3Q7">
+                <option selected disabled> </option>
+                <option value="1">Q &#8260; m*(t2-t1)</option>
+                <option value="2">&#955;*m</option>
+                <option value="3">Q &#8260; m</option>
+                <option value="4">Q*m</option>
+            </select>
+        </p>
+        <p>
+            удельная теплота сгорания топлива
+            <select id="physicsV3Q8">
+                <option selected disabled> </option>
+                <option value="1">Q &#8260; m*(t2-t1)</option>
+                <option value="2">&#955;*m</option>
+                <option value="3">Q &#8260; m</option>
+                <option value="4">Q*m</option>
+            </select>
+        </p>
+    </li>
+    <li>
+        <p>
+            Установите соответствие между формулами для расчёта физических величин и названиями этих величин. В формулах использованы обозначения: R— радиус окружности; T— период обращения.
+        </p>
+        <p>
+            2&#960;R &#8260; T
+            <select id="physicsV3Q9">
+                <option selected disabled> </option>
+                <option value="1">число оборотов за единицу времени</option>
+                <option value="2">угловая скорость</option>
+                <option value="3">линейная скорость</option>
+                <option value="4">частота вращения</option>
+            </select>
+        </p>
+        <p>
+            2&#960; &#8260; T
+            <select id="physicsV3Q10">
+                <option selected disabled> </option>
+                <option value="1">число оборотов за единицу времени</option>
+                <option value="2">угловая скорость</option>
+                <option value="3">линейная скорость</option>
+                <option value="4">частота вращения</option>
+            </select>
+        </p>
+    </li>
+    </ol>
+    <p><button onclick="check('physicsV3')">Проверить</button></p>
+    <p><button onclick="openPage('physics')">Назад</button></p>
+</div>
+<div id="physicsV4" class="page">
+    <p>
+    <ol>
+    <li>
+        <p>
+            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+        </p>
+        <p>
+            Электрическая дуга — это один из видов газового разряда. Получить её можно следующим образом.
+            В штативе закрепляют два угольных стержня заострёнными концами друг к другу и присоединяют к источнику тока.
+            Когда угли приводят в соприкосновение, а затем слегка раздвигают, между концами углей образуется яркое пламя, а сами угли раскаляются добела.
+            Дуга горит устойчиво, если через неё проходит постоянный электрический ток.
+            В этом случае один электрод является всё время положительным (анод), а другой — отрицательным (катод).
+        </p>
+        <p>
+            Для поддержания дугового разряда нужно небольшое напряжение, дуга горит при напряжении на её электродах 40В.
+            Сила тока в дуге довольно значительна, а сопротивление невелико; следовательно, светящийся газовый столб
+            <select id="physicsV4Q1">
+                <option selected disabled> </option>
+                <option value="1">плохо</option>
+                <option value="2">хорошо</option>
+                <option value="3">молекулы газа</option>
+                <option value="4">осадок</option>
+                <option value="5">протоны</option>
+                <option value="6">теплота</option>
+                <option value="7">электроны</option>
+            </select>
+            проводит электрический ток.
+            Ионизацию в пространстве между электродами вызывают своими ударами о
+            <select id="physicsV4Q2">
+                <option selected disabled> </option>
+                <option value="1">плохо</option>
+                <option value="2">хорошо</option>
+                <option value="3">молекулы газа</option>
+                <option value="4">осадок</option>
+                <option value="5">протоны</option>
+                <option value="6">теплота</option>
+                <option value="7">электроны</option>
+            </select>
+            электроны, испускаемые катодом дуги.
+            Большое количество испускаемых
+            <select id="physicsV4Q3">
+                <option selected disabled> </option>
+                <option value="1">плохо</option>
+                <option value="2">хорошо</option>
+                <option value="3">молекулы газа</option>
+                <option value="4">осадок</option>
+                <option value="5">протоны</option>
+                <option value="6">теплота</option>
+                <option value="7">электроны</option>
+            </select>
+            обеспечивается тем, что катод нагрет до очень высокой температуры.
+            Когда для зажигания дуги вначале угли приводят в соприкосновение, то в месте контакта, обладающем очень большим сопротивлением, выделяется огромное количество
+            <select id="physicsV4Q4">
+                <option selected disabled> </option>
+                <option value="1">плохо</option>
+                <option value="2">хорошо</option>
+                <option value="3">молекулы газа</option>
+                <option value="4">осадок</option>
+                <option value="5">протоны</option>
+                <option value="6">теплота</option>
+                <option value="7">электроны</option>
+            </select>.
+            Поэтому концы углей сильно разогреваются, и этого достаточно для того, чтобы при их раздвижении между ними вспыхнула дуга.
+            В дальнейшем катод дуги поддерживается в накалённом состоянии самим током, проходящим через дугу.
+        </p>
+    </li>
+    <li>
+        <p>
+            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+        </p>
+        <p>
+            Полярное сияние — одно из самых красивых явлений в природе.
+            Формы полярного сияния очень разнообразны:
+            то это своеобразные светлые столбы,
+            то изумрудно-зелёные с красной бахромой пылающие длинные ленты,
+            расходящиеся многочисленные лучи-стрелы,
+            а то и просто бесформенные светлые, иногда цветные пятна на небе.
+        </p>
+        <p>
+            Полярные сияния чаще всего наблюдаются в приполярных регионах, откуда и происходит это название.
+            Полярные сияния могут быть видны не только на далёком Севере, но и южнее.
+            Например, в 1938 году полярное сияние наблюдалось на южном берегу Крыма, что объясняется увеличением мощности возбудителя свечения —
+            <select id="physicsV4Q5">
+                <option selected disabled> </option>
+                <option value="1">метеоритный дождь</option>
+                <option value="2">солнечный ветер</option>
+                <option value="3">волна</option>
+                <option value="4">поле</option>
+                <option value="5">разряд</option>
+                <option value="6">возбуждённый</option>
+                <option value="7">магнитный</option>
+                <option value="8">стационарный</option>
+                <option value="9">электрический</option>
+            </select>.
+        </p>
+        <p>
+            Начало изучению полярных сияний положил великий русский учёный М.В.Ломоносов, высказавший гипотезу о том, что причиной этого явления служат электрические
+            <select id="physicsV4Q6">
+                <option selected disabled> </option>
+                <option value="1">метеоритный дождь</option>
+                <option value="2">солнечный ветер</option>
+                <option value="3">волна</option>
+                <option value="4">поле</option>
+                <option value="5">разряд</option>
+                <option value="6">возбуждённый</option>
+                <option value="7">магнитный</option>
+                <option value="8">стационарный</option>
+                <option value="9">электрический</option>
+            </select>
+            в разреженном воздухе.
+            Опыты подтвердили научное предположение учёного.
+        </p>
+        <p>
+            Полярные сияния — это электрическое свечение верхних очень разреженных слоёв атмосферы на высоте (обычно) от 80 до 1000 км.
+            Свечение это происходит под влиянием быстро движущихся электрически заряженных частиц (электронов и протонов), приходящих от Солнца.
+            Взаимодействие солнечного ветра с
+            <select id="physicsV4Q7">
+                <option selected disabled> </option>
+                <option value="1">метеоритный дождь</option>
+                <option value="2">солнечный ветер</option>
+                <option value="3">волна</option>
+                <option value="4">поле</option>
+                <option value="5">разряд</option>
+                <option value="6">возбуждённый</option>
+                <option value="7">магнитный</option>
+                <option value="8">стационарный</option>
+                <option value="9">электрический</option>
+            </select>
+            полем Земли приводит к повышенной концентрации заряженных частиц в зонах, окружающих геомагнитные полюса Земли.
+            Именно в этих зонах и наблюдается наибольшая активность полярных сияний.
+        </p>
+        <p>
+            Столкновения быстрых электронов и протонов с атомами кислорода и азота приводят атомы в
+            <select id="physicsV4Q8">
+                <option selected disabled> </option>
+                <option value="1">метеоритный дождь</option>
+                <option value="2">солнечный ветер</option>
+                <option value="3">волна</option>
+                <option value="4">поле</option>
+                <option value="5">разряд</option>
+                <option value="6">возбуждённый</option>
+                <option value="7">магнитный</option>
+                <option value="8">стационарный</option>
+                <option value="9">электрический</option>
+            </select>
+            состояние.
+            Выделяя избыток энергии, атомы кислорода дают яркое излучение в зелёной и красной областях спектра, молекулы азота — в фиолетовой.
+            Сочетание всех этих излучений и придаёт полярным сияниям красивую, часто меняющуюся окраску.
+        </p>
+    </li>
+    <li>
+        <p>
+            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+        </p>
+        <p>
+            Реактивным называется движение, которое происходит под действием
+            <select id="physicsV4Q9">
+                <option selected disabled> </option>
+                <option value="1">сила реакции</option>
+                <option value="2">сила тяжести</option>
+                <option value="3">первый</option>
+                <option value="4">второй</option>
+                <option value="5">третий</option>
+                <option value="6">противоположное направление</option>
+                <option value="7">совпадающий с направлением</option>
+                <option value="8">изменяется</option>
+                <option value="9">остаётся постоянным</option>
+            </select>
+            , действующей на движущееся тело со стороны струи вещества, выбрасываемого из двигателя.
+            Пояснить принцип реактивного движения можно на примере движения ракеты.
+        </p>
+        <p>
+            Пусть в двигателе, установленном на ракете, происходит сгорание топлива и продукты горения (горячие газы) под высоким давлением выбрасываются из сопла двигателя.
+            На каждую порцию газов, выброшенных из сопла, со стороны двигателя действует некоторая сила, которая приводит эту порцию газов в движение.
+            В соответствии с
+            <select id="physicsV4Q10">
+                <option selected disabled> </option>
+                <option value="1">сила реакции</option>
+                <option value="2">сила тяжести</option>
+                <option value="3">первый</option>
+                <option value="4">второй</option>
+                <option value="5">третий</option>
+                <option value="6">противоположное направление</option>
+                <option value="7">совпадающий с направлением</option>
+                <option value="8">изменяется</option>
+                <option value="9">остаётся постоянным</option>
+            </select>
+            законом Ньютона, на двигатель со стороны выбрасываемых газов действует сила, такая же по модулю и противоположная по направлению.
+            Эта сила называется реактивной.
+            Под её действием ракета приобретает ускорение и разгоняется в направлении,
+            <select id="physicsV4Q11">
+                <option selected disabled> </option>
+                <option value="1">сила реакции</option>
+                <option value="2">сила тяжести</option>
+                <option value="3">первый</option>
+                <option value="4">второй</option>
+                <option value="5">третий</option>
+                <option value="6">противоположное направление</option>
+                <option value="7">совпадающий с направлением</option>
+                <option value="8">изменяется</option>
+                <option value="9">остаётся постоянным</option>
+            </select>
+            выбрасывания газов.
+        </p>
+        <p>
+            При реактивном движении ракеты её масса непрерывно уменьшается из-за сгорания топлива и выбрасывания наружу продуктов сгорания.
+            По этой причине модуль ускорения ракеты всё время
+            <select id="physicsV4Q12">
+                <option selected disabled> </option>
+                <option value="1">сила реакции</option>
+                <option value="2">сила тяжести</option>
+                <option value="3">первый</option>
+                <option value="4">второй</option>
+                <option value="5">третий</option>
+                <option value="6">противоположное направление</option>
+                <option value="7">совпадающий с направлением</option>
+                <option value="8">изменяется</option>
+                <option value="9">остаётся постоянным</option>
+            </select>
+            , а скорость ракеты нелинейно зависит от массы сгоревшего топлива.
+            Впервые задача об отыскании модуля конечной скорости v ракеты, масса которой изменилась от значения m0 до величины m, была решена русским учёным, пионером космонавтики К.Э.Циолковским.
+        </p>
+    </li>
+    <li>
+        <p>
+            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+        </p>
+        <p>
+            Атмосферное электричество образуется и концентрируется в облаках — образованиях из мелких частиц воды, находящейся в жидком или твёрдом состоянии.
+            При дроблении водяных капель и кристаллов льда, при столкновениях их с ионами атмосферного воздуха крупные капли и кристаллы приобретают избыточный отрицательный заряд, а мелкие — положительный.
+            Восходящие потоки воздуха в грозовом облаке поднимают мелкие капли и кристаллы к вершине облака, крупные капли и кристаллы опускаются к его основанию.
+        </p>
+        <p>
+            Заряженные облака наводят на земной поверхности под собой
+            <select id="physicsV4Q13">
+                <option selected disabled> </option>
+                <option value="1">в разные моменты времени</option>
+                <option value="2">длиннее</option>
+                <option value="3">короче</option>
+                <option value="4">магнитный</option>
+                <option value="5">одновременно</option>
+                <option value="6">противоположный</option>
+                <option value="7">такой же</option>
+                <option value="8">электрический</option>
+            </select>
+            по знаку заряд. Внутри облака и между облаком и Землёй создаётся сильное
+            <select id="physicsV4Q14">
+                <option selected disabled> </option>
+                <option value="1">в разные моменты времени</option>
+                <option value="2">длиннее</option>
+                <option value="3">короче</option>
+                <option value="4">магнитный</option>
+                <option value="5">одновременно</option>
+                <option value="6">противоположный</option>
+                <option value="7">такой же</option>
+                <option value="8">электрический</option>
+            </select>
+            поле, которое способствует ионизации воздуха и возникновению искровых разрядов (молний) как внутри облака, так и между облаком и поверхностью Земли.
+        </p>
+        <p>
+            Гром возникает вследствие резкого расширения воздуха при быстром повышении температуры в канале разряда молнии.
+            Вспышку молнии мы видим практически одновременно с разрядом, так как скорость распространения света очень велика (3·108 м/с).
+            Разряд молнии длится всего 0,1–0,2 с. Звук распространяется значительно медленнее. В воздухе его скорость равна примерно 330 м/с.
+            Чем дальше от нас произошёл разряд молнии, тем
+            <select id="physicsV4Q15">
+                <option selected disabled> </option>
+                <option value="1">в разные моменты времени</option>
+                <option value="2">длиннее</option>
+                <option value="3">короче</option>
+                <option value="4">магнитный</option>
+                <option value="5">одновременно</option>
+                <option value="6">противоположный</option>
+                <option value="7">такой же</option>
+                <option value="8">электрический</option>
+            </select>
+            пауза между вспышкой света и громом. Гром от очень далёких молний вообще не доходит: звуковая энергия рассеивается и поглощается по пути.
+            Такие молнии называют зарницами. Как правило, гром слышен на расстоянии до 15–20 километров; таким образом, если наблюдатель видит молнию, но не слышит грома, то гроза находится на расстоянии более 20 километров.
+        </p>
+        <p>
+            Гром, сопровождающий молнию, может длиться в течение нескольких секунд. Существует две причины, объясняющие, почему вслед за короткой молнией слышатся более или менее долгие раскаты грома.
+            Во-первых, молния имеет очень большую длину (она измеряется километрами), поэтому звук от разных её участков доходит до наблюдателя
+            <select id="physicsV4Q16">
+                <option selected disabled> </option>
+                <option value="1">в разные моменты времени</option>
+                <option value="2">длиннее</option>
+                <option value="3">короче</option>
+                <option value="4">магнитный</option>
+                <option value="5">одновременно</option>
+                <option value="6">противоположный</option>
+                <option value="7">такой же</option>
+                <option value="8">электрический</option>
+            </select>.
+            Во-вторых, происходит отражение звука от облаков и туч — возникает эхо. Отражением звука от облаков объясняется происходящее иногда усиление громкости звука в конце громовых раскатов.
+        </p>
+    </li>
+    <li>
+        <p>
+            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+        </p>
+        <p>
+            В воздухе всегда присутствуют водяные пары, концентрация которых может быть различной.
+            Опыт показывает, что концентрация паров не может превышать некоторого максимально возможного значения nmax (для каждой температуры это значение своё).
+            Пары с концентрацией, равной nmax, называются
+            <select id="physicsV4Q17">
+                <option selected disabled> </option>
+                <option value="1">абсолютный</option>
+                <option value="2">жидкий</option>
+                <option value="3">насыщенный</option>
+                <option value="4">ненасыщенный</option>
+                <option value="5">относительный</option>
+                <option value="6">равновесный</option>
+                <option value="7">твёрдый</option>
+                <option value="8">температура конденсации</option>
+                <option value="9">точка росы</option>
+            </select>.
+            С ростом температуры максимально возможная концентрация водяных паров также растёт.
+            Отношение концентрации n водяных паров при данной температуре к максимально возможной концентрации при той же температуре называется
+            <select id="physicsV4Q18">
+                <option selected disabled> </option>
+                <option value="1">абсолютный</option>
+                <option value="2">жидкий</option>
+                <option value="3">насыщенный</option>
+                <option value="4">ненасыщенный</option>
+                <option value="5">относительный</option>
+                <option value="6">равновесный</option>
+                <option value="7">твёрдый</option>
+                <option value="8">температура конденсации</option>
+                <option value="9">точка росы</option>
+            </select>
+            влажностью, которая обозначается буквой &phi;.
+            Её принято измерять в процентах. Из сказанного следует, что &phi;=(n/nmax)·100%.
+        </p>
+        <p>
+            Пусть при некоторой температуре t концентрация водяных паров в воздухе равна n, а φ меньше, чем 100%.
+            Если температура будет понижаться, то вместе с ней будет уменьшаться и величина nmax, а значит, &phi; будет увеличиваться.
+            При некоторой критической температуре &phi; достигнет значения 100% (в этот момент концентрация водяных паров станет максимально возможной при данной температуре).
+            Поэтому дальнейшее понижение температуры приведёт к переходу водяных паров в
+            <select id="physicsV4Q19">
+                <option selected disabled> </option>
+                <option value="1">абсолютный</option>
+                <option value="2">жидкий</option>
+                <option value="3">насыщенный</option>
+                <option value="4">ненасыщенный</option>
+                <option value="5">относительный</option>
+                <option value="6">равновесный</option>
+                <option value="7">твёрдый</option>
+                <option value="8">температура конденсации</option>
+                <option value="9">точка росы</option>
+            </select>
+            состояние — в воздухе образуются капли тумана, а на предметах выпадут капли воды.
+            Поэтому упомянутая выше критическая температура называется
+            <select id="physicsV4Q20">
+                <option selected disabled> </option>
+                <option value="1">абсолютный</option>
+                <option value="2">жидкий</option>
+                <option value="3">насыщенный</option>
+                <option value="4">ненасыщенный</option>
+                <option value="5">относительный</option>
+                <option value="6">равновесный</option>
+                <option value="7">твёрдый</option>
+                <option value="8">температура конденсации</option>
+                <option value="9">точка росы</option>
+            </select>.
+        </p>
+    </li>
+    </ol>
+    <p><button onclick="check('physicsV4')">Проверить</button></p>
+    <p><button onclick="openPage('physics')">Назад</button></p>
+</div>
+
 <div id="testPassedMessage" class="messageBoundingBox" onclick="hideMe(this)">
     <div class="centered">
         <h2>Тест пройден</h2>
