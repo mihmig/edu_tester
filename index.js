@@ -152,18 +152,35 @@ function hideMe(element) {
 }
 
 function check(id){
-    var correctAnswers = answers[id];
-    var numberOfCorrectAnswers = 0;
-    var questionCount = 0;
-    for (var key in correctAnswers){
+    let correctAnswers = answers[id];
+    let numberOfCorrectAnswers = 0;
+    let questionCount = 0;
+    for (let key in correctAnswers){
         questionCount++;
-        var userAnswer = document.getElementById(key).value;
+        let answerElement = document.getElementById(key);
+        if (!answerElement) continue;
+        let userAnswer = null;
+        switch (answerElement.tagName) {
+            case "DIV":
+                let radioinput = answerElement.querySelector("input:checked");
+                if (radioinput) {
+                    userAnswer = radioinput.value;
+                }
+                break;
+            case "SELECT":
+                userAnswer = document.getElementById(key).value;
+                break;
+            default:
+                console.error("check(id): unknown element type - " + answerElement.tagName);
+                continue;
+        }
+
         if (userAnswer === correctAnswers[key]){
             numberOfCorrectAnswers++;
-            document.getElementById(key).style.backgroundColor = "lightgreen";
+            answerElement.style.backgroundColor = "lightgreen";
         }
         else{
-            document.getElementById(key).style.backgroundColor = "lightpink";
+            answerElement.style.backgroundColor = "lightpink";
         }
     }
     console.log(numberOfCorrectAnswers);

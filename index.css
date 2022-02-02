@@ -4,9 +4,10 @@ body,html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 2em;
 }
 .page {
-    font-size: medium;
+    /*font-size: medium;*/
     padding: 50px 10%;
     display: none;
     height: 100%;
@@ -18,11 +19,13 @@ body,html {
     /*padding: 0px 30% 0px;*/
 }
 
-button {
-    background-color: white;
-    font-size: larger;
-    height: 50px;
+.button {
+    font-size: 2em;
     width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
 }
 
 table {
@@ -69,3 +72,23 @@ select{
     visibility: hidden;
     z-index: 100;
 }
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grid2x2 > div {
+    display: flex;
+    flex-basis: calc(45% - 10px);
+    justify-content: center;
+    flex-direction: column;
+}
+.grid2x2 > div > div {
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: row;
+}
+
+.box { margin: 20px; }

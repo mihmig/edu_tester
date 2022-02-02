@@ -3,111 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <!--<link rel="stylesheet" href="checkbox.css" type="text/css">-->
+    <link rel="stylesheet" href="radio_button.css" type="text/css">
     <script src="index.js?45682347652875628"></script>
     <title>Тесты</title>
 </head>
 <body onload="init();">
 <div id="home" class="page">
     <p class="pageName">
-    Предметы
+        Выберите предмет:
     </p>
     <p>
-       <button id="mathButton" onclick="openPage('math')">Математика</button>
+    <div class="button" id="mathButton" onclick="openPage('math')">Математика</div>
     </p>
     <p>
-        <button id="informaticsButton" onclick="openPage('informatics')">Информатика</button>
+    <div class="button" id="informaticsButton" onclick="openPage('informatics')">Информатика</div>
     </p>
     <p>
-        <button id="physicsButton" onclick="openPage('physics')">Физика</button>
+    <div class="button" id="physicsButton" onclick="openPage('physics')">Физика</div>
     </p>
 </div>
 <div id="math" class="page">
-    <p><button onclick="openPage('mathV1')">Вариант 1</button></p>
-    <p><button onclick="openPage('mathV2')">Вариант 2</button></p>
-    <p><button onclick="openPage('mathV3')">Вариант 3</button></p>
-    <p><button onclick="openPage('mathV4')">Вариант 4</button></p>
-    <p><button onclick="openPage('mathV5')">Вариант 5</button></p>
-    <p><button onclick="openPage('home')">Назад</button></p>
+    <p>
+    <div class="button" onclick="openPage('mathV1')">Вариант 1</div>
+    </p>
+    <p>
+    <div class="button" onclick="openPage('mathV2')">Вариант 2</div>
+    </p>
+    <p>
+    <div class="button" onclick="openPage('mathV3')">Вариант 3</div>
+    </p>
+    <p>
+    <div class="button" onclick="openPage('mathV4')">Вариант 4</div>
+    </p>
+    <p>
+    <div class="button" onclick="openPage('mathV5')">Вариант 5</div>
+    </p>
+    <p>
+    <div class="button" onclick="openPage('home')">Назад</div>
+    </p>
 </div>
 <div id="informatics" class="page">
-    <p><button onclick="openPage('infV1')">Вариант 1</button></p>
-    <p><button onclick="openPage('infV2')">Вариант 2</button></p>
-    <p><button onclick="openPage('infV3')">Вариант 3</button></p>
-    <p><button onclick="openPage('infV4')">Вариант 4</button></p>
-    <p><button onclick="openPage('infV5')">Вариант 5</button></p>
-    <button onclick="openPage('home')">Назад</button>
+    <p>
+    <div onclick="openPage('infV1')">Вариант 1</div>
+    </p>
+    <p>
+    <div onclick="openPage('infV2')">Вариант 2</div>
+    </p>
+    <p>
+    <div onclick="openPage('infV3')">Вариант 3</div>
+    </p>
+    <p>
+    <div onclick="openPage('infV4')">Вариант 4</div>
+    </p>
+    <p>
+    <div onclick="openPage('infV5')">Вариант 5</div>
+    </p>
+    <div onclick="openPage('home')">Назад</div>
 </div>
 <div id="physics" class="page">
-    <p><button onclick="openPage('physicsV1')">Вариант 1</button></p>
-    <p><button onclick="openPage('physicsV2')">Вариант 2</button></p>
-    <p><button onclick="openPage('physicsV3')">Вариант 3</button></p>
-    <p><button onclick="openPage('physicsV4')">Вариант 4</button></p>
-    <p><button onclick="openPage('physicsV5')">Вариант 5</button></p>
-    <button onclick="openPage('home')">Назад</button>
+    <p>
+    <div onclick="openPage('physicsV1')">Вариант 1</div>
+    </p>
+    <p>
+    <div onclick="openPage('physicsV2')">Вариант 2</div>
+    </p>
+    <p>
+    <div onclick="openPage('physicsV3')">Вариант 3</div>
+    </p>
+    <p>
+    <div onclick="openPage('physicsV4')">Вариант 4</div>
+    </p>
+    <p>
+    <div onclick="openPage('physicsV5')">Вариант 5</div>
+    </p>
+    <div onclick="openPage('home')">Назад</div>
 </div>
 <div id="mathV1" class="page">
     <p>
     <ol>
-    <li>
-        Известно, что a &lt; b &lt; 0. Выберите наименьшее из чисел.
-      <select id="mathV1Q1">
-          <option selected disabled> </option>
-          <option value="1">a-1</option>
-          <option value="2">b-1</option>
-          <option value="3">ab</option>
-          <option value="4">-b</option>
-      </select>
-    </li>
-    <li>
-        О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.
-        <select id="mathV1Q2">
-            <option selected disabled> </option>
-            <option value="1">d=a</option>
-            <option value="2">d&gt;a</option>
-            <option value="3">d&lt;a</option>
-            <option value="4">Сравнить невозможно</option>
-        </select>
-    </li>
-    <li>
-        Какому промежутку принадлежит число  &Sqrt;53?
-        <select id="mathV1Q3">
-            <option selected disabled> </option>
-            <option value="1">[4;5]</option>
-            <option value="2">[5;6]</option>
-            <option value="3">[6;7]</option>
-            <option value="4">[7;8]</option>
-        </select>
-    </li>
-    <li>
-        Какому из данных промежутков принадлежит число  5 &#8260; 9?
-        <select id="mathV1Q4">
-            <option selected disabled> </option>
-            <option value="1">[0,5;0,6]</option>
-            <option value="2">[0,6;0,7]</option>
-            <option value="3">[0,7;0,8]</option>
-            <option value="4">[0,8;0,9]</option>
-        </select>
-    </li>
-    <li>
-        Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?
-        <select id="mathV1Q5">
-            <option selected disabled> </option>
-            <option value="1">a-b</option>
-            <option value="2">a-c</option>
-            <option value="3">b-c</option>
-            <option value="4">c-b</option>
-        </select>
-    </li>
-</ol>
-    <p><button onclick="check('mathV1')">Проверить</button></p>
-    <p><button onclick="openPage('math')">Назад</button></p>
+        <li>
+            <p>Известно, что a &lt; b &lt; 0. Выберите наименьшее из чисел.</p>
+            <div class="grid2x2" id="mathV1Q1">
+                <div class="box">
+                    <div>
+                        <label class="container">a-1
+                            <input type="radio" value="1" name="mathV1Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">b-1
+                            <input type="radio" value="2" name="mathV1Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">ab
+                            <input type="radio" value="3" name="mathV1Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">-b
+                            <input type="radio" value="4" name="mathV1Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.
+            <select id="mathV1Q2">
+                <option selected disabled></option>
+                <option value="1">d=a</option>
+                <option value="2">d&gt;a</option>
+                <option value="3">d&lt;a</option>
+                <option value="4">Сравнить невозможно</option>
+            </select>
+        </li>
+        <li>
+            Какому промежутку принадлежит число &Sqrt;53?
+            <select id="mathV1Q3">
+                <option selected disabled></option>
+                <option value="1">[4;5]</option>
+                <option value="2">[5;6]</option>
+                <option value="3">[6;7]</option>
+                <option value="4">[7;8]</option>
+            </select>
+        </li>
+        <li>
+            Какому из данных промежутков принадлежит число 5 &#8260; 9?
+            <select id="mathV1Q4">
+                <option selected disabled></option>
+                <option value="1">[0,5;0,6]</option>
+                <option value="2">[0,6;0,7]</option>
+                <option value="3">[0,7;0,8]</option>
+                <option value="4">[0,8;0,9]</option>
+            </select>
+        </li>
+        <li>
+            Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?
+            <select id="mathV1Q5">
+                <option selected disabled></option>
+                <option value="1">a-b</option>
+                <option value="2">a-c</option>
+                <option value="3">b-c</option>
+                <option value="4">c-b</option>
+            </select>
+        </li>
+    </ol>
+    <p>
+    <div onclick="check('mathV1')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('math')">Назад</div>
+    </p>
 </div>
 <div id="mathV2" class="page">
     <ol>
         <li>
-            Решите неравенство  x&sup2; &lt; 361.
+            Решите неравенство x&sup2; &lt; 361.
             <select id="mathV2Q1">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(-&infin;;-19)&cup;(19;&infin;)</option>
                 <option value="2">(-&infin;;-19]&cup;[19;&infin;)</option>
                 <option value="3">(-19;19)</option>
@@ -117,7 +182,7 @@
         <li>
             Решите неравенство x&sup2; -36 &gt; 0.
             <select id="mathV2Q2">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(&infin;;&infin;)</option>
                 <option value="2">(−&infin;;−6)&cup;(6;&infin;)</option>
                 <option value="3">(−6;6)</option>
@@ -127,7 +192,7 @@
         <li>
             Решите неравенство x&sup2; + x &ge; 0.
             <select id="mathV2Q3">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(-&infin;-1]&cup;[0;&infin;)</option>
                 <option value="2">[-1;0]</option>
                 <option value="3">(-1;0)</option>
@@ -137,7 +202,7 @@
         <li>
             Решите неравенство 9x - 4(2x + 1) &gt; -8.
             <select id="mathV2Q4">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(−4;&infin;)</option>
                 <option value="2">(−12;&infin;)</option>
                 <option value="3">(−&infin;;−4)</option>
@@ -145,9 +210,9 @@
             </select>
         </li>
         <li>
-            Решите неравенство  -x&sup2; -2x &le; 0.
+            Решите неравенство -x&sup2; -2x &le; 0.
             <select id="mathV2Q5">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(-&infin;;-2)&cup;(0;&infin;)</option>
                 <option value="2">(-&infin;;-2]&cup;[0;&infin;)</option>
                 <option value="3">(-2;0)</option>
@@ -155,8 +220,12 @@
             </select>
         </li>
     </ol>
-    <p><button onclick="check('mathV2')">Проверить</button></p>
-    <p><button onclick="openPage('math')">Назад</button></p>
+    <p>
+    <div onclick="check('mathV2')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('math')">Назад</div>
+    </p>
 </div>
 <div id="mathV3" class="page">
     <ol>
@@ -166,7 +235,7 @@
             <p>2)Боковые стороны любой трапеции равны.</p>
             <p>3)Сумма углов равнобедренного треугольника равна 180 градусам</p>
             <select id="mathV3Q1">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">1 и 2</option>
                 <option value="2">1 и 3</option>
                 <option value="3">2 и 3</option>
@@ -178,7 +247,7 @@
             <p>2)Угол, вписанный в окружность, равен соответствующему центральному углу, опирающемуся на ту же дугу.</p>
             <p>3)В любой ромб можно вписать окружность.</p>
             <select id="mathV3Q2">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">1 и 2</option>
                 <option value="2">1 и 3</option>
                 <option value="3">2 и 3</option>
@@ -191,7 +260,7 @@
             <p>3)Если в ромбе один из углов равен 90°, то такой ромб — квадрат.</p>
             <p>4)В любом параллелограмме диагонали равны.</p>
             <select id="mathV3Q3">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">1 и 2</option>
                 <option value="2">1 и 3</option>
                 <option value="3">1 и 4</option>
@@ -206,7 +275,7 @@
             <p>2)Если два угла треугольника равны, то равны и противолежащие им стороны.</p>
             <p>3)Внутренние накрест лежащие углы, образованные двумя параллельными прямыми и секущей, равны.</p>
             <select id="mathV3Q4">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">1 и 2</option>
                 <option value="2">1 и 3</option>
                 <option value="3">2 и 3</option>
@@ -218,15 +287,19 @@
             <p>2)Диагонали трапеции пересекаются и делятся точкой пересечения пополам.</p>
             <p>3)Все диаметры окружности равны между собой.</p>
             <select id="mathV3Q5">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">1 и 2</option>
                 <option value="2">1 и 3</option>
                 <option value="3">2 и 3</option>
             </select>
         </li>
     </ol>
-    <p><button onclick="check('mathV3')">Проверить</button></p>
-    <p><button onclick="openPage('math')">Назад</button></p>
+    <p>
+    <div onclick="check('mathV3')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('math')">Назад</div>
+    </p>
 </div>
 <div id="mathV4" class="page">
     <ol>
@@ -236,8 +309,12 @@
         <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" size="15" id="mathV4Q4"></li>
         <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" size="15" id="mathV4Q5"></li>
     </ol>
-    <p><button onclick="check('mathV4')">Проверить</button></p>
-    <p><button onclick="openPage('math')">Назад</button></p>
+    <p>
+    <div onclick="check('mathV4')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('math')">Назад</div>
+    </p>
 </div>
 <div id="mathV5" class="page">
     <ol>
@@ -246,7 +323,7 @@
             <p>5x + 13 &le; 0</p>
             <p>x + 5 &ge; 0</p>
             <select id="mathV5Q1">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">[-13&#8260;5;-4]</option>
                 <option value="2">[-4;13&#8260;5]</option>
                 <option value="3">(-&infin;;-4]&cup;[-13&#8260;5;&infin;)</option>
@@ -258,7 +335,7 @@
             <p>x&sup2; &le; 4</p>
             <p>x + 3 &ge; 0</p>
             <select id="mathV5Q2">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(-&infin;;-3]</option>
                 <option value="2">(-&infin;;-3]&cup;[2;&infin;)</option>
                 <option value="3">[-2;-2]</option>
@@ -270,7 +347,7 @@
             <p>x &gt; 3</p>
             <p>4 - x &gt; 0</p>
             <select id="mathV5Q3">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(-&infin;;4)</option>
                 <option value="2">нет решений</option>
                 <option value="3">(3;&infin;)</option>
@@ -282,7 +359,7 @@
             <p>-35 + 5x &gt; 0</p>
             <p>6 - 3x &gt; -18</p>
             <select id="mathV5Q4">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">(7;8)</option>
                 <option value="2">(-&infin;;8)</option>
                 <option value="3">нет решений</option>
@@ -294,7 +371,7 @@
             <p>x - 4 &gt; 0</p>
             <p>x - 0,3 &gt; 1</p>
             <select id="mathV5Q5">
-                <option selected disabled> </option>
+                <option selected disabled></option>
                 <option value="1">[13 &#8260; 10;&infin;)</option>
                 <option value="2">[4;&infin;)</option>
                 <option value="3">[13 &#8260; 10;4)</option>
@@ -302,8 +379,12 @@
             </select>
         </li>
     </ol>
-    <p><button onclick="check('mathV5')">Проверить</button></p>
-    <p><button onclick="openPage('math')">Назад</button></p>
+    <p>
+    <div onclick="check('mathV5')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('math')">Назад</div>
+    </p>
 </div>
 <div id="infV1" class="page">
     <p>
@@ -313,261 +394,589 @@
             не (X &lt; 2) и (X &lt; 5).
             <input type="text" size="15" id="infV1Q1">
         </li>
-    <li>
-        Напишите наименьшее целое число x, для которого истинно высказывание:
-        не (X &lt; 7) и (X чётное).
-        <input type="text" size="15" id="infV1Q2">
-    </li>
-    <li>
-        Напишите наибольшее целое число x, для которого истинно высказывание:
-        не (X &le; 15) и (X &lt; 20).
-        <input type="text" size="15" id="infV1Q3">
-    </li>
-    <li>
-        Напишите наибольшее целое число x, для которого истинно высказывание:
-        не (X &le; 11) и не (X &ge; 17) и (X нечётное).
-        <input type="text" size="15" id="infV1Q4">
-    </li>
-    <li>
-        Напишите наименьшее натуральное трёхзначное число, для которого истинно высказывание:
-        не (Число нечётное) и (Число кратно 3).
-        <input type="text" size="15" id="infV1Q5">
-    </li>
+        <li>
+            Напишите наименьшее целое число x, для которого истинно высказывание:
+            не (X &lt; 7) и (X чётное).
+            <input type="text" size="15" id="infV1Q2">
+        </li>
+        <li>
+            Напишите наибольшее целое число x, для которого истинно высказывание:
+            не (X &le; 15) и (X &lt; 20).
+            <input type="text" size="15" id="infV1Q3">
+        </li>
+        <li>
+            Напишите наибольшее целое число x, для которого истинно высказывание:
+            не (X &le; 11) и не (X &ge; 17) и (X нечётное).
+            <input type="text" size="15" id="infV1Q4">
+        </li>
+        <li>
+            Напишите наименьшее натуральное трёхзначное число, для которого истинно высказывание:
+            не (Число нечётное) и (Число кратно 3).
+            <input type="text" size="15" id="infV1Q5">
+        </li>
     </ol>
-    <p><button onclick="check('infV1')">Проверить</button></p>
-    <p><button onclick="openPage('informatics')">Назад</button></p>
+    <p>
+    <div onclick="check('infV1')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('informatics')">Назад</div>
+    </p>
 </div>
 <div id="infV2" class="page">
     <p>
     <ol>
-    <li>
-        <p>У исполнителя Бета две команды, которым присвоены номера:</p>
-        <p>1 прибавь 2</p>
-        <p>2 умножь на b</p>
-        <p>(b - неизвестное натуральное число; b &ge; 2).</p>
-        <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111 переводит число 7 в число 51. Определите значение b <input type="text" size="15" id="infV2Q1">.</p>
-    </li>
-    <li>
-        <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
-        <p>1 прибавь 1</p>
-        <p>2 раздели на b</p>
-        <p>(b — неизвестное натуральное число; b &ge; 2).</p>
-        <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b. Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111 переводит число 63 в число 11. Определите значение b <input type="text" size="15" id="infV2Q2">.</p>
-    </li>
-    <li>
-        <p>У исполнителя Омега две команды, которым присвоены номера:</p>
-        <p>1 прибавь 4</p>
-        <p>2 умножь на b</p>
-        <p>(b — неизвестное натуральное число; b &ge; 2).</p>
-        <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа 12111 переводит число 9 в число 77. Определите значение b <input type="text" size="15" id="infV2Q3">.</p>
-    </li>
-    <li>
-        <p>У исполнителя Квадратор две команды. которым присвоены номера:</p>
-        <p>1 возведи в квадрат</p>
-        <p>2 прибавь 3</p>
-        <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд <input type="text" size="15" id="infV2Q4">.</p>
-    </li>
-    <li>
-        <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
-        <p>1 возведи в квадрат</p>
-        <p>2 прибавь b</p>
-        <p>(b — неизвестное натуральное число).</p>
-        <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в число 37. Определите значение b <input type="text" size="15" id="infV2Q5">.</p>
-    </li>
+        <li>
+            <p>У исполнителя Бета две команды, которым присвоены номера:</p>
+            <p>1 прибавь 2</p>
+            <p>2 умножь на b</p>
+            <p>(b - неизвестное натуральное число; b &ge; 2).</p>
+            <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на
+                b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111
+                переводит число 7 в число 51. Определите значение b <input type="text" size="15" id="infV2Q1">.</p>
+        </li>
+        <li>
+            <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
+            <p>1 прибавь 1</p>
+            <p>2 раздели на b</p>
+            <p>(b — неизвестное натуральное число; b &ge; 2).</p>
+            <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b.
+                Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111
+                переводит число 63 в число 11. Определите значение b <input type="text" size="15" id="infV2Q2">.</p>
+        </li>
+        <li>
+            <p>У исполнителя Омега две команды, которым присвоены номера:</p>
+            <p>1 прибавь 4</p>
+            <p>2 умножь на b</p>
+            <p>(b — неизвестное натуральное число; b &ge; 2).</p>
+            <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на
+                b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа
+                12111 переводит число 9 в число 77. Определите значение b <input type="text" size="15" id="infV2Q3">.
+            </p>
+        </li>
+        <li>
+            <p>У исполнителя Квадратор две команды. которым присвоены номера:</p>
+            <p>1 возведи в квадрат</p>
+            <p>2 прибавь 3</p>
+            <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм
+                получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд
+                <input type="text" size="15" id="infV2Q4">.</p>
+        </li>
+        <li>
+            <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
+            <p>1 возведи в квадрат</p>
+            <p>2 прибавь b</p>
+            <p>(b — неизвестное натуральное число).</p>
+            <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для
+                исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в
+                число 37. Определите значение b <input type="text" size="15" id="infV2Q5">.</p>
+        </li>
     </ol>
-    <p><button onclick="check('infV2')">Проверить</button></p>
-    <p><button onclick="openPage('informatics')">Назад</button></p>
+    <p>
+    <div onclick="check('infV2')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('informatics')">Назад</div>
+    </p>
 </div>
 <div id="infV3" class="page">
     <p>
     <ol>
-    <li>
-        <p>
-            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
-            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
-        </p>
-        <p>
-        <table class="inputData">
-        <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
-        <tr><td>Рыбак&nbsp;|&nbsp;Рыбка</td> <td>780</td></tr>
-        <tr><td>Рыбак</td> <td>260</td></tr>
-        <tr><td>Рыбак &amp; Рыбка</td> <td>50</td></tr>
-        </table>
-        <p>Какое количество страниц (в тысячах) будет найдено по запросу Рыбка?
-            <input type="text" size="15" id="infV3Q1">
-        </p>
+        <li>
+            <p>
+                В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а
+                для обозначения логической операции "и" — символ "&".
+                В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+            </p>
+            <p>
+            <table class="inputData">
+                <tr>
+                    <td>Запрос</td>
+                    <td>Найдено страниц (в тысячах)</td>
+                </tr>
+                <tr>
+                    <td>Рыбак&nbsp;|&nbsp;Рыбка</td>
+                    <td>780</td>
+                </tr>
+                <tr>
+                    <td>Рыбак</td>
+                    <td>260</td>
+                </tr>
+                <tr>
+                    <td>Рыбак &amp; Рыбка</td>
+                    <td>50</td>
+                </tr>
+            </table>
+            <p>Какое количество страниц (в тысячах) будет найдено по запросу Рыбка?
+                <input type="text" size="15" id="infV3Q1">
+            </p>
         </li>
-    <li>
-        <p>
-            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
-            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
-        </p>
-        <p>
-        <table class="inputData">
-            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
-            <tr><td>Сириус &amp; Вега</td> <td>260</td></tr>
-            <tr><td>Вега &amp; (Сириус | Арктур)</td> <td>467</td></tr>
-            <tr><td>Сириус &amp; Вега &amp; Арктур</td> <td>131</td></tr>
-        </table>
-        <p>Какое количество страниц (в тысячах) будет найдено по запросу Вега&amp;Арктур ?
-            <input type="text" size="15" id="infV3Q2">
-        </p>
-    </li>
-    <li>
-        <p>
-            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
-            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
-        </p>
-        <p>
-        <table class="inputData">
-            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
-            <tr><td>Фрегат &amp; Эсминец</td> <td>500</td></tr>
-            <tr><td>Фрегат | Эсминец</td> <td>4500</td></tr>
-            <tr><td>Эсминец</td> <td>2500</td></tr>
-        </table>
-        <p>Сколько страниц (в тысячах) будет найдено по запросу Фрегат?
-            <input type="text" size="15" id="infV3Q3">
-        </p>
-    </li>
-    <li>
-        <p>
-            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
-            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
-        </p>
-        <p>
-        <table class="inputData">
-            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
-            <tr><td>Сербия&amp;Хорватия</td> <td>500</td></tr>
-            <tr><td>Сербия | Хорватия</td> <td>300</td></tr>
-            <tr><td>Сербия</td> <td>2000</td></tr>
-        </table>
-        <p>Какое количество страниц (в тысячах) будет найдено по запросу Хорватия?
-            <input type="text" size="15" id="infV3Q4">
-        </p>
-    </li>
-    <li>
-        <p>
-            В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а для обозначения логической операции "и" — символ "&".
-            В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
-        </p>
-        <p>
-        <table class="inputData">
-            <tr><td>Запрос</td> <td>Найдено страниц (в тысячах)</td></tr>
-            <tr><td>Лилия&amp;Цветок</td> <td>550</td></tr>
-            <tr><td>Лилия</td> <td>800</td></tr>
-            <tr><td>Цветок</td> <td>950</td></tr>
-        </table>
-        <p>
-            Какое количество страниц (в тысячах) будет найдено по запросу Лилия | Цветок?
-            <input type="text" size="15" id="infV3Q5">
-        </p>
-    </li>
+        <li>
+            <p>
+                В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а
+                для обозначения логической операции "и" — символ "&".
+                В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+            </p>
+            <p>
+            <table class="inputData">
+                <tr>
+                    <td>Запрос</td>
+                    <td>Найдено страниц (в тысячах)</td>
+                </tr>
+                <tr>
+                    <td>Сириус &amp; Вега</td>
+                    <td>260</td>
+                </tr>
+                <tr>
+                    <td>Вега &amp; (Сириус | Арктур)</td>
+                    <td>467</td>
+                </tr>
+                <tr>
+                    <td>Сириус &amp; Вега &amp; Арктур</td>
+                    <td>131</td>
+                </tr>
+            </table>
+            <p>Какое количество страниц (в тысячах) будет найдено по запросу Вега&amp;Арктур ?
+                <input type="text" size="15" id="infV3Q2">
+            </p>
+        </li>
+        <li>
+            <p>
+                В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а
+                для обозначения логической операции "и" — символ "&".
+                В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+            </p>
+            <p>
+            <table class="inputData">
+                <tr>
+                    <td>Запрос</td>
+                    <td>Найдено страниц (в тысячах)</td>
+                </tr>
+                <tr>
+                    <td>Фрегат &amp; Эсминец</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Фрегат | Эсминец</td>
+                    <td>4500</td>
+                </tr>
+                <tr>
+                    <td>Эсминец</td>
+                    <td>2500</td>
+                </tr>
+            </table>
+            <p>Сколько страниц (в тысячах) будет найдено по запросу Фрегат?
+                <input type="text" size="15" id="infV3Q3">
+            </p>
+        </li>
+        <li>
+            <p>
+                В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а
+                для обозначения логической операции "и" — символ "&".
+                В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+            </p>
+            <p>
+            <table class="inputData">
+                <tr>
+                    <td>Запрос</td>
+                    <td>Найдено страниц (в тысячах)</td>
+                </tr>
+                <tr>
+                    <td>Сербия&amp;Хорватия</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Сербия | Хорватия</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Сербия</td>
+                    <td>2000</td>
+                </tr>
+            </table>
+            <p>Какое количество страниц (в тысячах) будет найдено по запросу Хорватия?
+                <input type="text" size="15" id="infV3Q4">
+            </p>
+        </li>
+        <li>
+            <p>
+                В языке запросов поискового сервера для обозначения логической операции "или" используется символ "|", а
+                для обозначения логической операции "и" — символ "&".
+                В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
+            </p>
+            <p>
+            <table class="inputData">
+                <tr>
+                    <td>Запрос</td>
+                    <td>Найдено страниц (в тысячах)</td>
+                </tr>
+                <tr>
+                    <td>Лилия&amp;Цветок</td>
+                    <td>550</td>
+                </tr>
+                <tr>
+                    <td>Лилия</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td>Цветок</td>
+                    <td>950</td>
+                </tr>
+            </table>
+            <p>
+                Какое количество страниц (в тысячах) будет найдено по запросу Лилия | Цветок?
+                <input type="text" size="15" id="infV3Q5">
+            </p>
+        </li>
     </ol>
-    <p><button onclick="check('infV3')">Проверить</button></p>
-    <p><button onclick="openPage('informatics')">Назад</button></p>
+    <p>
+    <div onclick="check('infV3')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('informatics')">Назад</div>
+    </p>
 </div>
 <div id="infV4" class="page">
     <p>
     <ol>
-    <li>
-        <p>
-            Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах) приведена в таблице:
-        </p>
-        <p>
-        <table class="inputData">
-            <thead>
-            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td></tr>
-            </thead>
-            <tr><td>A</td> <td></td> <td>1</td> <td></td> <td></td> <td></td></tr>
-            <tr><td>B</td> <td>1</td> <td></td> <td>4</td> <td>8</td> <td>2</td></tr>
-            <tr><td>C</td> <td></td> <td>4</td> <td></td> <td></td> <td>4</td></tr>
-            <tr><td>D</td> <td></td> <td>8</td> <td></td> <td></td> <td>4</td></tr>
-            <tr><td>E</td> <td></td> <td>2</td> <td>4</td> <td>4</td> <td></td></tr>
-        </table>
-        <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
-            <input type="text" size="15" id="infV4Q1">
-        </p>
-    </li>
-    <li>
-        <p>
-            Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах) приведена в таблице:
-        </p>
-        <p>
-        <table class="inputData">
-        <thead>
-        <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td></tr>
-        </thead>
-        <tr><td>A</td> <td></td> <td>2</td> <td>5</td> <td>1</td> <td></td></tr>
-        <tr><td>B</td> <td>2</td> <td></td> <td>1</td> <td></td> <td></td></tr>
-        <tr><td>C</td> <td>5</td> <td>1</td> <td></td> <td>3</td> <td>2</td></tr>
-        <tr><td>D</td> <td>1</td> <td></td> <td>3</td> <td></td> <td></td></tr>
-        <tr><td>E</td> <td></td> <td></td> <td>2</td> <td></td> <td></td></tr>
-        </table>
-        <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
-            <input type="text" size="15" id="infV4Q2">
-        </p>
-    </li>
-    <li>
-        <p>
-            Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах) приведена в таблице:
-        </p>
-        <p>
-        <table class="inputData">
-            <thead>
-            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td></tr>
-            </thead>
-            <tr><td>A</td> <td></td> <td>5</td> <td>5</td> <td>4</td> <td></td> <td></td></tr>
-            <tr><td>B</td> <td>5</td> <td></td> <td>2</td> <td></td> <td></td> <td></td></tr>
-            <tr><td>C</td> <td>5</td> <td>2</td> <td></td> <td></td> <td></td> <td>1</td></tr>
-            <tr><td>D</td> <td>4</td> <td></td> <td></td> <td></td> <td>1</td> <td>3</td></tr>
-            <tr><td>E</td> <td></td> <td></td> <td></td> <td>1</td> <td></td> <td>1</td></tr>
-            <tr><td>F</td> <td></td> <td></td> <td>1</td> <td>3</td> <td>1</td> <td></td></tr>
-        </table>
-        <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
-            <input type="text" size="15" id="infV4Q3">
-        </p>
-    </li>
-    <li>
-        <p>
-            Между населёнными пунктами А, В, С, D построены дороги, протяжённость которых (в километрах) приведена в таблице:
-        </p>
-        <p>
-        <table class="inputData">
-            <thead>
-            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td></tr>
-            </thead>
-            <tr><td>A</td> <td></td> <td>2</td> <td>7</td> <td>4</td></tr>
-            <tr><td>B</td> <td>2</td> <td></td> <td>5</td> <td>1</td></tr>
-            <tr><td>C</td> <td>7</td> <td>5</td> <td></td> <td>2</td></tr>
-            <tr><td>D</td> <td>4</td> <td>1</td> <td>2</td> <td></td></tr>
-        </table>
-        <p>Определите длину кратчайшего пути между пунктами А и C. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
-            <input type="text" size="15" id="infV4Q4">
-        </p>
-    </li>
-    <li>
-        <p>
-            Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах) приведена в таблице:
-        </p>
-        <p>
-        <table class="inputData">
-            <thead>
-            <tr><td>&nbsp;</td><td >A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td></tr>
-            </thead>
-            <tr><td>A</td> <td></td> <td>8</td> <td>3</td> <td></td> <td></td> <td></td></tr>
-            <tr><td>B</td> <td>8</td> <td></td> <td></td> <td>3</td> <td></td> <td></td></tr>
-            <tr><td>C</td> <td>3</td> <td></td> <td></td> <td></td> <td>4</td> <td>3</td></tr>
-            <tr><td>D</td> <td></td> <td>3</td> <td></td> <td></td> <td>1</td> <td>3</td></tr>
-            <tr><td>E</td> <td></td> <td></td> <td>4</td> <td>1</td> <td></td> <td>2</td></tr>
-            <tr><td>F</td> <td></td> <td></td> <td>3</td> <td>3</td> <td>2</td> <td></td></tr>
-        </table>
-        <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам, протяжённость которых указана в таблице.
-            <input type="text" size="15" id="infV4Q5">
-        </p>
-    </li>
+        <li>
+            <p>
+                Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах)
+                приведена в таблице:
+            </p>
+            <p>
+            <table class="inputData">
+                <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td></td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
+                протяжённость которых указана в таблице.
+                <input type="text" size="15" id="infV4Q1">
+            </p>
+        </li>
+        <li>
+            <p>
+                Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах)
+                приведена в таблице:
+            </p>
+            <p>
+            <table class="inputData">
+                <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>2</td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td></td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
+                протяжённость которых указана в таблице.
+                <input type="text" size="15" id="infV4Q2">
+            </p>
+        </li>
+        <li>
+            <p>
+                Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах)
+                приведена в таблице:
+            </p>
+            <p>
+            <table class="inputData">
+                <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>5</td>
+                    <td></td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
+                протяжённость которых указана в таблице.
+                <input type="text" size="15" id="infV4Q3">
+            </p>
+        </li>
+        <li>
+            <p>
+                Между населёнными пунктами А, В, С, D построены дороги, протяжённость которых (в километрах) приведена в
+                таблице:
+            </p>
+            <p>
+            <table class="inputData">
+                <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>2</td>
+                    <td></td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Определите длину кратчайшего пути между пунктами А и C. Передвигаться можно только по дорогам,
+                протяжённость которых указана в таблице.
+                <input type="text" size="15" id="infV4Q4">
+            </p>
+        </li>
+        <li>
+            <p>
+                Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах)
+                приведена в таблице:
+            </p>
+            <p>
+            <table class="inputData">
+                <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>A</td>
+                    <td></td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td></td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td></td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
+                протяжённость которых указана в таблице.
+                <input type="text" size="15" id="infV4Q5">
+            </p>
+        </li>
     </ol>
-    <p><button onclick="check('infV4')">Проверить</button></p>
-    <p><button onclick="openPage('informatics')">Назад</button></p>
+    <p>
+    <div onclick="check('infV4')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('informatics')">Назад</div>
+    </p>
 </div>
 <div id="infV5" class="page">
     <p>
@@ -581,80 +990,92 @@
             <input type="text" size="15" id="infV5Q2">
         </li>
         <li>
-            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и запишите его в ответе в десятичной системе счисления.
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
+            запишите его в ответе в десятичной системе счисления.
             14(16), 26(8), 11000(2).
             <input type="text" size="15" id="infV5Q3">
         </li>
         <li>
-            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и запишите его в ответе в десятичной системе счисления.
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
+            запишите его в ответе в десятичной системе счисления.
             50(16), 106(8), 1001010(2).
             <input type="text" size="15" id="infV5Q4">
         </li>
         <li>
-            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите минимальное и запишите его в ответе в десятичной системе счисления.
+            Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите минимальное и запишите
+            его в ответе в десятичной системе счисления.
             32(16), 60(8), 110110(2).
             <input type="text" size="15" id="infV5Q5">
         </li>
     </ol>
-    <p><button onclick="check('infV5')">Проверить</button></p>
-    <p><button onclick="openPage('informatics')">Назад</button></p>
+    <p>
+    <div onclick="check('infV5')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('informatics')">Назад</div>
+    </p>
 </div>
 <div id="physicsV1" class="page">
     <p>
     <ol>
-    <li>
-        Внутренняя энергия тела зависит
-        <select id="physicsV1Q1">
-            <option selected disabled> </option>
-            <option value="1">только от температуры этого тела</option>
-            <option value="2">только от массы этого тела</option>
-            <option value="3">только от агрегатного состояния вещества</option>
-            <option value="4">от температуры, массы тела и агрегатного состояния вещества</option>
-        </select>
-    </li>
-    <li>
-        В каком агрегатном состоянии находится вещество, если оно имеет собственные форму и объем?
-        <select id="physicsV1Q2">
-            <option selected disabled> </option>
-            <option value="1">только в твердом</option>
-            <option value="2">только в жидком</option>
-            <option value="3">только в газообразном</option>
-            <option value="4">в твердом или в жидком</option>
-        </select>
-    </li>
-    <li>
-        Турист разжёг костёр на привале в безветренную погоду. Находясь на некотором расстоянии от костра, турист ощущает тепло. Каким способом в основном происходит процесс передачи теплоты от костра к туристу?
-        <select id="physicsV1Q3">
-            <option selected disabled> </option>
-            <option value="1">путём теплопроводности</option>
-            <option value="2">путём конвекции</option>
-            <option value="3">путём излучения</option>
-            <option value="4">путём теплопроводности и конвекции</option>
-        </select>
-    </li>
-    <li>
-        Какие изменения энергии происходят в куске льда при его таянии?
-        <select id="physicsV1Q4">
-            <option selected disabled> </option>
-            <option value="1">увеличивается кинетическая энергия куска льда</option>
-            <option value="2">уменьшается внутренняя энергия куска льда</option>
-            <option value="3">увеличивается внутренняя энергия куска льда</option>
-            <option value="4">увеличивается внутренняя энергия воды, из которой состоит кусок льда</option>
-        </select>
-    </li>
-    <li>
-        При резком сжатии воздуха его внутренняя энергия
-        <select id="physicsV1Q5">
-            <option selected disabled> </option>
-            <option value="1">уменьшается</option>
-            <option value="2">увеличивается</option>
-            <option value="3">не изменяется</option>
-            <option value="4">может как увеличиваться, так и уменьшаться — в зависимости от быстроты сжатия</option>
-        </select>
-    </li>
+        <li>
+            Внутренняя энергия тела зависит
+            <select id="physicsV1Q1">
+                <option selected disabled></option>
+                <option value="1">только от температуры этого тела</option>
+                <option value="2">только от массы этого тела</option>
+                <option value="3">только от агрегатного состояния вещества</option>
+                <option value="4">от температуры, массы тела и агрегатного состояния вещества</option>
+            </select>
+        </li>
+        <li>
+            В каком агрегатном состоянии находится вещество, если оно имеет собственные форму и объем?
+            <select id="physicsV1Q2">
+                <option selected disabled></option>
+                <option value="1">только в твердом</option>
+                <option value="2">только в жидком</option>
+                <option value="3">только в газообразном</option>
+                <option value="4">в твердом или в жидком</option>
+            </select>
+        </li>
+        <li>
+            Турист разжёг костёр на привале в безветренную погоду. Находясь на некотором расстоянии от костра, турист
+            ощущает тепло. Каким способом в основном происходит процесс передачи теплоты от костра к туристу?
+            <select id="physicsV1Q3">
+                <option selected disabled></option>
+                <option value="1">путём теплопроводности</option>
+                <option value="2">путём конвекции</option>
+                <option value="3">путём излучения</option>
+                <option value="4">путём теплопроводности и конвекции</option>
+            </select>
+        </li>
+        <li>
+            Какие изменения энергии происходят в куске льда при его таянии?
+            <select id="physicsV1Q4">
+                <option selected disabled></option>
+                <option value="1">увеличивается кинетическая энергия куска льда</option>
+                <option value="2">уменьшается внутренняя энергия куска льда</option>
+                <option value="3">увеличивается внутренняя энергия куска льда</option>
+                <option value="4">увеличивается внутренняя энергия воды, из которой состоит кусок льда</option>
+            </select>
+        </li>
+        <li>
+            При резком сжатии воздуха его внутренняя энергия
+            <select id="physicsV1Q5">
+                <option selected disabled></option>
+                <option value="1">уменьшается</option>
+                <option value="2">увеличивается</option>
+                <option value="3">не изменяется</option>
+                <option value="4">может как увеличиваться, так и уменьшаться — в зависимости от быстроты сжатия</option>
+            </select>
+        </li>
     </ol>
-    <p><button onclick="check('physicsV1')">Проверить</button></p>
-    <p><button onclick="openPage('physics')">Назад</button></p>
+    <p>
+    <div onclick="check('physicsV1')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('physics')">Назад</div>
+    </p>
 </div>
 <div id="physicsV2" class="page">
     <p>
@@ -664,7 +1085,7 @@
             <p>
                 физическая величина
                 <select id="physicsV2Q1">
-                    <option selected disabled> </option>
+                    <option selected disabled></option>
                     <option value="1">инерциальная система отсчёта</option>
                     <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
                     <option value="3">мяч, выпущенный из рук, падает на землю</option>
@@ -675,7 +1096,7 @@
             <p>
                 физическое явление
                 <select id="physicsV2Q2">
-                    <option selected disabled> </option>
+                    <option selected disabled></option>
                     <option value="1">инерциальная система отсчёта</option>
                     <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
                     <option value="3">мяч, выпущенный из рук, падает на землю</option>
@@ -686,7 +1107,7 @@
             <p>
                 физический закон
                 <select id="physicsV2Q3">
-                    <option selected disabled> </option>
+                    <option selected disabled></option>
                     <option value="1">инерциальная система отсчёта</option>
                     <option value="2">всем телам Земля вблизи своей поверхности сообщает одинаковое ускорение</option>
                     <option value="3">мяч, выпущенный из рук, падает на землю</option>
@@ -695,655 +1116,706 @@
                 </select>
             </p>
         </li>
-    <li>
-        Установите соответствие между физическими величинами и единицами измерения этих величин в системе СИ.
-        <p>
-            импульс тела
-            <select id="physicsV2Q4">
-                <option selected disabled> </option>
-                <option value="1">вольт</option>
-                <option value="2">ньютон на секунду</option>
-                <option value="3">ватт</option>
-                <option value="4">ньютон</option>
-                <option value="5">джоуль</option>
-            </select>
-        </p>
-        <p>
-            мощность
-            <select id="physicsV2Q5">
-                <option selected disabled> </option>
-                <option value="1">вольт</option>
-                <option value="2">ньютон на секунду</option>
-                <option value="3">ватт</option>
-                <option value="4">ньютон</option>
-                <option value="5">джоуль</option>
-            </select>
-        </p>
-        <p>
-            работа
-            <select id="physicsV2Q6">
-                <option selected disabled> </option>
-                <option value="1">вольт</option>
-                <option value="2">ньютон на секунду</option>
-                <option value="3">ватт</option>
-                <option value="4">ньютон</option>
-                <option value="5">джоуль</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        Установите соответствие между устройствами и физическими явлениями, лежащими в основе принципа их действия.
-        <p>
-            компас
-            <select id="physicsV2Q7">
-                <option selected disabled> </option>
-                <option value="1">взаимодействие постоянных магнитов</option>
-                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
-                <option value="3">электризация тел при ударе</option>
-                <option value="4">взаимодействие наэлектризованных тел</option>
-                <option value="5">действие магнитного поля на проводник с током</option>
-            </select>
-        </p>
-        <p>
-            электрометр
-            <select id="physicsV2Q8">
-                <option selected disabled> </option>
-                <option value="1">взаимодействие постоянных магнитов</option>
-                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
-                <option value="3">электризация тел при ударе</option>
-                <option value="4">взаимодействие наэлектризованных тел</option>
-                <option value="5">действие магнитного поля на проводник с током</option>
-            </select>
-        </p>
-        <p>
-            электродвигатель
-            <select id="physicsV2Q9">
-                <option selected disabled> </option>
-                <option value="1">взаимодействие постоянных магнитов</option>
-                <option value="2">возникновение электрического тока под действиемпеременного магнитного поля</option>
-                <option value="3">электризация тел при ударе</option>
-                <option value="4">взаимодействие наэлектризованных тел</option>
-                <option value="5">действие магнитного поля на проводник с током</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        Установите соответствие между размерностями физических величин и их наименованиями в системе.
-        <p>
-            [1 Кл/1 с]
-            <select id="physicsV2Q10">
-                <option selected disabled> </option>
-                <option value="1">Ампер</option>
-                <option value="2">Ньютон</option>
-                <option value="3">Джоуль</option>
-                <option value="4">Ом</option>
-                <option value="5">Ватт</option>
-            </select>
-        </p>
-        <p>
-            [1 B/1 А]
-            <select id="physicsV2Q11">
-                <option selected disabled> </option>
-                <option value="1">Ампер</option>
-                <option value="2">Ньютон</option>
-                <option value="3">Джоуль</option>
-                <option value="4">Ом</option>
-                <option value="5">Ватт</option>
-            </select>
-        </p>
-        <p>
-            [1 Кл·1 B]
-            <select id="physicsV2Q12">
-                <option selected disabled> </option>
-                <option value="1">Ампер</option>
-                <option value="2">Ньютон</option>
-                <option value="3">Джоуль</option>
-                <option value="4">Ом</option>
-                <option value="5">Ватт</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        Для каждого физического понятия подберите соответствующий пример.
-        <p>
-            физическая величина
-            <select id="physicsV2Q13">
-                <option selected disabled> </option>
-                <option value="1">интерференция</option>
-                <option value="2">спектроскоп</option>
-                <option value="3">частота</option>
-                <option value="4">герц</option>
-                <option value="5">дисперсия</option>
-            </select>
-        </p>
-        <p>
-            физическое явление
-            <select id="physicsV2Q14">
-                <option selected disabled> </option>
-                <option value="1">интерференция</option>
-                <option value="2">спектроскоп</option>
-                <option value="3">частота</option>
-                <option value="4">герц</option>
-                <option value="5">дисперсия</option>
-            </select>
-        </p>
-        <p>
-            физический закон
-            <select id="physicsV2Q15">
-                <option selected disabled> </option>
-                <option value="1">интерференция</option>
-                <option value="2">спектроскоп</option>
-                <option value="3">частота</option>
-                <option value="4">герц</option>
-                <option value="5">дисперсия</option>
-            </select>
-        </p>
-    </li>
+        <li>
+            Установите соответствие между физическими величинами и единицами измерения этих величин в системе СИ.
+            <p>
+                импульс тела
+                <select id="physicsV2Q4">
+                    <option selected disabled></option>
+                    <option value="1">вольт</option>
+                    <option value="2">ньютон на секунду</option>
+                    <option value="3">ватт</option>
+                    <option value="4">ньютон</option>
+                    <option value="5">джоуль</option>
+                </select>
+            </p>
+            <p>
+                мощность
+                <select id="physicsV2Q5">
+                    <option selected disabled></option>
+                    <option value="1">вольт</option>
+                    <option value="2">ньютон на секунду</option>
+                    <option value="3">ватт</option>
+                    <option value="4">ньютон</option>
+                    <option value="5">джоуль</option>
+                </select>
+            </p>
+            <p>
+                работа
+                <select id="physicsV2Q6">
+                    <option selected disabled></option>
+                    <option value="1">вольт</option>
+                    <option value="2">ньютон на секунду</option>
+                    <option value="3">ватт</option>
+                    <option value="4">ньютон</option>
+                    <option value="5">джоуль</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            Установите соответствие между устройствами и физическими явлениями, лежащими в основе принципа их действия.
+            <p>
+                компас
+                <select id="physicsV2Q7">
+                    <option selected disabled></option>
+                    <option value="1">взаимодействие постоянных магнитов</option>
+                    <option value="2">возникновение электрического тока под действиемпеременного магнитного поля
+                    </option>
+                    <option value="3">электризация тел при ударе</option>
+                    <option value="4">взаимодействие наэлектризованных тел</option>
+                    <option value="5">действие магнитного поля на проводник с током</option>
+                </select>
+            </p>
+            <p>
+                электрометр
+                <select id="physicsV2Q8">
+                    <option selected disabled></option>
+                    <option value="1">взаимодействие постоянных магнитов</option>
+                    <option value="2">возникновение электрического тока под действиемпеременного магнитного поля
+                    </option>
+                    <option value="3">электризация тел при ударе</option>
+                    <option value="4">взаимодействие наэлектризованных тел</option>
+                    <option value="5">действие магнитного поля на проводник с током</option>
+                </select>
+            </p>
+            <p>
+                электродвигатель
+                <select id="physicsV2Q9">
+                    <option selected disabled></option>
+                    <option value="1">взаимодействие постоянных магнитов</option>
+                    <option value="2">возникновение электрического тока под действиемпеременного магнитного поля
+                    </option>
+                    <option value="3">электризация тел при ударе</option>
+                    <option value="4">взаимодействие наэлектризованных тел</option>
+                    <option value="5">действие магнитного поля на проводник с током</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            Установите соответствие между размерностями физических величин и их наименованиями в системе.
+            <p>
+                [1 Кл/1 с]
+                <select id="physicsV2Q10">
+                    <option selected disabled></option>
+                    <option value="1">Ампер</option>
+                    <option value="2">Ньютон</option>
+                    <option value="3">Джоуль</option>
+                    <option value="4">Ом</option>
+                    <option value="5">Ватт</option>
+                </select>
+            </p>
+            <p>
+                [1 B/1 А]
+                <select id="physicsV2Q11">
+                    <option selected disabled></option>
+                    <option value="1">Ампер</option>
+                    <option value="2">Ньютон</option>
+                    <option value="3">Джоуль</option>
+                    <option value="4">Ом</option>
+                    <option value="5">Ватт</option>
+                </select>
+            </p>
+            <p>
+                [1 Кл·1 B]
+                <select id="physicsV2Q12">
+                    <option selected disabled></option>
+                    <option value="1">Ампер</option>
+                    <option value="2">Ньютон</option>
+                    <option value="3">Джоуль</option>
+                    <option value="4">Ом</option>
+                    <option value="5">Ватт</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            Для каждого физического понятия подберите соответствующий пример.
+            <p>
+                физическая величина
+                <select id="physicsV2Q13">
+                    <option selected disabled></option>
+                    <option value="1">интерференция</option>
+                    <option value="2">спектроскоп</option>
+                    <option value="3">частота</option>
+                    <option value="4">герц</option>
+                    <option value="5">дисперсия</option>
+                </select>
+            </p>
+            <p>
+                физическое явление
+                <select id="physicsV2Q14">
+                    <option selected disabled></option>
+                    <option value="1">интерференция</option>
+                    <option value="2">спектроскоп</option>
+                    <option value="3">частота</option>
+                    <option value="4">герц</option>
+                    <option value="5">дисперсия</option>
+                </select>
+            </p>
+            <p>
+                физический закон
+                <select id="physicsV2Q15">
+                    <option selected disabled></option>
+                    <option value="1">интерференция</option>
+                    <option value="2">спектроскоп</option>
+                    <option value="3">частота</option>
+                    <option value="4">герц</option>
+                    <option value="5">дисперсия</option>
+                </select>
+            </p>
+        </li>
     </ol>
-    <p><button onclick="check('physicsV2')">Проверить</button></p>
-    <p><button onclick="openPage('physics')">Назад</button></p>
+    <p>
+    <div onclick="check('physicsV2')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('physics')">Назад</div>
+    </p>
 </div>
 <div id="physicsV3" class="page">
     <p>
     <ol>
-    <li>
-        <p>
-            Два проводника, имеющие одинаковые сопротивления R1 = R2 = r, соединены параллельно. Установите соответствие между физическими величинами и формулами, по которым рассчитываются соответствующие величины. I1 и I2— силы тока, U1 и U2— напряжения на этих сопротивлениях.
-        </p>
-        <p>
-            сила тока в общей цепи
-            <select id="physicsV3Q1">
-                <option selected disabled> </option>
-                <option value="1">U = U1 + U2</option>
-                <option value="2">I = I1 + I2</option>
-                <option value="3">R = r &#8260; 2</option>
-                <option value="4">R = 2r</option>
-            </select>
-        </p>
-        <p>
-            общее сопротивление участка цепи
-            <select id="physicsV3Q2">
-                <option selected disabled> </option>
-                <option value="1">U = U1 + U2</option>
-                <option value="2">I = I1 + I2</option>
-                <option value="3">R = r &#8260; 2</option>
-                <option value="4">R = 2r</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        <p>
-            Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
-        </p>
-        <p>
-            сила тока
-            <select id="physicsV3Q3">
-                <option selected disabled> </option>
-                <option value="1">q &#8260; t</option>
-                <option value="2">q * U</option>
-                <option value="3">U * I</option>
-                <option value="4">U &#8260; I</option>
-            </select>
-        </p>
-        <p>
-            мощность тока
-            <select id="physicsV3Q4">
-                <option selected disabled> </option>
-                <option value="1">q &#8260; t</option>
-                <option value="2">q * U</option>
-                <option value="3">U * I</option>
-                <option value="4">U &#8260; I</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        <p>
-            Установите соответствие между формулами для расчёта физических величин и названиями этих величин.
-        </p>
-        <p>
-            ma
-            <select id="physicsV3Q5">
-                <option selected disabled> </option>
-                <option value="1">давление тела</option>
-                <option value="2">модуль равнодействующей силы</option>
-                <option value="3">механическая энергия</option>
-                <option value="4">мощность</option>
-            </select>
-        </p>
-        <p>
-            A &#8260; t
-            <select id="physicsV3Q6">
-                <option selected disabled> </option>
-                <option value="1">давление тела</option>
-                <option value="2">модуль равнодействующей силы</option>
-                <option value="3">механическая энергия</option>
-                <option value="4">мощность</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        <p>
-            Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
-        </p>
-        <p>
-            удельная теплоёмкость вещества
-            <select id="physicsV3Q7">
-                <option selected disabled> </option>
-                <option value="1">Q &#8260; m*(t2-t1)</option>
-                <option value="2">&#955;*m</option>
-                <option value="3">Q &#8260; m</option>
-                <option value="4">Q*m</option>
-            </select>
-        </p>
-        <p>
-            удельная теплота сгорания топлива
-            <select id="physicsV3Q8">
-                <option selected disabled> </option>
-                <option value="1">Q &#8260; m*(t2-t1)</option>
-                <option value="2">&#955;*m</option>
-                <option value="3">Q &#8260; m</option>
-                <option value="4">Q*m</option>
-            </select>
-        </p>
-    </li>
-    <li>
-        <p>
-            Установите соответствие между формулами для расчёта физических величин и названиями этих величин. В формулах использованы обозначения: R— радиус окружности; T— период обращения.
-        </p>
-        <p>
-            2&#960;R &#8260; T
-            <select id="physicsV3Q9">
-                <option selected disabled> </option>
-                <option value="1">число оборотов за единицу времени</option>
-                <option value="2">угловая скорость</option>
-                <option value="3">линейная скорость</option>
-                <option value="4">частота вращения</option>
-            </select>
-        </p>
-        <p>
-            2&#960; &#8260; T
-            <select id="physicsV3Q10">
-                <option selected disabled> </option>
-                <option value="1">число оборотов за единицу времени</option>
-                <option value="2">угловая скорость</option>
-                <option value="3">линейная скорость</option>
-                <option value="4">частота вращения</option>
-            </select>
-        </p>
-    </li>
+        <li>
+            <p>
+                Два проводника, имеющие одинаковые сопротивления R1 = R2 = r, соединены параллельно. Установите
+                соответствие между физическими величинами и формулами, по которым рассчитываются соответствующие
+                величины. I1 и I2— силы тока, U1 и U2— напряжения на этих сопротивлениях.
+            </p>
+            <p>
+                сила тока в общей цепи
+                <select id="physicsV3Q1">
+                    <option selected disabled></option>
+                    <option value="1">U = U1 + U2</option>
+                    <option value="2">I = I1 + I2</option>
+                    <option value="3">R = r &#8260; 2</option>
+                    <option value="4">R = 2r</option>
+                </select>
+            </p>
+            <p>
+                общее сопротивление участка цепи
+                <select id="physicsV3Q2">
+                    <option selected disabled></option>
+                    <option value="1">U = U1 + U2</option>
+                    <option value="2">I = I1 + I2</option>
+                    <option value="3">R = r &#8260; 2</option>
+                    <option value="4">R = 2r</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            <p>
+                Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
+            </p>
+            <p>
+                сила тока
+                <select id="physicsV3Q3">
+                    <option selected disabled></option>
+                    <option value="1">q &#8260; t</option>
+                    <option value="2">q * U</option>
+                    <option value="3">U * I</option>
+                    <option value="4">U &#8260; I</option>
+                </select>
+            </p>
+            <p>
+                мощность тока
+                <select id="physicsV3Q4">
+                    <option selected disabled></option>
+                    <option value="1">q &#8260; t</option>
+                    <option value="2">q * U</option>
+                    <option value="3">U * I</option>
+                    <option value="4">U &#8260; I</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            <p>
+                Установите соответствие между формулами для расчёта физических величин и названиями этих величин.
+            </p>
+            <p>
+                ma
+                <select id="physicsV3Q5">
+                    <option selected disabled></option>
+                    <option value="1">давление тела</option>
+                    <option value="2">модуль равнодействующей силы</option>
+                    <option value="3">механическая энергия</option>
+                    <option value="4">мощность</option>
+                </select>
+            </p>
+            <p>
+                A &#8260; t
+                <select id="physicsV3Q6">
+                    <option selected disabled></option>
+                    <option value="1">давление тела</option>
+                    <option value="2">модуль равнодействующей силы</option>
+                    <option value="3">механическая энергия</option>
+                    <option value="4">мощность</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            <p>
+                Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
+            </p>
+            <p>
+                удельная теплоёмкость вещества
+                <select id="physicsV3Q7">
+                    <option selected disabled></option>
+                    <option value="1">Q &#8260; m*(t2-t1)</option>
+                    <option value="2">&#955;*m</option>
+                    <option value="3">Q &#8260; m</option>
+                    <option value="4">Q*m</option>
+                </select>
+            </p>
+            <p>
+                удельная теплота сгорания топлива
+                <select id="physicsV3Q8">
+                    <option selected disabled></option>
+                    <option value="1">Q &#8260; m*(t2-t1)</option>
+                    <option value="2">&#955;*m</option>
+                    <option value="3">Q &#8260; m</option>
+                    <option value="4">Q*m</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            <p>
+                Установите соответствие между формулами для расчёта физических величин и названиями этих величин. В
+                формулах использованы обозначения: R— радиус окружности; T— период обращения.
+            </p>
+            <p>
+                2&#960;R &#8260; T
+                <select id="physicsV3Q9">
+                    <option selected disabled></option>
+                    <option value="1">число оборотов за единицу времени</option>
+                    <option value="2">угловая скорость</option>
+                    <option value="3">линейная скорость</option>
+                    <option value="4">частота вращения</option>
+                </select>
+            </p>
+            <p>
+                2&#960; &#8260; T
+                <select id="physicsV3Q10">
+                    <option selected disabled></option>
+                    <option value="1">число оборотов за единицу времени</option>
+                    <option value="2">угловая скорость</option>
+                    <option value="3">линейная скорость</option>
+                    <option value="4">частота вращения</option>
+                </select>
+            </p>
+        </li>
     </ol>
-    <p><button onclick="check('physicsV3')">Проверить</button></p>
-    <p><button onclick="openPage('physics')">Назад</button></p>
+    <p>
+    <div onclick="check('physicsV3')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('physics')">Назад</div>
+    </p>
 </div>
 <div id="physicsV4" class="page">
     <p>
     <ol>
-    <li>
-        <p>
-            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
-        </p>
-        <p>
-            Электрическая дуга — это один из видов газового разряда. Получить её можно следующим образом.
-            В штативе закрепляют два угольных стержня заострёнными концами друг к другу и присоединяют к источнику тока.
-            Когда угли приводят в соприкосновение, а затем слегка раздвигают, между концами углей образуется яркое пламя, а сами угли раскаляются добела.
-            Дуга горит устойчиво, если через неё проходит постоянный электрический ток.
-            В этом случае один электрод является всё время положительным (анод), а другой — отрицательным (катод).
-        </p>
-        <p>
-            Для поддержания дугового разряда нужно небольшое напряжение, дуга горит при напряжении на её электродах 40В.
-            Сила тока в дуге довольно значительна, а сопротивление невелико; следовательно, светящийся газовый столб
-            <select id="physicsV4Q1">
-                <option selected disabled> </option>
-                <option value="1">плохо</option>
-                <option value="2">хорошо</option>
-                <option value="3">молекулы газа</option>
-                <option value="4">осадок</option>
-                <option value="5">протоны</option>
-                <option value="6">теплота</option>
-                <option value="7">электроны</option>
-            </select>
-            проводит электрический ток.
-            Ионизацию в пространстве между электродами вызывают своими ударами о
-            <select id="physicsV4Q2">
-                <option selected disabled> </option>
-                <option value="1">плохо</option>
-                <option value="2">хорошо</option>
-                <option value="3">молекулы газа</option>
-                <option value="4">осадок</option>
-                <option value="5">протоны</option>
-                <option value="6">теплота</option>
-                <option value="7">электроны</option>
-            </select>
-            электроны, испускаемые катодом дуги.
-            Большое количество испускаемых
-            <select id="physicsV4Q3">
-                <option selected disabled> </option>
-                <option value="1">плохо</option>
-                <option value="2">хорошо</option>
-                <option value="3">молекулы газа</option>
-                <option value="4">осадок</option>
-                <option value="5">протоны</option>
-                <option value="6">теплота</option>
-                <option value="7">электроны</option>
-            </select>
-            обеспечивается тем, что катод нагрет до очень высокой температуры.
-            Когда для зажигания дуги вначале угли приводят в соприкосновение, то в месте контакта, обладающем очень большим сопротивлением, выделяется огромное количество
-            <select id="physicsV4Q4">
-                <option selected disabled> </option>
-                <option value="1">плохо</option>
-                <option value="2">хорошо</option>
-                <option value="3">молекулы газа</option>
-                <option value="4">осадок</option>
-                <option value="5">протоны</option>
-                <option value="6">теплота</option>
-                <option value="7">электроны</option>
-            </select>.
-            Поэтому концы углей сильно разогреваются, и этого достаточно для того, чтобы при их раздвижении между ними вспыхнула дуга.
-            В дальнейшем катод дуги поддерживается в накалённом состоянии самим током, проходящим через дугу.
-        </p>
-    </li>
-    <li>
-        <p>
-            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
-        </p>
-        <p>
-            Полярное сияние — одно из самых красивых явлений в природе.
-            Формы полярного сияния очень разнообразны:
-            то это своеобразные светлые столбы,
-            то изумрудно-зелёные с красной бахромой пылающие длинные ленты,
-            расходящиеся многочисленные лучи-стрелы,
-            а то и просто бесформенные светлые, иногда цветные пятна на небе.
-        </p>
-        <p>
-            Полярные сияния чаще всего наблюдаются в приполярных регионах, откуда и происходит это название.
-            Полярные сияния могут быть видны не только на далёком Севере, но и южнее.
-            Например, в 1938 году полярное сияние наблюдалось на южном берегу Крыма, что объясняется увеличением мощности возбудителя свечения —
-            <select id="physicsV4Q5">
-                <option selected disabled> </option>
-                <option value="1">метеоритный дождь</option>
-                <option value="2">солнечный ветер</option>
-                <option value="3">волна</option>
-                <option value="4">поле</option>
-                <option value="5">разряд</option>
-                <option value="6">возбуждённый</option>
-                <option value="7">магнитный</option>
-                <option value="8">стационарный</option>
-                <option value="9">электрический</option>
-            </select>.
-        </p>
-        <p>
-            Начало изучению полярных сияний положил великий русский учёный М.В.Ломоносов, высказавший гипотезу о том, что причиной этого явления служат электрические
-            <select id="physicsV4Q6">
-                <option selected disabled> </option>
-                <option value="1">метеоритный дождь</option>
-                <option value="2">солнечный ветер</option>
-                <option value="3">волна</option>
-                <option value="4">поле</option>
-                <option value="5">разряд</option>
-                <option value="6">возбуждённый</option>
-                <option value="7">магнитный</option>
-                <option value="8">стационарный</option>
-                <option value="9">электрический</option>
-            </select>
-            в разреженном воздухе.
-            Опыты подтвердили научное предположение учёного.
-        </p>
-        <p>
-            Полярные сияния — это электрическое свечение верхних очень разреженных слоёв атмосферы на высоте (обычно) от 80 до 1000 км.
-            Свечение это происходит под влиянием быстро движущихся электрически заряженных частиц (электронов и протонов), приходящих от Солнца.
-            Взаимодействие солнечного ветра с
-            <select id="physicsV4Q7">
-                <option selected disabled> </option>
-                <option value="1">метеоритный дождь</option>
-                <option value="2">солнечный ветер</option>
-                <option value="3">волна</option>
-                <option value="4">поле</option>
-                <option value="5">разряд</option>
-                <option value="6">возбуждённый</option>
-                <option value="7">магнитный</option>
-                <option value="8">стационарный</option>
-                <option value="9">электрический</option>
-            </select>
-            полем Земли приводит к повышенной концентрации заряженных частиц в зонах, окружающих геомагнитные полюса Земли.
-            Именно в этих зонах и наблюдается наибольшая активность полярных сияний.
-        </p>
-        <p>
-            Столкновения быстрых электронов и протонов с атомами кислорода и азота приводят атомы в
-            <select id="physicsV4Q8">
-                <option selected disabled> </option>
-                <option value="1">метеоритный дождь</option>
-                <option value="2">солнечный ветер</option>
-                <option value="3">волна</option>
-                <option value="4">поле</option>
-                <option value="5">разряд</option>
-                <option value="6">возбуждённый</option>
-                <option value="7">магнитный</option>
-                <option value="8">стационарный</option>
-                <option value="9">электрический</option>
-            </select>
-            состояние.
-            Выделяя избыток энергии, атомы кислорода дают яркое излучение в зелёной и красной областях спектра, молекулы азота — в фиолетовой.
-            Сочетание всех этих излучений и придаёт полярным сияниям красивую, часто меняющуюся окраску.
-        </p>
-    </li>
-    <li>
-        <p>
-            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
-        </p>
-        <p>
-            Реактивным называется движение, которое происходит под действием
-            <select id="physicsV4Q9">
-                <option selected disabled> </option>
-                <option value="1">сила реакции</option>
-                <option value="2">сила тяжести</option>
-                <option value="3">первый</option>
-                <option value="4">второй</option>
-                <option value="5">третий</option>
-                <option value="6">противоположное направление</option>
-                <option value="7">совпадающий с направлением</option>
-                <option value="8">изменяется</option>
-                <option value="9">остаётся постоянным</option>
-            </select>
-            , действующей на движущееся тело со стороны струи вещества, выбрасываемого из двигателя.
-            Пояснить принцип реактивного движения можно на примере движения ракеты.
-        </p>
-        <p>
-            Пусть в двигателе, установленном на ракете, происходит сгорание топлива и продукты горения (горячие газы) под высоким давлением выбрасываются из сопла двигателя.
-            На каждую порцию газов, выброшенных из сопла, со стороны двигателя действует некоторая сила, которая приводит эту порцию газов в движение.
-            В соответствии с
-            <select id="physicsV4Q10">
-                <option selected disabled> </option>
-                <option value="1">сила реакции</option>
-                <option value="2">сила тяжести</option>
-                <option value="3">первый</option>
-                <option value="4">второй</option>
-                <option value="5">третий</option>
-                <option value="6">противоположное направление</option>
-                <option value="7">совпадающий с направлением</option>
-                <option value="8">изменяется</option>
-                <option value="9">остаётся постоянным</option>
-            </select>
-            законом Ньютона, на двигатель со стороны выбрасываемых газов действует сила, такая же по модулю и противоположная по направлению.
-            Эта сила называется реактивной.
-            Под её действием ракета приобретает ускорение и разгоняется в направлении,
-            <select id="physicsV4Q11">
-                <option selected disabled> </option>
-                <option value="1">сила реакции</option>
-                <option value="2">сила тяжести</option>
-                <option value="3">первый</option>
-                <option value="4">второй</option>
-                <option value="5">третий</option>
-                <option value="6">противоположное направление</option>
-                <option value="7">совпадающий с направлением</option>
-                <option value="8">изменяется</option>
-                <option value="9">остаётся постоянным</option>
-            </select>
-            выбрасывания газов.
-        </p>
-        <p>
-            При реактивном движении ракеты её масса непрерывно уменьшается из-за сгорания топлива и выбрасывания наружу продуктов сгорания.
-            По этой причине модуль ускорения ракеты всё время
-            <select id="physicsV4Q12">
-                <option selected disabled> </option>
-                <option value="1">сила реакции</option>
-                <option value="2">сила тяжести</option>
-                <option value="3">первый</option>
-                <option value="4">второй</option>
-                <option value="5">третий</option>
-                <option value="6">противоположное направление</option>
-                <option value="7">совпадающий с направлением</option>
-                <option value="8">изменяется</option>
-                <option value="9">остаётся постоянным</option>
-            </select>
-            , а скорость ракеты нелинейно зависит от массы сгоревшего топлива.
-            Впервые задача об отыскании модуля конечной скорости v ракеты, масса которой изменилась от значения m0 до величины m, была решена русским учёным, пионером космонавтики К.Э.Циолковским.
-        </p>
-    </li>
-    <li>
-        <p>
-            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
-        </p>
-        <p>
-            Атмосферное электричество образуется и концентрируется в облаках — образованиях из мелких частиц воды, находящейся в жидком или твёрдом состоянии.
-            При дроблении водяных капель и кристаллов льда, при столкновениях их с ионами атмосферного воздуха крупные капли и кристаллы приобретают избыточный отрицательный заряд, а мелкие — положительный.
-            Восходящие потоки воздуха в грозовом облаке поднимают мелкие капли и кристаллы к вершине облака, крупные капли и кристаллы опускаются к его основанию.
-        </p>
-        <p>
-            Заряженные облака наводят на земной поверхности под собой
-            <select id="physicsV4Q13">
-                <option selected disabled> </option>
-                <option value="1">в разные моменты времени</option>
-                <option value="2">длиннее</option>
-                <option value="3">короче</option>
-                <option value="4">магнитный</option>
-                <option value="5">одновременно</option>
-                <option value="6">противоположный</option>
-                <option value="7">такой же</option>
-                <option value="8">электрический</option>
-            </select>
-            по знаку заряд. Внутри облака и между облаком и Землёй создаётся сильное
-            <select id="physicsV4Q14">
-                <option selected disabled> </option>
-                <option value="1">в разные моменты времени</option>
-                <option value="2">длиннее</option>
-                <option value="3">короче</option>
-                <option value="4">магнитный</option>
-                <option value="5">одновременно</option>
-                <option value="6">противоположный</option>
-                <option value="7">такой же</option>
-                <option value="8">электрический</option>
-            </select>
-            поле, которое способствует ионизации воздуха и возникновению искровых разрядов (молний) как внутри облака, так и между облаком и поверхностью Земли.
-        </p>
-        <p>
-            Гром возникает вследствие резкого расширения воздуха при быстром повышении температуры в канале разряда молнии.
-            Вспышку молнии мы видим практически одновременно с разрядом, так как скорость распространения света очень велика (3·108 м/с).
-            Разряд молнии длится всего 0,1–0,2 с. Звук распространяется значительно медленнее. В воздухе его скорость равна примерно 330 м/с.
-            Чем дальше от нас произошёл разряд молнии, тем
-            <select id="physicsV4Q15">
-                <option selected disabled> </option>
-                <option value="1">в разные моменты времени</option>
-                <option value="2">длиннее</option>
-                <option value="3">короче</option>
-                <option value="4">магнитный</option>
-                <option value="5">одновременно</option>
-                <option value="6">противоположный</option>
-                <option value="7">такой же</option>
-                <option value="8">электрический</option>
-            </select>
-            пауза между вспышкой света и громом. Гром от очень далёких молний вообще не доходит: звуковая энергия рассеивается и поглощается по пути.
-            Такие молнии называют зарницами. Как правило, гром слышен на расстоянии до 15–20 километров; таким образом, если наблюдатель видит молнию, но не слышит грома, то гроза находится на расстоянии более 20 километров.
-        </p>
-        <p>
-            Гром, сопровождающий молнию, может длиться в течение нескольких секунд. Существует две причины, объясняющие, почему вслед за короткой молнией слышатся более или менее долгие раскаты грома.
-            Во-первых, молния имеет очень большую длину (она измеряется километрами), поэтому звук от разных её участков доходит до наблюдателя
-            <select id="physicsV4Q16">
-                <option selected disabled> </option>
-                <option value="1">в разные моменты времени</option>
-                <option value="2">длиннее</option>
-                <option value="3">короче</option>
-                <option value="4">магнитный</option>
-                <option value="5">одновременно</option>
-                <option value="6">противоположный</option>
-                <option value="7">такой же</option>
-                <option value="8">электрический</option>
-            </select>.
-            Во-вторых, происходит отражение звука от облаков и туч — возникает эхо. Отражением звука от облаков объясняется происходящее иногда усиление громкости звука в конце громовых раскатов.
-        </p>
-    </li>
-    <li>
-        <p>
-            Прочитайте текст и вставьте на места пропусков слова (словосочетания).
-        </p>
-        <p>
-            В воздухе всегда присутствуют водяные пары, концентрация которых может быть различной.
-            Опыт показывает, что концентрация паров не может превышать некоторого максимально возможного значения nmax (для каждой температуры это значение своё).
-            Пары с концентрацией, равной nmax, называются
-            <select id="physicsV4Q17">
-                <option selected disabled> </option>
-                <option value="1">абсолютный</option>
-                <option value="2">жидкий</option>
-                <option value="3">насыщенный</option>
-                <option value="4">ненасыщенный</option>
-                <option value="5">относительный</option>
-                <option value="6">равновесный</option>
-                <option value="7">твёрдый</option>
-                <option value="8">температура конденсации</option>
-                <option value="9">точка росы</option>
-            </select>.
-            С ростом температуры максимально возможная концентрация водяных паров также растёт.
-            Отношение концентрации n водяных паров при данной температуре к максимально возможной концентрации при той же температуре называется
-            <select id="physicsV4Q18">
-                <option selected disabled> </option>
-                <option value="1">абсолютный</option>
-                <option value="2">жидкий</option>
-                <option value="3">насыщенный</option>
-                <option value="4">ненасыщенный</option>
-                <option value="5">относительный</option>
-                <option value="6">равновесный</option>
-                <option value="7">твёрдый</option>
-                <option value="8">температура конденсации</option>
-                <option value="9">точка росы</option>
-            </select>
-            влажностью, которая обозначается буквой &phi;.
-            Её принято измерять в процентах. Из сказанного следует, что &phi;=(n/nmax)·100%.
-        </p>
-        <p>
-            Пусть при некоторой температуре t концентрация водяных паров в воздухе равна n, а φ меньше, чем 100%.
-            Если температура будет понижаться, то вместе с ней будет уменьшаться и величина nmax, а значит, &phi; будет увеличиваться.
-            При некоторой критической температуре &phi; достигнет значения 100% (в этот момент концентрация водяных паров станет максимально возможной при данной температуре).
-            Поэтому дальнейшее понижение температуры приведёт к переходу водяных паров в
-            <select id="physicsV4Q19">
-                <option selected disabled> </option>
-                <option value="1">абсолютный</option>
-                <option value="2">жидкий</option>
-                <option value="3">насыщенный</option>
-                <option value="4">ненасыщенный</option>
-                <option value="5">относительный</option>
-                <option value="6">равновесный</option>
-                <option value="7">твёрдый</option>
-                <option value="8">температура конденсации</option>
-                <option value="9">точка росы</option>
-            </select>
-            состояние — в воздухе образуются капли тумана, а на предметах выпадут капли воды.
-            Поэтому упомянутая выше критическая температура называется
-            <select id="physicsV4Q20">
-                <option selected disabled> </option>
-                <option value="1">абсолютный</option>
-                <option value="2">жидкий</option>
-                <option value="3">насыщенный</option>
-                <option value="4">ненасыщенный</option>
-                <option value="5">относительный</option>
-                <option value="6">равновесный</option>
-                <option value="7">твёрдый</option>
-                <option value="8">температура конденсации</option>
-                <option value="9">точка росы</option>
-            </select>.
-        </p>
-    </li>
+        <li>
+            <p>
+                Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+            </p>
+            <p>
+                Электрическая дуга — это один из видов газового разряда. Получить её можно следующим образом.
+                В штативе закрепляют два угольных стержня заострёнными концами друг к другу и присоединяют к источнику
+                тока.
+                Когда угли приводят в соприкосновение, а затем слегка раздвигают, между концами углей образуется яркое
+                пламя, а сами угли раскаляются добела.
+                Дуга горит устойчиво, если через неё проходит постоянный электрический ток.
+                В этом случае один электрод является всё время положительным (анод), а другой — отрицательным (катод).
+            </p>
+            <p>
+                Для поддержания дугового разряда нужно небольшое напряжение, дуга горит при напряжении на её электродах
+                40В.
+                Сила тока в дуге довольно значительна, а сопротивление невелико; следовательно, светящийся газовый столб
+                <select id="physicsV4Q1">
+                    <option selected disabled></option>
+                    <option value="1">плохо</option>
+                    <option value="2">хорошо</option>
+                    <option value="3">молекулы газа</option>
+                    <option value="4">осадок</option>
+                    <option value="5">протоны</option>
+                    <option value="6">теплота</option>
+                    <option value="7">электроны</option>
+                </select>
+                проводит электрический ток.
+                Ионизацию в пространстве между электродами вызывают своими ударами о
+                <select id="physicsV4Q2">
+                    <option selected disabled></option>
+                    <option value="1">плохо</option>
+                    <option value="2">хорошо</option>
+                    <option value="3">молекулы газа</option>
+                    <option value="4">осадок</option>
+                    <option value="5">протоны</option>
+                    <option value="6">теплота</option>
+                    <option value="7">электроны</option>
+                </select>
+                электроны, испускаемые катодом дуги.
+                Большое количество испускаемых
+                <select id="physicsV4Q3">
+                    <option selected disabled></option>
+                    <option value="1">плохо</option>
+                    <option value="2">хорошо</option>
+                    <option value="3">молекулы газа</option>
+                    <option value="4">осадок</option>
+                    <option value="5">протоны</option>
+                    <option value="6">теплота</option>
+                    <option value="7">электроны</option>
+                </select>
+                обеспечивается тем, что катод нагрет до очень высокой температуры.
+                Когда для зажигания дуги вначале угли приводят в соприкосновение, то в месте контакта, обладающем очень
+                большим сопротивлением, выделяется огромное количество
+                <select id="physicsV4Q4">
+                    <option selected disabled></option>
+                    <option value="1">плохо</option>
+                    <option value="2">хорошо</option>
+                    <option value="3">молекулы газа</option>
+                    <option value="4">осадок</option>
+                    <option value="5">протоны</option>
+                    <option value="6">теплота</option>
+                    <option value="7">электроны</option>
+                </select>.
+                Поэтому концы углей сильно разогреваются, и этого достаточно для того, чтобы при их раздвижении между
+                ними вспыхнула дуга.
+                В дальнейшем катод дуги поддерживается в накалённом состоянии самим током, проходящим через дугу.
+            </p>
+        </li>
+        <li>
+            <p>
+                Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+            </p>
+            <p>
+                Полярное сияние — одно из самых красивых явлений в природе.
+                Формы полярного сияния очень разнообразны:
+                то это своеобразные светлые столбы,
+                то изумрудно-зелёные с красной бахромой пылающие длинные ленты,
+                расходящиеся многочисленные лучи-стрелы,
+                а то и просто бесформенные светлые, иногда цветные пятна на небе.
+            </p>
+            <p>
+                Полярные сияния чаще всего наблюдаются в приполярных регионах, откуда и происходит это название.
+                Полярные сияния могут быть видны не только на далёком Севере, но и южнее.
+                Например, в 1938 году полярное сияние наблюдалось на южном берегу Крыма, что объясняется увеличением
+                мощности возбудителя свечения —
+                <select id="physicsV4Q5">
+                    <option selected disabled></option>
+                    <option value="1">метеоритный дождь</option>
+                    <option value="2">солнечный ветер</option>
+                    <option value="3">волна</option>
+                    <option value="4">поле</option>
+                    <option value="5">разряд</option>
+                    <option value="6">возбуждённый</option>
+                    <option value="7">магнитный</option>
+                    <option value="8">стационарный</option>
+                    <option value="9">электрический</option>
+                </select>.
+            </p>
+            <p>
+                Начало изучению полярных сияний положил великий русский учёный М.В.Ломоносов, высказавший гипотезу о
+                том, что причиной этого явления служат электрические
+                <select id="physicsV4Q6">
+                    <option selected disabled></option>
+                    <option value="1">метеоритный дождь</option>
+                    <option value="2">солнечный ветер</option>
+                    <option value="3">волна</option>
+                    <option value="4">поле</option>
+                    <option value="5">разряд</option>
+                    <option value="6">возбуждённый</option>
+                    <option value="7">магнитный</option>
+                    <option value="8">стационарный</option>
+                    <option value="9">электрический</option>
+                </select>
+                в разреженном воздухе.
+                Опыты подтвердили научное предположение учёного.
+            </p>
+            <p>
+                Полярные сияния — это электрическое свечение верхних очень разреженных слоёв атмосферы на высоте
+                (обычно) от 80 до 1000 км.
+                Свечение это происходит под влиянием быстро движущихся электрически заряженных частиц (электронов и
+                протонов), приходящих от Солнца.
+                Взаимодействие солнечного ветра с
+                <select id="physicsV4Q7">
+                    <option selected disabled></option>
+                    <option value="1">метеоритный дождь</option>
+                    <option value="2">солнечный ветер</option>
+                    <option value="3">волна</option>
+                    <option value="4">поле</option>
+                    <option value="5">разряд</option>
+                    <option value="6">возбуждённый</option>
+                    <option value="7">магнитный</option>
+                    <option value="8">стационарный</option>
+                    <option value="9">электрический</option>
+                </select>
+                полем Земли приводит к повышенной концентрации заряженных частиц в зонах, окружающих геомагнитные полюса
+                Земли.
+                Именно в этих зонах и наблюдается наибольшая активность полярных сияний.
+            </p>
+            <p>
+                Столкновения быстрых электронов и протонов с атомами кислорода и азота приводят атомы в
+                <select id="physicsV4Q8">
+                    <option selected disabled></option>
+                    <option value="1">метеоритный дождь</option>
+                    <option value="2">солнечный ветер</option>
+                    <option value="3">волна</option>
+                    <option value="4">поле</option>
+                    <option value="5">разряд</option>
+                    <option value="6">возбуждённый</option>
+                    <option value="7">магнитный</option>
+                    <option value="8">стационарный</option>
+                    <option value="9">электрический</option>
+                </select>
+                состояние.
+                Выделяя избыток энергии, атомы кислорода дают яркое излучение в зелёной и красной областях спектра,
+                молекулы азота — в фиолетовой.
+                Сочетание всех этих излучений и придаёт полярным сияниям красивую, часто меняющуюся окраску.
+            </p>
+        </li>
+        <li>
+            <p>
+                Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+            </p>
+            <p>
+                Реактивным называется движение, которое происходит под действием
+                <select id="physicsV4Q9">
+                    <option selected disabled></option>
+                    <option value="1">сила реакции</option>
+                    <option value="2">сила тяжести</option>
+                    <option value="3">первый</option>
+                    <option value="4">второй</option>
+                    <option value="5">третий</option>
+                    <option value="6">противоположное направление</option>
+                    <option value="7">совпадающий с направлением</option>
+                    <option value="8">изменяется</option>
+                    <option value="9">остаётся постоянным</option>
+                </select>
+                , действующей на движущееся тело со стороны струи вещества, выбрасываемого из двигателя.
+                Пояснить принцип реактивного движения можно на примере движения ракеты.
+            </p>
+            <p>
+                Пусть в двигателе, установленном на ракете, происходит сгорание топлива и продукты горения (горячие
+                газы) под высоким давлением выбрасываются из сопла двигателя.
+                На каждую порцию газов, выброшенных из сопла, со стороны двигателя действует некоторая сила, которая
+                приводит эту порцию газов в движение.
+                В соответствии с
+                <select id="physicsV4Q10">
+                    <option selected disabled></option>
+                    <option value="1">сила реакции</option>
+                    <option value="2">сила тяжести</option>
+                    <option value="3">первый</option>
+                    <option value="4">второй</option>
+                    <option value="5">третий</option>
+                    <option value="6">противоположное направление</option>
+                    <option value="7">совпадающий с направлением</option>
+                    <option value="8">изменяется</option>
+                    <option value="9">остаётся постоянным</option>
+                </select>
+                законом Ньютона, на двигатель со стороны выбрасываемых газов действует сила, такая же по модулю и
+                противоположная по направлению.
+                Эта сила называется реактивной.
+                Под её действием ракета приобретает ускорение и разгоняется в направлении,
+                <select id="physicsV4Q11">
+                    <option selected disabled></option>
+                    <option value="1">сила реакции</option>
+                    <option value="2">сила тяжести</option>
+                    <option value="3">первый</option>
+                    <option value="4">второй</option>
+                    <option value="5">третий</option>
+                    <option value="6">противоположное направление</option>
+                    <option value="7">совпадающий с направлением</option>
+                    <option value="8">изменяется</option>
+                    <option value="9">остаётся постоянным</option>
+                </select>
+                выбрасывания газов.
+            </p>
+            <p>
+                При реактивном движении ракеты её масса непрерывно уменьшается из-за сгорания топлива и выбрасывания
+                наружу продуктов сгорания.
+                По этой причине модуль ускорения ракеты всё время
+                <select id="physicsV4Q12">
+                    <option selected disabled></option>
+                    <option value="1">сила реакции</option>
+                    <option value="2">сила тяжести</option>
+                    <option value="3">первый</option>
+                    <option value="4">второй</option>
+                    <option value="5">третий</option>
+                    <option value="6">противоположное направление</option>
+                    <option value="7">совпадающий с направлением</option>
+                    <option value="8">изменяется</option>
+                    <option value="9">остаётся постоянным</option>
+                </select>
+                , а скорость ракеты нелинейно зависит от массы сгоревшего топлива.
+                Впервые задача об отыскании модуля конечной скорости v ракеты, масса которой изменилась от значения m0
+                до величины m, была решена русским учёным, пионером космонавтики К.Э.Циолковским.
+            </p>
+        </li>
+        <li>
+            <p>
+                Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+            </p>
+            <p>
+                Атмосферное электричество образуется и концентрируется в облаках — образованиях из мелких частиц воды,
+                находящейся в жидком или твёрдом состоянии.
+                При дроблении водяных капель и кристаллов льда, при столкновениях их с ионами атмосферного воздуха
+                крупные капли и кристаллы приобретают избыточный отрицательный заряд, а мелкие — положительный.
+                Восходящие потоки воздуха в грозовом облаке поднимают мелкие капли и кристаллы к вершине облака, крупные
+                капли и кристаллы опускаются к его основанию.
+            </p>
+            <p>
+                Заряженные облака наводят на земной поверхности под собой
+                <select id="physicsV4Q13">
+                    <option selected disabled></option>
+                    <option value="1">в разные моменты времени</option>
+                    <option value="2">длиннее</option>
+                    <option value="3">короче</option>
+                    <option value="4">магнитный</option>
+                    <option value="5">одновременно</option>
+                    <option value="6">противоположный</option>
+                    <option value="7">такой же</option>
+                    <option value="8">электрический</option>
+                </select>
+                по знаку заряд. Внутри облака и между облаком и Землёй создаётся сильное
+                <select id="physicsV4Q14">
+                    <option selected disabled></option>
+                    <option value="1">в разные моменты времени</option>
+                    <option value="2">длиннее</option>
+                    <option value="3">короче</option>
+                    <option value="4">магнитный</option>
+                    <option value="5">одновременно</option>
+                    <option value="6">противоположный</option>
+                    <option value="7">такой же</option>
+                    <option value="8">электрический</option>
+                </select>
+                поле, которое способствует ионизации воздуха и возникновению искровых разрядов (молний) как внутри
+                облака, так и между облаком и поверхностью Земли.
+            </p>
+            <p>
+                Гром возникает вследствие резкого расширения воздуха при быстром повышении температуры в канале разряда
+                молнии.
+                Вспышку молнии мы видим практически одновременно с разрядом, так как скорость распространения света
+                очень велика (3·108 м/с).
+                Разряд молнии длится всего 0,1–0,2 с. Звук распространяется значительно медленнее. В воздухе его
+                скорость равна примерно 330 м/с.
+                Чем дальше от нас произошёл разряд молнии, тем
+                <select id="physicsV4Q15">
+                    <option selected disabled></option>
+                    <option value="1">в разные моменты времени</option>
+                    <option value="2">длиннее</option>
+                    <option value="3">короче</option>
+                    <option value="4">магнитный</option>
+                    <option value="5">одновременно</option>
+                    <option value="6">противоположный</option>
+                    <option value="7">такой же</option>
+                    <option value="8">электрический</option>
+                </select>
+                пауза между вспышкой света и громом. Гром от очень далёких молний вообще не доходит: звуковая энергия
+                рассеивается и поглощается по пути.
+                Такие молнии называют зарницами. Как правило, гром слышен на расстоянии до 15–20 километров; таким
+                образом, если наблюдатель видит молнию, но не слышит грома, то гроза находится на расстоянии более 20
+                километров.
+            </p>
+            <p>
+                Гром, сопровождающий молнию, может длиться в течение нескольких секунд. Существует две причины,
+                объясняющие, почему вслед за короткой молнией слышатся более или менее долгие раскаты грома.
+                Во-первых, молния имеет очень большую длину (она измеряется километрами), поэтому звук от разных её
+                участков доходит до наблюдателя
+                <select id="physicsV4Q16">
+                    <option selected disabled></option>
+                    <option value="1">в разные моменты времени</option>
+                    <option value="2">длиннее</option>
+                    <option value="3">короче</option>
+                    <option value="4">магнитный</option>
+                    <option value="5">одновременно</option>
+                    <option value="6">противоположный</option>
+                    <option value="7">такой же</option>
+                    <option value="8">электрический</option>
+                </select>.
+                Во-вторых, происходит отражение звука от облаков и туч — возникает эхо. Отражением звука от облаков
+                объясняется происходящее иногда усиление громкости звука в конце громовых раскатов.
+            </p>
+        </li>
+        <li>
+            <p>
+                Прочитайте текст и вставьте на места пропусков слова (словосочетания).
+            </p>
+            <p>
+                В воздухе всегда присутствуют водяные пары, концентрация которых может быть различной.
+                Опыт показывает, что концентрация паров не может превышать некоторого максимально возможного значения
+                nmax (для каждой температуры это значение своё).
+                Пары с концентрацией, равной nmax, называются
+                <select id="physicsV4Q17">
+                    <option selected disabled></option>
+                    <option value="1">абсолютный</option>
+                    <option value="2">жидкий</option>
+                    <option value="3">насыщенный</option>
+                    <option value="4">ненасыщенный</option>
+                    <option value="5">относительный</option>
+                    <option value="6">равновесный</option>
+                    <option value="7">твёрдый</option>
+                    <option value="8">температура конденсации</option>
+                    <option value="9">точка росы</option>
+                </select>.
+                С ростом температуры максимально возможная концентрация водяных паров также растёт.
+                Отношение концентрации n водяных паров при данной температуре к максимально возможной концентрации при
+                той же температуре называется
+                <select id="physicsV4Q18">
+                    <option selected disabled></option>
+                    <option value="1">абсолютный</option>
+                    <option value="2">жидкий</option>
+                    <option value="3">насыщенный</option>
+                    <option value="4">ненасыщенный</option>
+                    <option value="5">относительный</option>
+                    <option value="6">равновесный</option>
+                    <option value="7">твёрдый</option>
+                    <option value="8">температура конденсации</option>
+                    <option value="9">точка росы</option>
+                </select>
+                влажностью, которая обозначается буквой &phi;.
+                Её принято измерять в процентах. Из сказанного следует, что &phi;=(n/nmax)·100%.
+            </p>
+            <p>
+                Пусть при некоторой температуре t концентрация водяных паров в воздухе равна n, а φ меньше, чем 100%.
+                Если температура будет понижаться, то вместе с ней будет уменьшаться и величина nmax, а значит, &phi;
+                будет увеличиваться.
+                При некоторой критической температуре &phi; достигнет значения 100% (в этот момент концентрация водяных
+                паров станет максимально возможной при данной температуре).
+                Поэтому дальнейшее понижение температуры приведёт к переходу водяных паров в
+                <select id="physicsV4Q19">
+                    <option selected disabled></option>
+                    <option value="1">абсолютный</option>
+                    <option value="2">жидкий</option>
+                    <option value="3">насыщенный</option>
+                    <option value="4">ненасыщенный</option>
+                    <option value="5">относительный</option>
+                    <option value="6">равновесный</option>
+                    <option value="7">твёрдый</option>
+                    <option value="8">температура конденсации</option>
+                    <option value="9">точка росы</option>
+                </select>
+                состояние — в воздухе образуются капли тумана, а на предметах выпадут капли воды.
+                Поэтому упомянутая выше критическая температура называется
+                <select id="physicsV4Q20">
+                    <option selected disabled></option>
+                    <option value="1">абсолютный</option>
+                    <option value="2">жидкий</option>
+                    <option value="3">насыщенный</option>
+                    <option value="4">ненасыщенный</option>
+                    <option value="5">относительный</option>
+                    <option value="6">равновесный</option>
+                    <option value="7">твёрдый</option>
+                    <option value="8">температура конденсации</option>
+                    <option value="9">точка росы</option>
+                </select>.
+            </p>
+        </li>
     </ol>
-    <p><button onclick="check('physicsV4')">Проверить</button></p>
-    <p><button onclick="openPage('physics')">Назад</button></p>
+    <p>
+    <div onclick="check('physicsV4')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('physics')">Назад</div>
+    </p>
 </div>
 
 <div id="testPassedMessage" class="messageBoundingBox" onclick="hideMe(this)">
