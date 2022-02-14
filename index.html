@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css" type="text/css">
-    <!--<link rel="stylesheet" href="checkbox.css" type="text/css">-->
+    <link rel="stylesheet" href="checkbox.css" type="text/css">
     <link rel="stylesheet" href="radio_button.css" type="text/css">
     <script src="index.js?45682347652875628"></script>
     <title>Тесты</title>
@@ -120,44 +120,152 @@
             </div>
         </li>
         <li>
-            О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.
-            <select id="mathV1Q2">
-                <option selected disabled></option>
-                <option value="1">d=a</option>
-                <option value="2">d&gt;a</option>
-                <option value="3">d&lt;a</option>
-                <option value="4">Сравнить невозможно</option>
-            </select>
+            <p>О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.</p>
+            <div class="grid2x2" id="mathV1Q2">
+                <div class="box">
+                    <div>
+                        <label class="container">d=a
+                            <input type="radio" value="1" name="mathV1Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">d&gt;a
+                            <input type="radio" value="2" name="mathV1Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">d&lt;a
+                            <input type="radio" value="3" name="mathV1Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">Сравнить невозможно
+                            <input type="radio" value="4" name="mathV1Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Какому промежутку принадлежит число &Sqrt;53?
-            <select id="mathV1Q3">
-                <option selected disabled></option>
-                <option value="1">[4;5]</option>
-                <option value="2">[5;6]</option>
-                <option value="3">[6;7]</option>
-                <option value="4">[7;8]</option>
-            </select>
+            <p>Какому промежутку принадлежит число &Sqrt;53?</p>
+            <div class="grid2x2" id="mathV1Q3">
+                <div class="box">
+                    <div>
+                        <label class="container">[4;5]
+                            <input type="radio" value="1" name="mathV1Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[5;6]
+                            <input type="radio" value="2" name="mathV1Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[6;7]
+                            <input type="radio" value="3" name="mathV1Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[7;8]
+                            <input type="radio" value="4" name="mathV1Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Какому из данных промежутков принадлежит число 5 &#8260; 9?
-            <select id="mathV1Q4">
-                <option selected disabled></option>
-                <option value="1">[0,5;0,6]</option>
-                <option value="2">[0,6;0,7]</option>
-                <option value="3">[0,7;0,8]</option>
-                <option value="4">[0,8;0,9]</option>
-            </select>
+            <p>Какому из данных промежутков принадлежит число 5 &#8260; 9?</p>
+            <div class="grid2x2" id="mathV1Q4">
+                <div class="box">
+                    <div>
+                        <label class="container">[0,5;0,6]
+                            <input type="radio" value="1" name="mathV1Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[0,6;0,7]
+                            <input type="radio" value="2" name="mathV1Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[0,7;0,8]
+                            <input type="radio" value="3" name="mathV1Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[0,8;0,9]
+                            <input type="radio" value="4" name="mathV1Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?
-            <select id="mathV1Q5">
-                <option selected disabled></option>
-                <option value="1">a-b</option>
-                <option value="2">a-c</option>
-                <option value="3">b-c</option>
-                <option value="4">c-b</option>
-            </select>
+            <p>Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?</p>
+            <div class="grid2x2" id="mathV1Q5">
+                <div class="box">
+                    <div>
+                        <label class="container">a-b
+                            <input type="radio" value="1" name="mathV1Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">a-c
+                            <input type="radio" value="2" name="mathV1Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">b-c
+                            <input type="radio" value="3" name="mathV1Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">c-b
+                            <input type="radio" value="4" name="mathV1Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
     </ol>
     <p>
@@ -170,54 +278,190 @@
 <div id="mathV2" class="page">
     <ol>
         <li>
-            Решите неравенство x&sup2; &lt; 361.
-            <select id="mathV2Q1">
-                <option selected disabled></option>
-                <option value="1">(-&infin;;-19)&cup;(19;&infin;)</option>
-                <option value="2">(-&infin;;-19]&cup;[19;&infin;)</option>
-                <option value="3">(-19;19)</option>
-                <option value="4">[-19;19]</option>
-            </select>
+            <p>Решите неравенство x&sup2; &lt; 361</p>
+            <div class="grid2x2" id="mathV2Q1">
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-19)&cup;(19;&infin;)
+                            <input type="radio" value="1" name="mathV2Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-19]&cup;[19;&infin;)
+                            <input type="radio" value="2" name="mathV2Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-19;19)
+                            <input type="radio" value="3" name="mathV2Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-19;19]
+                            <input type="radio" value="4" name="mathV2Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Решите неравенство x&sup2; -36 &gt; 0.
-            <select id="mathV2Q2">
-                <option selected disabled></option>
-                <option value="1">(&infin;;&infin;)</option>
-                <option value="2">(−&infin;;−6)&cup;(6;&infin;)</option>
-                <option value="3">(−6;6)</option>
-                <option value="4">нет решений</option>
-            </select>
+            <p>Решите неравенство x&sup2; - 36 &gt; 0</p>
+            <div class="grid2x2" id="mathV2Q2">
+                <div class="box">
+                    <div>
+                        <label class="container">(&infin;;&infin;)
+                            <input type="radio" value="1" name="mathV2Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(−&infin;;−6)&cup;(6;&infin;)
+                            <input type="radio" value="2" name="mathV2Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(−6;6)
+                            <input type="radio" value="3" name="mathV2Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">нет решений
+                            <input type="radio" value="4" name="mathV2Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Решите неравенство x&sup2; + x &ge; 0.
-            <select id="mathV2Q3">
-                <option selected disabled></option>
-                <option value="1">(-&infin;-1]&cup;[0;&infin;)</option>
-                <option value="2">[-1;0]</option>
-                <option value="3">(-1;0)</option>
-                <option value="4"> (-&infin;; 0]&cup;[1;&infin;)</option>
-            </select>
+            <p>Решите неравенство x&sup2; + x &ge; 0</p>
+            <div class="grid2x2" id="mathV2Q3">
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;-1]&cup;[0;&infin;)
+                            <input type="radio" value="1" name="mathV2Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-1;0]
+                            <input type="radio" value="2" name="mathV2Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-1;0)
+                            <input type="radio" value="3" name="mathV2Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;; 0]&cup;[1;&infin;)
+                            <input type="radio" value="4" name="mathV2Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
-            Решите неравенство 9x - 4(2x + 1) &gt; -8.
-            <select id="mathV2Q4">
-                <option selected disabled></option>
-                <option value="1">(−4;&infin;)</option>
-                <option value="2">(−12;&infin;)</option>
-                <option value="3">(−&infin;;−4)</option>
-                <option value="4">(−&infin;;−12)</option>
-            </select>
+            <p>Решите неравенство 9x - 4(2x + 1) &gt; -8</p>
+            <div class="grid2x2" id="mathV2Q4">
+                <div class="box">
+                    <div>
+                        <label class="container">(−4;&infin;)
+                            <input type="radio" value="1" name="mathV2Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(−12;&infin;)
+                            <input type="radio" value="2" name="mathV2Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(−&infin;;−4)
+                            <input type="radio" value="3" name="mathV2Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(−&infin;;−12)
+                            <input type="radio" value="4" name="mathV2Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
+
         <li>
-            Решите неравенство -x&sup2; -2x &le; 0.
-            <select id="mathV2Q5">
-                <option selected disabled></option>
-                <option value="1">(-&infin;;-2)&cup;(0;&infin;)</option>
-                <option value="2">(-&infin;;-2]&cup;[0;&infin;)</option>
-                <option value="3">(-2;0)</option>
-                <option value="4">[-2;0]</option>
-            </select>
+            <p>Решите неравенство -x&sup2; -2x &le; 0</p>
+            <div class="grid2x2" id="mathV2Q5">
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-2)&cup;(0;&infin;)
+                            <input type="radio" value="1" name="mathV2Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-2]&cup;[0;&infin;)
+                            <input type="radio" value="2" name="mathV2Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-2;0)
+                            <input type="radio" value="3" name="mathV2Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-2;0]
+                            <input type="radio" value="4" name="mathV2Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
     </ol>
     <p>
@@ -230,68 +474,116 @@
 <div id="mathV3" class="page">
     <ol>
         <li>
-            Какие из следующих утверждений верны?
-            <p>1)Существуют три прямые, которые проходят через одну точку.</p>
-            <p>2)Боковые стороны любой трапеции равны.</p>
-            <p>3)Сумма углов равнобедренного треугольника равна 180 градусам</p>
-            <select id="mathV3Q1">
-                <option selected disabled></option>
-                <option value="1">1 и 2</option>
-                <option value="2">1 и 3</option>
-                <option value="3">2 и 3</option>
-            </select>
+            <h4>Какие из следующих утверждений верны?</h4>
+            <span id="mathV3Q1">
+                <label class="containerCheck">Существуют три прямые, которые проходят через одну точку.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q2">
+                <label class="containerCheck">Боковые стороны любой трапеции равны.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q3">
+                <label class="containerCheck">Сумма углов равнобедренного треугольника равна 180 градусам
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
         </li>
         <li>
-            Какие из следующих утверждений верны?
-            <p>1)Все высоты равностороннего треугольника равны.</p>
-            <p>2)Угол, вписанный в окружность, равен соответствующему центральному углу, опирающемуся на ту же дугу.</p>
-            <p>3)В любой ромб можно вписать окружность.</p>
-            <select id="mathV3Q2">
-                <option selected disabled></option>
-                <option value="1">1 и 2</option>
-                <option value="2">1 и 3</option>
-                <option value="3">2 и 3</option>
-            </select>
+            <h4>Какие из следующих утверждений верны?</h4>
+            <span id="mathV3Q4">
+                <label class="containerCheck">Все высоты равностороннего треугольника равны.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q5">
+                <label class="containerCheck">Угол, вписанный в окружность, равен соответствующему центральному углу, опирающемуся на ту же дугу.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q6">
+                <label class="containerCheck">В любой ромб можно вписать окружность.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
         </li>
         <li>
-            Укажите номера верных утверждений.
-            <p>1)Через точку, не лежащую на данной прямой, можно провести прямую, параллельную этой прямой.</p>
-            <p>2)Треугольник со сторонами 1, 2, 4 существует.</p>
-            <p>3)Если в ромбе один из углов равен 90°, то такой ромб — квадрат.</p>
-            <p>4)В любом параллелограмме диагонали равны.</p>
-            <select id="mathV3Q3">
-                <option selected disabled></option>
-                <option value="1">1 и 2</option>
-                <option value="2">1 и 3</option>
-                <option value="3">1 и 4</option>
-                <option value="4">2 и 3</option>
-                <option value="5">2 и 4</option>
-                <option value="6">3 и 4</option>
-            </select>
+            <h4>Какие из следующих утверждений верны?</h4>
+            <span id="mathV3Q7">
+                <label class="containerCheck">Через точку, не лежащую на данной прямой, можно провести прямую, параллельную этой прямой.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q8">
+                <label class="containerCheck">Треугольник со сторонами 1, 2, 4 существует.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q9">
+                <label class="containerCheck">Если в ромбе один из углов равен 90°, то такой ромб — квадрат.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q10">
+                <label class="containerCheck">В любом параллелограмме диагонали равны.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
         </li>
         <li>
-            Укажите номера верных утверждений.
-            <p>1)Существует квадрат, который не является прямоугольником.</p>
-            <p>2)Если два угла треугольника равны, то равны и противолежащие им стороны.</p>
-            <p>3)Внутренние накрест лежащие углы, образованные двумя параллельными прямыми и секущей, равны.</p>
-            <select id="mathV3Q4">
-                <option selected disabled></option>
-                <option value="1">1 и 2</option>
-                <option value="2">1 и 3</option>
-                <option value="3">2 и 3</option>
-            </select>
+            <h4>Какие из следующих утверждений верны?</h4>
+            <span id="mathV3Q11">
+                <label class="containerCheck">Существует квадрат, который не является прямоугольником.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q12">
+                <label class="containerCheck">Если два угла треугольника равны, то равны и противолежащие им стороны.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q13">
+                <label class="containerCheck">Внутренние накрест лежащие углы, образованные двумя параллельными прямыми и секущей, равны.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
         </li>
+
         <li>
-            Какие из следующих утверждений верны?
-            <p>1)Один из углов треугольника всегда не превышает 60 градусов.</p>
-            <p>2)Диагонали трапеции пересекаются и делятся точкой пересечения пополам.</p>
-            <p>3)Все диаметры окружности равны между собой.</p>
-            <select id="mathV3Q5">
-                <option selected disabled></option>
-                <option value="1">1 и 2</option>
-                <option value="2">1 и 3</option>
-                <option value="3">2 и 3</option>
-            </select>
+            <h4>Какие из следующих утверждений верны?</h4>
+            <span id="mathV3Q14">
+                <label class="containerCheck">Один из углов треугольника всегда не превышает 60 градусов.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q15">
+                <label class="containerCheck">Диагонали трапеции пересекаются и делятся точкой пересечения пополам.
+                    <input type="checkbox" value="0">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
+            <span id="mathV3Q16">
+                <label class="containerCheck">Все диаметры окружности равны между собой.
+                    <input type="checkbox" value="1">
+                    <span class="checkmarkCheck"></span>
+                </label>
+            </span>
         </li>
     </ol>
     <p>
@@ -1812,6 +2104,28 @@
     </ol>
     <p>
     <div onclick="check('physicsV4')">Проверить</div>
+    </p>
+    <p>
+    <div onclick="openPage('physics')">Назад</div>
+    </p>
+</div>
+<div id="physicsV5" class="page">
+    <ol>
+        <li>3 л воды, взятой при температуре 20 &#8451;, смешали с водой при температуре 100 &#8451;.
+            Температура смеси оказалась равной 40 &#8451;. Чему равна масса горячей воды? Теплообменом с окружающей средой пренебречь.
+            <input type="text" size="15" id="physicsV5Q1"></li>
+        <li>Сколько литров воды при 83 &#8451; нужно добавить к 4 л воды при 20 &#8451;, чтобы получить воду температурой 65 &#8451;? Теплообменом с окружающей средой пренебречь.
+            <input type="text" size="15" id="physicsV5Q2"></li>
+        <li>Какое количество теплоты выделится при охлаждении и кристаллизации воды массой 1 кг, взятой при температуре 10 &#8451;? Ответ дайте в килоджоулях. Удельная теплоёмкость воды 4,2 кДж/(кг·&#8451;), удельная теплота плавления льда 330 кДж/кг.<input type="text" size="15" id="physicsV5Q3"></li>
+        <li>Двигатель трактора совершил полезную работу 23 МДж, израсходовав при этом 2 кг бензина.
+            Найдите КПД двигателя трактора (удельную теплоту сгорания бензина принять равной 46 МДж/кг). Ответ дайте в %.
+            <input type="text" size="15" id="physicsV5Q4"></li>
+        <li>В тепловой машине потери энергии составляют 3/5 от энергии, выделяющейся при сгорании топлива.
+            Чему равен КПД этой тепловой машины? Ответ выразите в процентах.
+            <input type="text" size="15" id="physicsV5Q5"></li>
+    </ol>
+    <p>
+    <div onclick="check('physicsV5')">Проверить</div>
     </p>
     <p>
     <div onclick="openPage('physics')">Назад</div>

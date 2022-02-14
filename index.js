@@ -14,11 +14,22 @@ var answers = {
         'mathV2Q5' : '2',
     },
     'mathV3': {
-        'mathV3Q1' : '2',
-        'mathV3Q2' : '2',
-        'mathV3Q3' : '2',
-        'mathV3Q4' : '3',
-        'mathV3Q5' : '2',
+        'mathV3Q1' : '1',
+        'mathV3Q2' : '0',
+        'mathV3Q3' : '1',
+        'mathV3Q4' : '1',
+        'mathV3Q5' : '0',
+        'mathV3Q6' : '1',
+        'mathV3Q7' : '1',
+        'mathV3Q8' : '0',
+        'mathV3Q9' : '1',
+        'mathV3Q10' : '0',
+        'mathV3Q11' : '0',
+        'mathV3Q12' : '1',
+        'mathV3Q13' : '1',
+        'mathV3Q14' : '1',
+        'mathV3Q15' : '0',
+        'mathV3Q16' : '1',
     },
     'mathV4': {
         'mathV4Q1' : '3,75',
@@ -126,6 +137,13 @@ var answers = {
         'physicsV4Q18': '5',
         'physicsV4Q19': '2',
         'physicsV4Q20': '9',
+    },
+    'physicsV5': {
+        'physicsV5Q1': '1',
+        'physicsV5Q2': '10',
+        'physicsV5Q3': '372',
+        'physicsV5Q4': '25',
+        'physicsV5Q5': '40'
     }
 }
 
@@ -162,13 +180,23 @@ function check(id){
         let userAnswer = null;
         switch (answerElement.tagName) {
             case "DIV":
-                let radioinput = answerElement.querySelector("input:checked");
-                if (radioinput) {
-                    userAnswer = radioinput.value;
+                let input = answerElement.querySelector("input");
+                if (input.type == 'radio') {
+                    userAnswer = input.value;
+                }
+                if (input.type == 'check') {
+                    userAnswer = input.checked;
                 }
                 break;
             case "SELECT":
                 userAnswer = document.getElementById(key).value;
+                break;
+            case "INPUT":
+                userAnswer = document.getElementById(key).value;
+                break;
+            case "SPAN":
+                let checkBox = answerElement.querySelector("input");
+                userAnswer = checkBox.value;
                 break;
             default:
                 console.error("check(id): unknown element type - " + answerElement.tagName);
