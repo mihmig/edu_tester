@@ -177,26 +177,32 @@ function check(id){
         questionCount++;
         let answerElement = document.getElementById(key);
         if (!answerElement) continue;
+        let answerType = answerElement.getAttribute("data");
         let userAnswer = null;
-        switch (answerElement.tagName) {
-            case "DIV":
-                let input = answerElement.querySelector("input");
-                if (input.type == 'radio') {
+        switch (answerType) {
+            case "radio":
+                let input = answerElement.querySelector("input:checked");
+                if (input) {
                     userAnswer = input.value;
                 }
-                if (input.type == 'check') {
-                    userAnswer = input.checked;
+                break;
+            case "checkbox":
+                let checkBox = answerElement.querySelector("input");
+                if (checkBox) {
+                    userAnswer = checkBox.checked ? "1" : "0";
+                }
+                break
+            case "select":
+                let selectField = document.getElementById(key);
+                if (selectField) {
+                    userAnswer = selectField.value;
                 }
                 break;
-            case "SELECT":
-                userAnswer = document.getElementById(key).value;
-                break;
-            case "INPUT":
-                userAnswer = document.getElementById(key).value;
-                break;
-            case "SPAN":
-                let checkBox = answerElement.querySelector("input");
-                userAnswer = checkBox.value;
+            case "text":
+                let textField = document.getElementById(key);
+                if (textField) {
+                    userAnswer = textField.value;
+                }
                 break;
             default:
                 console.error("check(id): unknown element type - " + answerElement.tagName);
@@ -211,11 +217,12 @@ function check(id){
             answerElement.style.backgroundColor = "lightpink";
         }
     }
-    console.log(numberOfCorrectAnswers);
-    console.log(correctAnswers.length);
+    // console.log(numberOfCorrectAnswers);
     if (numberOfCorrectAnswers === questionCount){
         document.getElementById("testPassedMessage").style.visibility="visible";
+        document.getElementById("testPassedMessage").style.backgroundColor='lightgreen';
     }else{
         document.getElementById("testFailedMessage").style.visibility="visible";
+        document.getElementById("testFailedMessage").style.backgroundColor='lightpink';
     }
 }

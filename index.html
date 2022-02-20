@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css" type="text/css">
@@ -25,19 +25,19 @@
 </div>
 <div id="math" class="page">
     <p>
-    <div class="button" onclick="openPage('mathV1')">Вариант 1</div>
+    <div class="button" onclick="openPage('mathV1')">Тест 1</div>
     </p>
     <p>
-    <div class="button" onclick="openPage('mathV2')">Вариант 2</div>
+    <div class="button" onclick="openPage('mathV2')">Тест 2</div>
     </p>
     <p>
-    <div class="button" onclick="openPage('mathV3')">Вариант 3</div>
+    <div class="button" onclick="openPage('mathV3')">Тест 3</div>
     </p>
     <p>
-    <div class="button" onclick="openPage('mathV4')">Вариант 4</div>
+    <div class="button" onclick="openPage('mathV4')">Тест 4</div>
     </p>
     <p>
-    <div class="button" onclick="openPage('mathV5')">Вариант 5</div>
+    <div class="button" onclick="openPage('mathV5')">Тест 5</div>
     </p>
     <p>
     <div class="button" onclick="openPage('home')">Назад</div>
@@ -45,37 +45,37 @@
 </div>
 <div id="informatics" class="page">
     <p>
-    <div onclick="openPage('infV1')">Вариант 1</div>
+    <div onclick="openPage('infV1')">Тест 1</div>
     </p>
     <p>
-    <div onclick="openPage('infV2')">Вариант 2</div>
+    <div onclick="openPage('infV2')">Тест 2</div>
     </p>
     <p>
-    <div onclick="openPage('infV3')">Вариант 3</div>
+    <div onclick="openPage('infV3')">Тест 3</div>
     </p>
     <p>
-    <div onclick="openPage('infV4')">Вариант 4</div>
+    <div onclick="openPage('infV4')">Тест 4</div>
     </p>
     <p>
-    <div onclick="openPage('infV5')">Вариант 5</div>
+    <div onclick="openPage('infV5')">Тест 5</div>
     </p>
-    <div onclick="openPage('home')">Назад</div>
+    <div onclick="openPage('home')">Тест</div>
 </div>
 <div id="physics" class="page">
     <p>
-    <div onclick="openPage('physicsV1')">Вариант 1</div>
+    <div onclick="openPage('physicsV1')">Тест 1</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV2')">Вариант 2</div>
+    <div onclick="openPage('physicsV2')">Тест 2</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV3')">Вариант 3</div>
+    <div onclick="openPage('physicsV3')">Тест 3</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV4')">Вариант 4</div>
+    <div onclick="openPage('physicsV4')">Тест 4</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV5')">Вариант 5</div>
+    <div onclick="openPage('physicsV5')">Тест 5</div>
     </p>
     <div onclick="openPage('home')">Назад</div>
 </div>
@@ -84,7 +84,7 @@
     <ol>
         <li>
             <p>Известно, что a &lt; b &lt; 0. Выберите наименьшее из чисел.</p>
-            <div class="grid2x2" id="mathV1Q1">
+            <div class="grid2x2" id="mathV1Q1" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">a-1
@@ -121,7 +121,7 @@
         </li>
         <li>
             <p>О числах a, b, c и d известно, что a &lt; b, b=c, d &gt; c . Сравнитe числа d и a.</p>
-            <div class="grid2x2" id="mathV1Q2">
+            <div class="grid1x4" id="mathV1Q2" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">d=a
@@ -158,7 +158,7 @@
         </li>
         <li>
             <p>Какому промежутку принадлежит число &Sqrt;53?</p>
-            <div class="grid2x2" id="mathV1Q3">
+            <div class="grid1x4" id="mathV1Q3" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">[4;5]
@@ -195,7 +195,7 @@
         </li>
         <li>
             <p>Какому из данных промежутков принадлежит число 5 &#8260; 9?</p>
-            <div class="grid2x2" id="mathV1Q4">
+            <div class="grid1x4" id="mathV1Q4" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">[0,5;0,6]
@@ -232,7 +232,7 @@
         </li>
         <li>
             <p>Известно, что a &gt; b &gt; c. Какое из следующих чисел отрицательно?</p>
-            <div class="grid2x2" id="mathV1Q5">
+            <div class="grid2x2" id="mathV1Q5" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">a-b
@@ -279,10 +279,10 @@
     <ol>
         <li>
             <p>Решите неравенство x&sup2; &lt; 361</p>
-            <div class="grid2x2" id="mathV2Q1">
+            <div class="grid1x4" id="mathV2Q1" data="radio">
                 <div class="box">
                     <div>
-                        <label class="container">(-&infin;;-19)&cup;(19;&infin;)
+                        <label class="container">(-&infin;;-19) &cup; (19;&infin;)
                             <input type="radio" value="1" name="mathV2Q1">
                             <span class="checkmark"></span>
                         </label>
@@ -290,7 +290,7 @@
                 </div>
                 <div class="box">
                     <div>
-                        <label class="container">(-&infin;;-19]&cup;[19;&infin;)
+                        <label class="container">(-&infin;;-19] &cup; [19;&infin;)
                             <input type="radio" value="2" name="mathV2Q1">
                             <span class="checkmark"></span>
                         </label>
@@ -316,7 +316,7 @@
         </li>
         <li>
             <p>Решите неравенство x&sup2; - 36 &gt; 0</p>
-            <div class="grid2x2" id="mathV2Q2">
+            <div class="grid1x4" id="mathV2Q2" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">(&infin;;&infin;)
@@ -353,7 +353,7 @@
         </li>
         <li>
             <p>Решите неравенство x&sup2; + x &ge; 0</p>
-            <div class="grid2x2" id="mathV2Q3">
+            <div class="grid1x4" id="mathV2Q3" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">(-&infin;-1]&cup;[0;&infin;)
@@ -390,7 +390,7 @@
         </li>
         <li>
             <p>Решите неравенство 9x - 4(2x + 1) &gt; -8</p>
-            <div class="grid2x2" id="mathV2Q4">
+            <div class="grid1x4" id="mathV2Q4" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">(−4;&infin;)
@@ -428,7 +428,7 @@
 
         <li>
             <p>Решите неравенство -x&sup2; -2x &le; 0</p>
-            <div class="grid2x2" id="mathV2Q5">
+            <div class="grid1x4" id="mathV2Q5" data="radio">
                 <div class="box">
                     <div>
                         <label class="container">(-&infin;;-2)&cup;(0;&infin;)
@@ -475,115 +475,115 @@
     <ol>
         <li>
             <h4>Какие из следующих утверждений верны?</h4>
-            <span id="mathV3Q1">
+            <div id="mathV3Q1" data="checkbox">
                 <label class="containerCheck">Существуют три прямые, которые проходят через одну точку.
-                    <input type="checkbox" value="1">
+                    <input type="checkbox">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q2">
+            </div>
+            <div id="mathV3Q2" data="checkbox">
                 <label class="containerCheck">Боковые стороны любой трапеции равны.
-                    <input type="checkbox" value="0">
+                    <input type="checkbox">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q3">
+            </div>
+            <div id="mathV3Q3" data="checkbox">
                 <label class="containerCheck">Сумма углов равнобедренного треугольника равна 180 градусам
-                    <input type="checkbox" value="1">
+                    <input type="checkbox">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
+            </div>
         </li>
         <li>
             <h4>Какие из следующих утверждений верны?</h4>
-            <span id="mathV3Q4">
+            <div id="mathV3Q4" data="checkbox">
                 <label class="containerCheck">Все высоты равностороннего треугольника равны.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q5">
+            </div>
+            <div id="mathV3Q5" data="checkbox">
                 <label class="containerCheck">Угол, вписанный в окружность, равен соответствующему центральному углу, опирающемуся на ту же дугу.
                     <input type="checkbox" value="0">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q6">
+            </div>
+            <div id="mathV3Q6" data="checkbox">
                 <label class="containerCheck">В любой ромб можно вписать окружность.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
+            </div>
         </li>
         <li>
             <h4>Какие из следующих утверждений верны?</h4>
-            <span id="mathV3Q7">
+            <div id="mathV3Q7" data="checkbox">
                 <label class="containerCheck">Через точку, не лежащую на данной прямой, можно провести прямую, параллельную этой прямой.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q8">
+            </div>
+            <div id="mathV3Q8" data="checkbox">
                 <label class="containerCheck">Треугольник со сторонами 1, 2, 4 существует.
                     <input type="checkbox" value="0">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q9">
+            </div>
+            <div id="mathV3Q9" data="checkbox">
                 <label class="containerCheck">Если в ромбе один из углов равен 90°, то такой ромб — квадрат.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q10">
+            </div>
+            <div id="mathV3Q10" data="checkbox">
                 <label class="containerCheck">В любом параллелограмме диагонали равны.
                     <input type="checkbox" value="0">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
+            </div>
         </li>
         <li>
             <h4>Какие из следующих утверждений верны?</h4>
-            <span id="mathV3Q11">
+            <div id="mathV3Q11" data="checkbox">
                 <label class="containerCheck">Существует квадрат, который не является прямоугольником.
                     <input type="checkbox" value="0">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q12">
+            </div>
+            <div id="mathV3Q12" data="checkbox">
                 <label class="containerCheck">Если два угла треугольника равны, то равны и противолежащие им стороны.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q13">
+            </div>
+            <div id="mathV3Q13" data="checkbox">
                 <label class="containerCheck">Внутренние накрест лежащие углы, образованные двумя параллельными прямыми и секущей, равны.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
+            </div>
         </li>
 
         <li>
             <h4>Какие из следующих утверждений верны?</h4>
-            <span id="mathV3Q14">
+            <div id="mathV3Q14" data="checkbox">
                 <label class="containerCheck">Один из углов треугольника всегда не превышает 60 градусов.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q15">
+            </div>
+            <div id="mathV3Q15" data="checkbox">
                 <label class="containerCheck">Диагонали трапеции пересекаются и делятся точкой пересечения пополам.
                     <input type="checkbox" value="0">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
-            <span id="mathV3Q16">
+            </div>
+            <div id="mathV3Q16" data="checkbox">
                 <label class="containerCheck">Все диаметры окружности равны между собой.
                     <input type="checkbox" value="1">
                     <span class="checkmarkCheck"></span>
                 </label>
-            </span>
+            </div>
         </li>
     </ol>
     <p>
@@ -595,11 +595,11 @@
 </div>
 <div id="mathV4" class="page">
     <ol>
-        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" size="15" id="mathV4Q1"></li>
-        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" size="15" id="mathV4Q2"></li>
-        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" size="15" id="mathV4Q3"></li>
-        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" size="15" id="mathV4Q4"></li>
-        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" size="15" id="mathV4Q5"></li>
+        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" size="15" id="mathV4Q1" data="text"></li>
+        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" size="15" id="mathV4Q2" data="text"></li>
+        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" size="15" id="mathV4Q3" data="text"></li>
+        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" size="15" id="mathV4Q4" data="text"></li>
+        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" size="15" id="mathV4Q5" data="text"></li>
     </ol>
     <p>
     <div onclick="check('mathV4')">Проверить</div>
@@ -614,61 +614,196 @@
             <p>Решите систему неравенств</p>
             <p>5x + 13 &le; 0</p>
             <p>x + 5 &ge; 0</p>
-            <select id="mathV5Q1">
-                <option selected disabled></option>
-                <option value="1">[-13&#8260;5;-4]</option>
-                <option value="2">[-4;13&#8260;5]</option>
-                <option value="3">(-&infin;;-4]&cup;[-13&#8260;5;&infin;)</option>
-                <option value="4">(-&infin;;13 &#8260; 5]</option>
-            </select>
+            <div class="grid1x4" id="mathV5Q1">
+                <div class="box">
+                    <div>
+                        <label class="container">[-13&#8260;5;-4]
+                            <input type="radio" value="1" name="mathV5Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-4;13&#8260;5]
+                            <input type="radio" value="2" name="mathV5Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-4] &cup; [-13&#8260;5;&infin;)
+                            <input type="radio" value="3" name="mathV5Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;13 &#8260; 5]
+                            <input type="radio" value="4" name="mathV5Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>Решите систему неравенств</p>
             <p>x&sup2; &le; 4</p>
             <p>x + 3 &ge; 0</p>
-            <select id="mathV5Q2">
-                <option selected disabled></option>
-                <option value="1">(-&infin;;-3]</option>
-                <option value="2">(-&infin;;-3]&cup;[2;&infin;)</option>
-                <option value="3">[-2;-2]</option>
-                <option value="4">[-2;3]</option>
-            </select>
+            <div class="grid1x4" id="mathV5Q2">
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-3]
+                            <input type="radio" value="1" name="mathV5Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;-3] &cup; [2;&infin;)
+                            <input type="radio" value="2" name="mathV5Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-2;-2]
+                            <input type="radio" value="3" name="mathV5Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">[-2;3]
+                            <input type="radio" value="4" name="mathV5Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>Решите систему неравенств</p>
             <p>x &gt; 3</p>
             <p>4 - x &gt; 0</p>
-            <select id="mathV5Q3">
-                <option selected disabled></option>
-                <option value="1">(-&infin;;4)</option>
-                <option value="2">нет решений</option>
-                <option value="3">(3;&infin;)</option>
-                <option value="4">(3;4)</option>
-            </select>
+            <div class="grid1x4" id="mathV5Q3">
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;4)
+                            <input type="radio" value="1" name="mathV5Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">нет решений
+                            <input type="radio" value="2" name="mathV5Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(3;&infin;)
+                            <input type="radio" value="3" name="mathV5Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(3;4)
+                            <input type="radio" value="4" name="mathV5Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>Решите систему неравенств</p>
             <p>-35 + 5x &gt; 0</p>
             <p>6 - 3x &gt; -18</p>
-            <select id="mathV5Q4">
-                <option selected disabled></option>
-                <option value="1">(7;8)</option>
-                <option value="2">(-&infin;;8)</option>
-                <option value="3">нет решений</option>
-                <option value="4">(7;&infin;)</option>
-            </select>
+            <div class="grid1x4" id="mathV5Q4">
+                <div class="box">
+                    <div>
+                        <label class="container">(7;8)
+                            <input type="radio" value="1" name="mathV5Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;8)
+                            <input type="radio" value="2" name="mathV5Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">нет решений
+                            <input type="radio" value="3" name="mathV5Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(7;&infin;)
+                            <input type="radio" value="4" name="mathV5Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>Решите систему неравенств</p>
             <p>x - 4 &gt; 0</p>
             <p>x - 0,3 &gt; 1</p>
-            <select id="mathV5Q5">
-                <option selected disabled></option>
-                <option value="1">[13 &#8260; 10;&infin;)</option>
-                <option value="2">[4;&infin;)</option>
-                <option value="3">[13 &#8260; 10;4)</option>
-                <option value="4">(-&infin;;13 &#8260; 10]&cup;[4;&infin;)</option>
-            </select>
+            <div class="grid1x4" id="mathV5Q5">
+                <div class="box">
+                    <div>
+                        <label class="container">(13 &#8260; 10;&infin;)
+                            <input type="radio" value="1" name="mathV5Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(4;&infin;)
+                            <input type="radio" value="2" name="mathV5Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(13 &#8260; 10;4)
+                            <input type="radio" value="3" name="mathV5Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">(-&infin;;13 &#8260; 10)&cup;(4;&infin;)
+                            <input type="radio" value="4" name="mathV5Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
     </ol>
     <p>
@@ -1310,57 +1445,192 @@
 <div id="physicsV1" class="page">
     <p>
     <ol>
-        <li>
-            Внутренняя энергия тела зависит
-            <select id="physicsV1Q1">
-                <option selected disabled></option>
-                <option value="1">только от температуры этого тела</option>
-                <option value="2">только от массы этого тела</option>
-                <option value="3">только от агрегатного состояния вещества</option>
-                <option value="4">от температуры, массы тела и агрегатного состояния вещества</option>
-            </select>
-        </li>
-        <li>
-            В каком агрегатном состоянии находится вещество, если оно имеет собственные форму и объем?
-            <select id="physicsV1Q2">
-                <option selected disabled></option>
-                <option value="1">только в твердом</option>
-                <option value="2">только в жидком</option>
-                <option value="3">только в газообразном</option>
-                <option value="4">в твердом или в жидком</option>
-            </select>
-        </li>
-        <li>
-            Турист разжёг костёр на привале в безветренную погоду. Находясь на некотором расстоянии от костра, турист
-            ощущает тепло. Каким способом в основном происходит процесс передачи теплоты от костра к туристу?
-            <select id="physicsV1Q3">
-                <option selected disabled></option>
-                <option value="1">путём теплопроводности</option>
-                <option value="2">путём конвекции</option>
-                <option value="3">путём излучения</option>
-                <option value="4">путём теплопроводности и конвекции</option>
-            </select>
-        </li>
-        <li>
-            Какие изменения энергии происходят в куске льда при его таянии?
-            <select id="physicsV1Q4">
-                <option selected disabled></option>
-                <option value="1">увеличивается кинетическая энергия куска льда</option>
-                <option value="2">уменьшается внутренняя энергия куска льда</option>
-                <option value="3">увеличивается внутренняя энергия куска льда</option>
-                <option value="4">увеличивается внутренняя энергия воды, из которой состоит кусок льда</option>
-            </select>
-        </li>
-        <li>
-            При резком сжатии воздуха его внутренняя энергия
-            <select id="physicsV1Q5">
-                <option selected disabled></option>
-                <option value="1">уменьшается</option>
-                <option value="2">увеличивается</option>
-                <option value="3">не изменяется</option>
-                <option value="4">может как увеличиваться, так и уменьшаться — в зависимости от быстроты сжатия</option>
-            </select>
-        </li>
+    <li>
+        <p>Внутренняя энергия тела зависит</p>
+        <div class="grid1x4" id="physicsV1Q1" data="radio">
+            <div class="box">
+                <div>
+                    <label class="container">только от температуры этого тела
+                        <input type="radio" value="1" name="physicsV1Q1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">только от массы этого тела
+                        <input type="radio" value="2" name="physicsV1Q1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">только от агрегатного состояния вещества
+                        <input type="radio" value="3" name="physicsV1Q1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">от температуры, массы тела и агрегатного состояния вещества
+                        <input type="radio" value="4" name="physicsV1Q1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>В каком агрегатном состоянии находится вещество, если оно имеет собственные форму и объем?</p>
+        <div class="grid1x4" id="physicsV1Q2" data="radio">
+            <div class="box">
+                <div>
+                    <label class="container">только в твердом
+                        <input type="radio" value="1" name="physicsV1Q2">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">только в жидком
+                        <input type="radio" value="2" name="physicsV1Q2">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">только в газообразном
+                        <input type="radio" value="3" name="physicsV1Q2">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">в твердом или в жидком
+                        <input type="radio" value="4" name="physicsV1Q2">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Турист разжёг костёр на привале в безветренную погоду. Находясь на некотором расстоянии от костра, турист ощущает тепло.
+            Каким способом в основном происходит процесс передачи теплоты от костра к туристу?</p>
+        <div class="grid1x4" id="physicsV1Q3" data="radio">
+            <div class="box">
+                <div>
+                    <label class="container">путём теплопроводности
+                        <input type="radio" value="1" name="physicsV1Q3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">путём конвекции
+                        <input type="radio" value="2" name="physicsV1Q3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">путём излучения
+                        <input type="radio" value="3" name="physicsV1Q3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">путём теплопроводности и конвекции
+                        <input type="radio" value="4" name="physicsV1Q3">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>Какие изменения энергии происходят в куске льда при его таянии?</p>
+        <div class="grid1x4" id="physicsV1Q4" data="radio">
+            <div class="box">
+                <div>
+                    <label class="container">увеличивается кинетическая энергия куска льда
+                        <input type="radio" value="1" name="physicsV1Q4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">уменьшается внутренняя энергия куска льда
+                        <input type="radio" value="2" name="physicsV1Q4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">увеличивается внутренняя энергия куска льда
+                        <input type="radio" value="3" name="physicsV1Q4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">увеличивается внутренняя энергия воды, из которой состоит кусок льда
+                        <input type="radio" value="4" name="physicsV1Q4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p>При резком сжатии воздуха его внутренняя энергия</p>
+        <div class="grid1x4" id="physicsV1Q5" data="radio">
+            <div class="box">
+                <div>
+                    <label class="container">уменьшается
+                        <input type="radio" value="1" name="physicsV1Q5">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">увеличивается
+                        <input type="radio" value="2" name="physicsV1Q5">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">не изменяется
+                        <input type="radio" value="3" name="physicsV1Q5">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <label class="container">может как увеличиваться, так и уменьшаться — в зависимости от быстроты сжатия
+                        <input type="radio" value="4" name="physicsV1Q5">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </li>
     </ol>
     <p>
     <div onclick="check('physicsV1')">Проверить</div>
@@ -1572,101 +1842,301 @@
                 соответствие между физическими величинами и формулами, по которым рассчитываются соответствующие
                 величины. I1 и I2— силы тока, U1 и U2— напряжения на этих сопротивлениях.
             </p>
-            <p>
-                сила тока в общей цепи
-                <select id="physicsV3Q1">
-                    <option selected disabled></option>
-                    <option value="1">U = U1 + U2</option>
-                    <option value="2">I = I1 + I2</option>
-                    <option value="3">R = r &#8260; 2</option>
-                    <option value="4">R = 2r</option>
-                </select>
-            </p>
-            <p>
-                общее сопротивление участка цепи
-                <select id="physicsV3Q2">
-                    <option selected disabled></option>
-                    <option value="1">U = U1 + U2</option>
-                    <option value="2">I = I1 + I2</option>
-                    <option value="3">R = r &#8260; 2</option>
-                    <option value="4">R = 2r</option>
-                </select>
-            </p>
+            <p>сила тока в общей цепи</p>
+            <div class="grid1x4" id="physicsV3Q1" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">U = U1 + U2
+                            <input type="radio" value="1" name="physicsV3Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">I = I1 + I2
+                            <input type="radio" value="2" name="physicsV3Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">R = r &#8260; 2
+                            <input type="radio" value="3" name="physicsV3Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">R = 2r
+                            <input type="radio" value="4" name="physicsV3Q1">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>общее сопротивление участка цепи</p>
+            <div class="grid1x4" id="physicsV3Q2" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">U = U1 + U2
+                            <input type="radio" value="1" name="physicsV3Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">I = I1 + I2
+                            <input type="radio" value="2" name="physicsV3Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">R = r &#8260; 2
+                            <input type="radio" value="3" name="physicsV3Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">R = 2r
+                            <input type="radio" value="4" name="physicsV3Q2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>
                 Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
             </p>
-            <p>
-                сила тока
-                <select id="physicsV3Q3">
-                    <option selected disabled></option>
-                    <option value="1">q &#8260; t</option>
-                    <option value="2">q * U</option>
-                    <option value="3">U * I</option>
-                    <option value="4">U &#8260; I</option>
-                </select>
-            </p>
-            <p>
-                мощность тока
-                <select id="physicsV3Q4">
-                    <option selected disabled></option>
-                    <option value="1">q &#8260; t</option>
-                    <option value="2">q * U</option>
-                    <option value="3">U * I</option>
-                    <option value="4">U &#8260; I</option>
-                </select>
-            </p>
+            <p>сила тока</p>
+            <div class="grid1x4" id="physicsV3Q3" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">q &#8260; t
+                            <input type="radio" value="1" name="physicsV3Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">q * U
+                            <input type="radio" value="2" name="physicsV3Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">U * I
+                            <input type="radio" value="3" name="physicsV3Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">U &#8260; I
+                            <input type="radio" value="4" name="physicsV3Q3">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>мощность тока</p>
+            <div class="grid1x4" id="physicsV3Q4" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">q &#8260; t
+                            <input type="radio" value="1" name="physicsV3Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">q * U
+                            <input type="radio" value="2" name="physicsV3Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">U * I
+                            <input type="radio" value="3" name="physicsV3Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">U &#8260; I
+                            <input type="radio" value="4" name="physicsV3Q4">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>
                 Установите соответствие между формулами для расчёта физических величин и названиями этих величин.
             </p>
-            <p>
-                ma
-                <select id="physicsV3Q5">
-                    <option selected disabled></option>
-                    <option value="1">давление тела</option>
-                    <option value="2">модуль равнодействующей силы</option>
-                    <option value="3">механическая энергия</option>
-                    <option value="4">мощность</option>
-                </select>
-            </p>
-            <p>
-                A &#8260; t
-                <select id="physicsV3Q6">
-                    <option selected disabled></option>
-                    <option value="1">давление тела</option>
-                    <option value="2">модуль равнодействующей силы</option>
-                    <option value="3">механическая энергия</option>
-                    <option value="4">мощность</option>
-                </select>
-            </p>
+            <p>ma</p>
+            <div class="grid1x4" id="physicsV3Q5" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">давление тела
+                            <input type="radio" value="1" name="physicsV3Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">модуль равнодействующей силы
+                            <input type="radio" value="2" name="physicsV3Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">механическая энергия
+                            <input type="radio" value="3" name="physicsV3Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">мощность
+                            <input type="radio" value="4" name="physicsV3Q5">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>A &#8260; t<p>
+            <div class="grid1x4" id="physicsV3Q6" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">давление тела
+                            <input type="radio" value="1" name="physicsV3Q6">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">модуль равнодействующей силы
+                            <input type="radio" value="2" name="physicsV3Q6">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">механическая энергия
+                            <input type="radio" value="3" name="physicsV3Q6">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">мощность
+                            <input type="radio" value="4" name="physicsV3Q6">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>
                 Установите соответствие между физическими величинами и формулами, по которым эти величины определяются.
             </p>
-            <p>
-                удельная теплоёмкость вещества
-                <select id="physicsV3Q7">
-                    <option selected disabled></option>
-                    <option value="1">Q &#8260; m*(t2-t1)</option>
-                    <option value="2">&#955;*m</option>
-                    <option value="3">Q &#8260; m</option>
-                    <option value="4">Q*m</option>
-                </select>
-            </p>
-            <p>
-                удельная теплота сгорания топлива
-                <select id="physicsV3Q8">
-                    <option selected disabled></option>
-                    <option value="1">Q &#8260; m*(t2-t1)</option>
-                    <option value="2">&#955;*m</option>
-                    <option value="3">Q &#8260; m</option>
-                    <option value="4">Q*m</option>
-                </select>
-            </p>
+            <p>удельная теплоёмкость вещества</p>
+            <div class="grid1x4" id="physicsV3Q7" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">Q &#8260; m*(t2-t1)
+                            <input type="radio" value="1" name="physicsV3Q7">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">&#955;*m
+                            <input type="radio" value="2" name="physicsV3Q7">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">Q &#8260; m
+                            <input type="radio" value="3" name="physicsV3Q7">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">Q*m
+                            <input type="radio" value="4" name="physicsV3Q7">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>удельная теплота сгорания топлива</p>
+            <div class="grid1x4" id="physicsV3Q8" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">Q &#8260; m*(t2-t1)
+                            <input type="radio" value="1" name="physicsV3Q8">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">&#955;*m
+                            <input type="radio" value="2" name="physicsV3Q8">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">Q &#8260; m
+                            <input type="radio" value="3" name="physicsV3Q8">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">Q*m
+                            <input type="radio" value="4" name="physicsV3Q8">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <p>
@@ -1675,24 +2145,76 @@
             </p>
             <p>
                 2&#960;R &#8260; T
-                <select id="physicsV3Q9">
-                    <option selected disabled></option>
-                    <option value="1">число оборотов за единицу времени</option>
-                    <option value="2">угловая скорость</option>
-                    <option value="3">линейная скорость</option>
-                    <option value="4">частота вращения</option>
-                </select>
             </p>
-            <p>
-                2&#960; &#8260; T
-                <select id="physicsV3Q10">
-                    <option selected disabled></option>
-                    <option value="1">число оборотов за единицу времени</option>
-                    <option value="2">угловая скорость</option>
-                    <option value="3">линейная скорость</option>
-                    <option value="4">частота вращения</option>
-                </select>
-            </p>
+            <div class="grid1x4" id="physicsV3Q9" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">число оборотов за единицу времени
+                            <input type="radio" value="1" name="physicsV3Q9">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">угловая скорость
+                            <input type="radio" value="2" name="physicsV3Q9">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">линейная скорость
+                            <input type="radio" value="3" name="physicsV3Q9">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">частота вращения
+                            <input type="radio" value="4" name="physicsV3Q9">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p>2&#960; &#8260; T</p>
+            <div class="grid1x4" id="physicsV3Q10" data="radio">
+                <div class="box">
+                    <div>
+                        <label class="container">число оборотов за единицу времени
+                            <input type="radio" value="1" name="physicsV3Q10">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">угловая скорость
+                            <input type="radio" value="2" name="physicsV3Q10">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">линейная скорость
+                            <input type="radio" value="3" name="physicsV3Q10">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label class="container">частота вращения
+                            <input type="radio" value="4" name="physicsV3Q10">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </li>
     </ol>
     <p>
@@ -2139,7 +2661,7 @@
 </div>
 <div id="testFailedMessage" class="messageBoundingBox" onclick="hideMe(this)">
     <div class="centered">
-        <h2>Тест провален</h2>
+        <h2>Тест не пройден</h2>
     </div>
 </div>
 </body>
