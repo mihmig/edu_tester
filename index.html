@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="stylesheet" href="checkbox.css" type="text/css">
     <link rel="stylesheet" href="radio_button.css" type="text/css">
@@ -45,39 +46,39 @@
 </div>
 <div id="informatics" class="page">
     <p>
-    <div onclick="openPage('infV1')">Тест 1</div>
+    <div class="button" onclick="openPage('infV1')">Тест 1</div>
     </p>
     <p>
-    <div onclick="openPage('infV2')">Тест 2</div>
+    <div class="button" onclick="openPage('infV2')">Тест 2</div>
     </p>
     <p>
-    <div onclick="openPage('infV3')">Тест 3</div>
+    <div class="button" onclick="openPage('infV3')">Тест 3</div>
     </p>
     <p>
-    <div onclick="openPage('infV4')">Тест 4</div>
+    <div class="button" onclick="openPage('infV4')">Тест 4</div>
     </p>
     <p>
-    <div onclick="openPage('infV5')">Тест 5</div>
+    <div class="button" onclick="openPage('infV5')">Тест 5</div>
     </p>
-    <div onclick="openPage('home')">Тест</div>
+    <div class="button" onclick="openPage('home')">Тест</div>
 </div>
 <div id="physics" class="page">
     <p>
-    <div onclick="openPage('physicsV1')">Тест 1</div>
+    <div class="button" onclick="openPage('physicsV1')">Тест 1</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV2')">Тест 2</div>
+    <div class="button" onclick="openPage('physicsV2')">Тест 2</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV3')">Тест 3</div>
+    <div class="button" onclick="openPage('physicsV3')">Тест 3</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV4')">Тест 4</div>
+    <div class="button" onclick="openPage('physicsV4')">Тест 4</div>
     </p>
     <p>
-    <div onclick="openPage('physicsV5')">Тест 5</div>
+    <div class="button" onclick="openPage('physicsV5')">Тест 5</div>
     </p>
-    <div onclick="openPage('home')">Назад</div>
+    <div class="button" onclick="openPage('home')">Назад</div>
 </div>
 <div id="mathV1" class="page">
     <p>
@@ -269,10 +270,10 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('mathV1')">Проверить</div>
+    <div class="button" onclick="check('mathV1')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('math')">Назад</div>
+    <div class="button" onclick="openPage('math')">Назад</div>
     </p>
 </div>
 <div id="mathV2" class="page">
@@ -465,10 +466,10 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('mathV2')">Проверить</div>
+    <div class="button" onclick="check('mathV2')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('math')">Назад</div>
+    <div class="button" onclick="openPage('math')">Назад</div>
     </p>
 </div>
 <div id="mathV3" class="page">
@@ -587,25 +588,25 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('mathV3')">Проверить</div>
+    <div class="button" onclick="check('mathV3')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('math')">Назад</div>
+    <div class="button" onclick="openPage('math')">Назад</div>
     </p>
 </div>
 <div id="mathV4" class="page">
     <ol>
-        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" size="15" id="mathV4Q1" data="text"></li>
-        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" size="15" id="mathV4Q2" data="text"></li>
-        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" size="15" id="mathV4Q3" data="text"></li>
-        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" size="15" id="mathV4Q4" data="text"></li>
-        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" size="15" id="mathV4Q5" data="text"></li>
+        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" class="answer" data="text" id="mathV4Q1" data="text"></li>
+        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" class="answer" data="text" id="mathV4Q2" data="text"></li>
+        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" class="answer" data="text" id="mathV4Q3" data="text"></li>
+        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" class="answer" data="text" id="mathV4Q4" data="text"></li>
+        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" class="answer" data="text" id="mathV4Q5" data="text"></li>
     </ol>
     <p>
-    <div onclick="check('mathV4')">Проверить</div>
+    <div class="button" onclick="check('mathV4')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('math')">Назад</div>
+    <div class="button" onclick="openPage('math')">Назад</div>
     </p>
 </div>
 <div id="mathV5" class="page">
@@ -807,10 +808,10 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('mathV5')">Проверить</div>
+    <div class="button" onclick="check('mathV5')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('math')">Назад</div>
+    <div class="button" onclick="openPage('math')">Назад</div>
     </p>
 </div>
 <div id="infV1" class="page">
@@ -819,34 +820,39 @@
         <li>
             Напишите наименьшее целое число x, для которого истинно высказывание:
             не (X &lt; 2) и (X &lt; 5).
-            <input type="text" size="15" id="infV1Q1">
+            </br>
+            <input type="text" class="answer" data="text" id="infV1Q1">
         </li>
         <li>
             Напишите наименьшее целое число x, для которого истинно высказывание:
             не (X &lt; 7) и (X чётное).
-            <input type="text" size="15" id="infV1Q2">
+            </br>
+            <input type="text" class="answer" data="text" id="infV1Q2">
         </li>
         <li>
             Напишите наибольшее целое число x, для которого истинно высказывание:
             не (X &le; 15) и (X &lt; 20).
-            <input type="text" size="15" id="infV1Q3">
+            </br>
+            <input type="text" class="answer" data="text" id="infV1Q3">
         </li>
         <li>
             Напишите наибольшее целое число x, для которого истинно высказывание:
             не (X &le; 11) и не (X &ge; 17) и (X нечётное).
-            <input type="text" size="15" id="infV1Q4">
+            </br>
+            <input type="text" class="answer" data="text" id="infV1Q4">
         </li>
         <li>
             Напишите наименьшее натуральное трёхзначное число, для которого истинно высказывание:
             не (Число нечётное) и (Число кратно 3).
-            <input type="text" size="15" id="infV1Q5">
+            </br>
+            <input type="text" class="answer" data="text" id="infV1Q5">
         </li>
     </ol>
     <p>
-    <div onclick="check('infV1')">Проверить</div>
+    <div class="button" onclick="check('infV1')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('informatics')">Назад</div>
+    <div class="button" onclick="openPage('informatics')">Назад</div>
     </p>
 </div>
 <div id="infV2" class="page">
@@ -859,7 +865,7 @@
             <p>(b - неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 7 в число 51. Определите значение b <input type="text" size="15" id="infV2Q1">.</p>
+                переводит число 7 в число 51. Определите значение b <input type="text" class="answer" data="text" id="infV2Q1">.</p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -868,7 +874,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b.
                 Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 63 в число 11. Определите значение b <input type="text" size="15" id="infV2Q2">.</p>
+                переводит число 63 в число 11. Определите значение b <input type="text" class="answer" data="text" id="infV2Q2">.</p>
         </li>
         <li>
             <p>У исполнителя Омега две команды, которым присвоены номера:</p>
@@ -877,7 +883,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа
-                12111 переводит число 9 в число 77. Определите значение b <input type="text" size="15" id="infV2Q3">.
+                12111 переводит число 9 в число 77. Определите значение b <input type="text" class="answer" data="text" id="infV2Q3">.
             </p>
         </li>
         <li>
@@ -886,7 +892,7 @@
             <p>2 прибавь 3</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм
                 получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд
-                <input type="text" size="15" id="infV2Q4">.</p>
+                <input type="text" class="answer" data="text" id="infV2Q4">.</p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -895,14 +901,14 @@
             <p>(b — неизвестное натуральное число).</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для
                 исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в
-                число 37. Определите значение b <input type="text" size="15" id="infV2Q5">.</p>
+                число 37. Определите значение b <input type="text" class="answer" data="text" id="infV2Q5">.</p>
         </li>
     </ol>
     <p>
-    <div onclick="check('infV2')">Проверить</div>
+    <div class="button" onclick="check('infV2')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('informatics')">Назад</div>
+    <div class="button" onclick="openPage('informatics')">Назад</div>
     </p>
 </div>
 <div id="infV3" class="page">
@@ -934,7 +940,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Рыбка?
-                <input type="text" size="15" id="infV3Q1">
+                <input type="text" class="answer" data="text" id="infV3Q1">
             </p>
         </li>
         <li>
@@ -963,7 +969,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Вега&amp;Арктур ?
-                <input type="text" size="15" id="infV3Q2">
+                <input type="text" class="answer" data="text" id="infV3Q2">
             </p>
         </li>
         <li>
@@ -992,7 +998,7 @@
                 </tr>
             </table>
             <p>Сколько страниц (в тысячах) будет найдено по запросу Фрегат?
-                <input type="text" size="15" id="infV3Q3">
+                <input type="text" class="answer" data="text" id="infV3Q3">
             </p>
         </li>
         <li>
@@ -1021,7 +1027,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Хорватия?
-                <input type="text" size="15" id="infV3Q4">
+                <input type="text" class="answer" data="text" id="infV3Q4">
             </p>
         </li>
         <li>
@@ -1051,15 +1057,15 @@
             </table>
             <p>
                 Какое количество страниц (в тысячах) будет найдено по запросу Лилия | Цветок?
-                <input type="text" size="15" id="infV3Q5">
+                <input type="text" class="answer" data="text" id="infV3Q5">
             </p>
         </li>
     </ol>
     <p>
-    <div onclick="check('infV3')">Проверить</div>
+    <div class="button" onclick="check('infV3')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('informatics')">Назад</div>
+    <div class="button" onclick="openPage('informatics')">Назад</div>
     </p>
 </div>
 <div id="infV4" class="page">
@@ -1125,7 +1131,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" size="15" id="infV4Q1">
+                <input type="text" class="answer" data="text" id="infV4Q1">
             </p>
         </li>
         <li>
@@ -1188,7 +1194,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" size="15" id="infV4Q2">
+                <input type="text" class="answer" data="text" id="infV4Q2">
             </p>
         </li>
         <li>
@@ -1266,7 +1272,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" size="15" id="infV4Q3">
+                <input type="text" class="answer" data="text" id="infV4Q3">
             </p>
         </li>
         <li>
@@ -1316,7 +1322,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и C. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" size="15" id="infV4Q4">
+                <input type="text" class="answer" data="text" id="infV4Q4">
             </p>
         </li>
         <li>
@@ -1394,15 +1400,15 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" size="15" id="infV4Q5">
+                <input type="text" class="answer" data="text" id="infV4Q5">
             </p>
         </li>
     </ol>
     <p>
-    <div onclick="check('infV4')">Проверить</div>
+    <div class="button" onclick="check('infV4')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('informatics')">Назад</div>
+    <div class="button" onclick="openPage('informatics')">Назад</div>
     </p>
 </div>
 <div id="infV5" class="page">
@@ -1410,36 +1416,36 @@
     <ol>
         <li>
             Переведите двоичное число 1100110 в десятичную систему счисления.
-            <input type="text" size="15" id="infV5Q1">
+            <input type="text" class="answer" data="text" id="infV5Q1">
         </li>
         <li>
             Переведите двоичное число 1110110 в десятичную систему счисления.
-            <input type="text" size="15" id="infV5Q2">
+            <input type="text" class="answer" data="text" id="infV5Q2">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
             запишите его в ответе в десятичной системе счисления.
             14(16), 26(8), 11000(2).
-            <input type="text" size="15" id="infV5Q3">
+            <input type="text" class="answer" data="text" id="infV5Q3">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
             запишите его в ответе в десятичной системе счисления.
             50(16), 106(8), 1001010(2).
-            <input type="text" size="15" id="infV5Q4">
+            <input type="text" class="answer" data="text" id="infV5Q4">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите минимальное и запишите
             его в ответе в десятичной системе счисления.
             32(16), 60(8), 110110(2).
-            <input type="text" size="15" id="infV5Q5">
+            <input type="text" class="answer" data="text" id="infV5Q5">
         </li>
     </ol>
     <p>
-    <div onclick="check('infV5')">Проверить</div>
+    <div class="button" onclick="check('infV5')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('informatics')">Назад</div>
+    <div class="button" onclick="openPage('informatics')">Назад</div>
     </p>
 </div>
 <div id="physicsV1" class="page">
@@ -1633,10 +1639,10 @@
     </li>
     </ol>
     <p>
-    <div onclick="check('physicsV1')">Проверить</div>
+    <div class="button" onclick="check('physicsV1')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('physics')">Назад</div>
+    <div class="button" onclick="openPage('physics')">Назад</div>
     </p>
 </div>
 <div id="physicsV2" class="page">
@@ -1827,10 +1833,10 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('physicsV2')">Проверить</div>
+    <div class="button" onclick="check('physicsV2')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('physics')">Назад</div>
+    <div class="button" onclick="openPage('physics')">Назад</div>
     </p>
 </div>
 <div id="physicsV3" class="page">
@@ -2218,10 +2224,10 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('physicsV3')">Проверить</div>
+    <div class="button" onclick="check('physicsV3')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('physics')">Назад</div>
+    <div class="button" onclick="openPage('physics')">Назад</div>
     </p>
 </div>
 <div id="physicsV4" class="page">
@@ -2625,32 +2631,32 @@
         </li>
     </ol>
     <p>
-    <div onclick="check('physicsV4')">Проверить</div>
+    <div class="button" onclick="check('physicsV4')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('physics')">Назад</div>
+    <div class="button" onclick="openPage('physics')">Назад</div>
     </p>
 </div>
 <div id="physicsV5" class="page">
     <ol>
         <li>3 л воды, взятой при температуре 20 &#8451;, смешали с водой при температуре 100 &#8451;.
             Температура смеси оказалась равной 40 &#8451;. Чему равна масса горячей воды? Теплообменом с окружающей средой пренебречь.
-            <input type="text" size="15" id="physicsV5Q1"></li>
+            <input type="text" class="answer" data="text" id="physicsV5Q1"></li>
         <li>Сколько литров воды при 83 &#8451; нужно добавить к 4 л воды при 20 &#8451;, чтобы получить воду температурой 65 &#8451;? Теплообменом с окружающей средой пренебречь.
-            <input type="text" size="15" id="physicsV5Q2"></li>
-        <li>Какое количество теплоты выделится при охлаждении и кристаллизации воды массой 1 кг, взятой при температуре 10 &#8451;? Ответ дайте в килоджоулях. Удельная теплоёмкость воды 4,2 кДж/(кг·&#8451;), удельная теплота плавления льда 330 кДж/кг.<input type="text" size="15" id="physicsV5Q3"></li>
+            <input type="text" class="answer" data="text" id="physicsV5Q2"></li>
+        <li>Какое количество теплоты выделится при охлаждении и кристаллизации воды массой 1 кг, взятой при температуре 10 &#8451;? Ответ дайте в килоджоулях. Удельная теплоёмкость воды 4,2 кДж/(кг·&#8451;), удельная теплота плавления льда 330 кДж/кг.<input type="text" class="answer" data="text" id="physicsV5Q3"></li>
         <li>Двигатель трактора совершил полезную работу 23 МДж, израсходовав при этом 2 кг бензина.
             Найдите КПД двигателя трактора (удельную теплоту сгорания бензина принять равной 46 МДж/кг). Ответ дайте в %.
-            <input type="text" size="15" id="physicsV5Q4"></li>
+            <input type="text" class="answer" data="text" id="physicsV5Q4"></li>
         <li>В тепловой машине потери энергии составляют 3/5 от энергии, выделяющейся при сгорании топлива.
             Чему равен КПД этой тепловой машины? Ответ выразите в процентах.
-            <input type="text" size="15" id="physicsV5Q5"></li>
+            <input type="text" class="answer" data="text" id="physicsV5Q5"></li>
     </ol>
     <p>
-    <div onclick="check('physicsV5')">Проверить</div>
+    <div class="button" onclick="check('physicsV5')">Проверить</div>
     </p>
     <p>
-    <div onclick="openPage('physics')">Назад</div>
+    <div class="button" onclick="openPage('physics')">Назад</div>
     </p>
 </div>
 
