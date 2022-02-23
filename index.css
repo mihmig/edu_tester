@@ -34,6 +34,14 @@ input.answer {
     border: 1px solid black;
 }
 
+select.answer {
+    margin: 0.1em;
+    height: 1.5em;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid black;
+}
+
 table {
     border-color: black;
     border-collapse: collapse;
