@@ -567,11 +567,14 @@
 </div>
 <div id="mathV4" class="page">
     <ol>
-        <li>Найдите значение выражения 24 &#8260; 3,2 * 2 <input type="text" class="answer" data="text" id="mathV4Q1" data="text"></li>
-        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="text" class="answer" data="text" id="mathV4Q2" data="text"></li>
-        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="text" class="answer" data="text" id="mathV4Q3" data="text"></li>
-        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" class="answer" data="text" id="mathV4Q4" data="text"></li>
-        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" class="answer" data="text" id="mathV4Q5" data="text"></li>
+        <li>
+            <label for="mathV4Q1">Найдите значение выражения 24 &#8260;3,2 * 2 </label>
+            <input type="number" class="answer" data="text" id="mathV4Q1" data="text">
+        </li>
+        <li>Найдите значение выражения 21 &#8260; 0,6 *2,8 <input type="number" class="answer" data="text" id="mathV4Q2" data="text"></li>
+        <li>Найдите значение выражения 1 &#8260; 4 + 0,7 <input type="number" class="answer" data="text" id="mathV4Q3" data="text"></li>
+        <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="number" class="answer" data="text" id="mathV4Q4" data="text"></li>
+        <li>Найдите значение выражения 0,007 · 7 · 700 <input type="number" class="answer" data="text" id="mathV4Q5" data="text"></li>
     </ol>
     <div class="button" onclick="check('mathV4')">Проверить</div>
     <div class="button" onclick="openPage('math')">Назад</div>
@@ -783,32 +786,32 @@
         <li>
             Напишите наименьшее целое число x, для которого истинно высказывание:
             не (X &lt; 2) и (X &lt; 5).
-            </br>
-            <input type="text" class="answer" data="text" id="infV1Q1">
+            <br>
+            <input type="number" class="answer" data="text" id="infV1Q1">
         </li>
         <li>
             Напишите наименьшее целое число x, для которого истинно высказывание:
             не (X &lt; 7) и (X чётное).
-            </br>
-            <input type="text" class="answer" data="text" id="infV1Q2">
+            <br>
+            <input type="number" class="answer" data="text" id="infV1Q2">
         </li>
         <li>
             Напишите наибольшее целое число x, для которого истинно высказывание:
             не (X &le; 15) и (X &lt; 20).
-            </br>
-            <input type="text" class="answer" data="text" id="infV1Q3">
+            <br>
+            <input type="number" class="answer" data="text" id="infV1Q3">
         </li>
         <li>
             Напишите наибольшее целое число x, для которого истинно высказывание:
             не (X &le; 11) и не (X &ge; 17) и (X нечётное).
-            </br>
-            <input type="text" class="answer" data="text" id="infV1Q4">
+            <br>
+            <input type="number" class="answer" data="text" id="infV1Q4">
         </li>
         <li>
             Напишите наименьшее натуральное трёхзначное число, для которого истинно высказывание:
             не (Число нечётное) и (Число кратно 3).
-            </br>
-            <input type="text" class="answer" data="text" id="infV1Q5">
+            <br>
+            <input type="number" class="answer" data="text" id="infV1Q5">
         </li>
     </ol>
     <div class="button" onclick="check('infV1')">Проверить</div>
@@ -823,7 +826,7 @@
             <p>(b - неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 7 в число 51. Определите значение b <input type="text" class="answer" data="text" id="infV2Q1"></p>
+                переводит число 7 в число 51. Определите значение b <input type="number" class="answer" data="text" id="infV2Q1"></p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -832,7 +835,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b.
                 Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 63 в число 11. Определите значение b <input type="text" class="answer" data="text" id="infV2Q2"></p>
+                переводит число 63 в число 11. Определите значение b <input type="number" class="answer" data="text" id="infV2Q2"></p>
         </li>
         <li>
             <p>У исполнителя Омега две команды, которым присвоены номера:</p>
@@ -841,7 +844,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа
-                12111 переводит число 9 в число 77. Определите значение b <input type="text" class="answer" data="text" id="infV2Q3">
+                12111 переводит число 9 в число 77. Определите значение b <input type="number" class="answer" data="text" id="infV2Q3">
             </p>
         </li>
         <li>
@@ -850,7 +853,7 @@
             <p>2 прибавь 3</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм
                 получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд
-                <input type="text" class="answer" data="text" id="infV2Q4"></p>
+                <input type="number" class="answer" data="text" id="infV2Q4"></p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -859,7 +862,7 @@
             <p>(b — неизвестное натуральное число).</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для
                 исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в
-                число 37. Определите значение b <input type="text" class="answer" data="text" id="infV2Q5"></p>
+                число 37. Определите значение b <input type="number" class="answer" data="text" id="infV2Q5"></p>
         </li>
     </ol>
     <div class="button" onclick="check('infV2')">Проверить</div>
@@ -892,7 +895,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Рыбка?
-                <input type="text" class="answer" data="text" id="infV3Q1">
+                <input type="number" class="answer" data="text" id="infV3Q1">
             </p>
         </li>
         <li>
@@ -920,7 +923,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Вега&amp;Арктур ?
-                <input type="text" class="answer" data="text" id="infV3Q2">
+                <input type="number" class="answer" data="text" id="infV3Q2">
             </p>
         </li>
         <li>
@@ -948,7 +951,7 @@
                 </tr>
             </table>
             <p>Сколько страниц (в тысячах) будет найдено по запросу Фрегат?
-                <input type="text" class="answer" data="text" id="infV3Q3">
+                <input type="number" class="answer" data="text" id="infV3Q3">
             </p>
         </li>
         <li>
@@ -976,7 +979,7 @@
                 </tr>
             </table>
             <p>Какое количество страниц (в тысячах) будет найдено по запросу Хорватия?
-                <input type="text" class="answer" data="text" id="infV3Q4">
+                <input type="number" class="answer" data="text" id="infV3Q4">
             </p>
         </li>
         <li>
@@ -1005,7 +1008,7 @@
             </table>
             <p>
                 Какое количество страниц (в тысячах) будет найдено по запросу Лилия | Цветок?
-                <input type="text" class="answer" data="text" id="infV3Q5">
+                <input type="number" class="answer" data="text" id="infV3Q5">
             </p>
         </li>
     </ol>
@@ -1019,7 +1022,6 @@
                 Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах)
                 приведена в таблице:
             </p>
-            <p>
             <table class="inputData">
                 <thead>
                 <tr>
@@ -1074,7 +1076,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" class="answer" data="text" id="infV4Q1">
+                <input type="number" class="answer" data="text" id="infV4Q1">
             </p>
         </li>
         <li>
@@ -1082,7 +1084,6 @@
                 Между населёнными пунктами А, В, С, D, Е построены дороги, протяжённость которых (в километрах)
                 приведена в таблице:
             </p>
-            <p>
             <table class="inputData">
                 <thead>
                 <tr>
@@ -1137,7 +1138,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и E. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" class="answer" data="text" id="infV4Q2">
+                <input type="number" class="answer" data="text" id="infV4Q2">
             </p>
         </li>
         <li>
@@ -1145,7 +1146,6 @@
                 Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах)
                 приведена в таблице:
             </p>
-            <p>
             <table class="inputData">
                 <thead>
                 <tr>
@@ -1215,7 +1215,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" class="answer" data="text" id="infV4Q3">
+                <input type="number" class="answer" data="text" id="infV4Q3">
             </p>
         </li>
         <li>
@@ -1264,7 +1264,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и C. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" class="answer" data="text" id="infV4Q4">
+                <input type="number" class="answer" data="text" id="infV4Q4">
             </p>
         </li>
         <li>
@@ -1341,7 +1341,7 @@
             </table>
             <p>Определите длину кратчайшего пути между пунктами А и F. Передвигаться можно только по дорогам,
                 протяжённость которых указана в таблице.
-                <input type="text" class="answer" data="text" id="infV4Q5">
+                <input type="number" class="answer" data="text" id="infV4Q5">
             </p>
         </li>
     </ol>
@@ -1352,29 +1352,29 @@
     <ol>
         <li>
             Переведите двоичное число 1100110 в десятичную систему счисления.
-            <input type="text" class="answer" data="text" id="infV5Q1">
+            <input type="number" class="answer" data="text" id="infV5Q1">
         </li>
         <li>
             Переведите двоичное число 1110110 в десятичную систему счисления.
-            <input type="text" class="answer" data="text" id="infV5Q2">
+            <input type="number" class="answer" data="text" id="infV5Q2">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
             запишите его в ответе в десятичной системе счисления.
             14(16), 26(8), 11000(2).
-            <input type="text" class="answer" data="text" id="infV5Q3">
+            <input type="number" class="answer" data="text" id="infV5Q3">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите максимальное и
             запишите его в ответе в десятичной системе счисления.
             50(16), 106(8), 1001010(2).
-            <input type="text" class="answer" data="text" id="infV5Q4">
+            <input type="number" class="answer" data="text" id="infV5Q4">
         </li>
         <li>
             Среди приведённых ниже трёх чисел, записанных в различных системах счисления, найдите минимальное и запишите
             его в ответе в десятичной системе счисления.
             32(16), 60(8), 110110(2).
-            <input type="text" class="answer" data="text" id="infV5Q5">
+            <input type="number" class="answer" data="text" id="infV5Q5">
         </li>
     </ol>
     <div class="button" onclick="check('infV5')">Проверить</div>
@@ -2479,7 +2479,7 @@
                 В воздухе всегда присутствуют водяные пары, концентрация которых может быть различной.
                 Опыт показывает, что концентрация паров не может превышать некоторого максимально возможного значения
                 nmax (для каждой температуры это значение своё).
-                Пары с концентрацией, равной nmax, называются
+                Пары с концентрацией, равной nmax, называются </p>
                 <select class="answer" id="physicsV4Q17">
                     <option selected disabled></option>
                     <option value="1">абсолютный</option>
@@ -2509,7 +2509,6 @@
                 </select>
                 влажностью, которая обозначается буквой &phi;.
                 Её принято измерять в процентах. Из сказанного следует, что &phi;=(n/nmax)·100%.
-            </p>
             <p>
                 Пусть при некоторой температуре t концентрация водяных паров в воздухе равна n, а φ меньше, чем 100%.
                 Если температура будет понижаться, то вместе с ней будет уменьшаться и величина nmax, а значит, &phi;
@@ -2553,16 +2552,17 @@
     <ol>
         <li>3 л воды, взятой при температуре 20 &#8451;, смешали с водой при температуре 100 &#8451;.
             Температура смеси оказалась равной 40 &#8451;. Чему равна масса горячей воды? Теплообменом с окружающей средой пренебречь.
-            <input type="text" class="answer" data="text" id="physicsV5Q1"></li>
+            <input type="number" class="answer" data="text" id="physicsV5Q1"></li>
         <li>Сколько литров воды при 83 &#8451; нужно добавить к 4 л воды при 20 &#8451;, чтобы получить воду температурой 65 &#8451;? Теплообменом с окружающей средой пренебречь.
-            <input type="text" class="answer" data="text" id="physicsV5Q2"></li>
-        <li>Какое количество теплоты выделится при охлаждении и кристаллизации воды массой 1 кг, взятой при температуре 10 &#8451;? Ответ дайте в килоджоулях. Удельная теплоёмкость воды 4,2 кДж/(кг·&#8451;), удельная теплота плавления льда 330 кДж/кг.<input type="text" class="answer" data="text" id="physicsV5Q3"></li>
+            <input type="number" class="answer" data="text" id="physicsV5Q2"></li>
+        <li>Какое количество теплоты выделится при охлаждении и кристаллизации воды массой 1 кг, взятой при температуре 10 &#8451;? Ответ дайте в килоджоулях. Удельная теплоёмкость воды 4,2 кДж/(кг·&#8451;), удельная теплота плавления льда 330 кДж/кг.
+            <input type="number" class="answer" data="text" id="physicsV5Q3"></li>
         <li>Двигатель трактора совершил полезную работу 23 МДж, израсходовав при этом 2 кг бензина.
             Найдите КПД двигателя трактора (удельную теплоту сгорания бензина принять равной 46 МДж/кг). Ответ дайте в %.
-            <input type="text" class="answer" data="text" id="physicsV5Q4"></li>
+            <input type="number" class="answer" data="text" id="physicsV5Q4"></li>
         <li>В тепловой машине потери энергии составляют 3/5 от энергии, выделяющейся при сгорании топлива.
             Чему равен КПД этой тепловой машины? Ответ выразите в процентах.
-            <input type="text" class="answer" data="text" id="physicsV5Q5"></li>
+            <input type="number" class="answer" data="text" id="physicsV5Q5"></li>
     </ol>
     <div class="button" onclick="check('physicsV5')">Проверить</div>
     <div class="button" onclick="openPage('physics')">Назад</div>
