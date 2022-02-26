@@ -157,6 +157,7 @@ function init() {
 function openPage(id){
     hideAll();
     document.getElementById(id).style.display = 'block';
+    window.scrollTo(0,0);
 }
 
 function hideAll() {

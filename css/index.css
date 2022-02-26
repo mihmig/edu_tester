@@ -108,12 +108,8 @@ select{
 .box { margin: 20px; }
 
 #update {
+    margin: 1em;
     color: #cccccc;
-    overflow: hidden;
     text-align: center;
     font-size: 24px;
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    bottom: 0;
 }
