@@ -2,12 +2,31 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href="checkbox.css" type="text/css">
-    <link rel="stylesheet" href="radio_button.css" type="text/css">
-    <script src="index.js?45682347652875628"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/checkbox.css" type="text/css">
+    <link rel="stylesheet" href="css/radio_button.css" type="text/css">
     <title>Тесты</title>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+            });
+        }
+    </script>
+    <script src="js/index.js?45682347652875628"></script>
 </head>
 <body onload="init();">
 <div id="home" class="page">
