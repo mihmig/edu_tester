@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="css/checkbox.css" type="text/css">
     <link rel="stylesheet" href="css/radio_button.css" type="text/css">
     <title>Тесты</title>
+    <link rel="manifest" href="manifest.json">
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
@@ -28,79 +28,43 @@
     </script>
     <script src="js/index.js?45682347652875628"></script>
 </head>
-<body onload="init();">
+<body>
 <div id="home" class="page">
     <p class="pageName">
         Выберите предмет:
     </p>
-    <p>
     <div class="button" id="mathButton" onclick="openPage('math')">Математика</div>
-    </p>
-    <p>
     <div class="button" id="informaticsButton" onclick="openPage('informatics')">Информатика</div>
-    </p>
-    <p>
     <div class="button" id="physicsButton" onclick="openPage('physics')">Физика</div>
-    </p>
+    <div id="update">
+        <a href="javascript:void(0);" onclick="update();">Обновить приложение</a>
+    </div>
 </div>
 <div id="math" class="page">
-    <p>
     <div class="button" onclick="openPage('mathV1')">Тест 1</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('mathV2')">Тест 2</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('mathV3')">Тест 3</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('mathV4')">Тест 4</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('mathV5')">Тест 5</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('home')">Назад</div>
-    </p>
 </div>
 <div id="informatics" class="page">
-    <p>
     <div class="button" onclick="openPage('infV1')">Тест 1</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('infV2')">Тест 2</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('infV3')">Тест 3</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('infV4')">Тест 4</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('infV5')">Тест 5</div>
-    </p>
-    <div class="button" onclick="openPage('home')">Тест</div>
+    <div class="button" onclick="openPage('home')">Назад</div>
 </div>
 <div id="physics" class="page">
-    <p>
     <div class="button" onclick="openPage('physicsV1')">Тест 1</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physicsV2')">Тест 2</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physicsV3')">Тест 3</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physicsV4')">Тест 4</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physicsV5')">Тест 5</div>
-    </p>
     <div class="button" onclick="openPage('home')">Назад</div>
 </div>
 <div id="mathV1" class="page">
-    <p>
     <ol>
         <li>
             <p>Известно, что a &lt; b &lt; 0. Выберите наименьшее из чисел.</p>
@@ -288,12 +252,8 @@
             </div>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('mathV1')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('math')">Назад</div>
-    </p>
 </div>
 <div id="mathV2" class="page">
     <ol>
@@ -484,12 +444,8 @@
             </div>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('mathV2')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('math')">Назад</div>
-    </p>
 </div>
 <div id="mathV3" class="page">
     <ol>
@@ -606,12 +562,8 @@
             </div>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('mathV3')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('math')">Назад</div>
-    </p>
 </div>
 <div id="mathV4" class="page">
     <ol>
@@ -621,12 +573,8 @@
         <li>Найдите значение выражения 12 &#8260; 20 * 3 <input type="text" class="answer" data="text" id="mathV4Q4" data="text"></li>
         <li>Найдите значение выражения 0,007 · 7 · 700 <input type="text" class="answer" data="text" id="mathV4Q5" data="text"></li>
     </ol>
-    <p>
     <div class="button" onclick="check('mathV4')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('math')">Назад</div>
-    </p>
 </div>
 <div id="mathV5" class="page">
     <ol>
@@ -826,12 +774,8 @@
             </div>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('mathV5')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('math')">Назад</div>
-    </p>
 </div>
 <div id="infV1" class="page">
     <p>
@@ -867,15 +811,10 @@
             <input type="text" class="answer" data="text" id="infV1Q5">
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('infV1')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('informatics')">Назад</div>
-    </p>
 </div>
 <div id="infV2" class="page">
-    <p>
     <ol>
         <li>
             <p>У исполнителя Бета две команды, которым присвоены номера:</p>
@@ -884,7 +823,7 @@
             <p>(b - неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Бета увеличивает число на экране на 2, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Бета — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 7 в число 51. Определите значение b <input type="text" class="answer" data="text" id="infV2Q1">.</p>
+                переводит число 7 в число 51. Определите значение b <input type="text" class="answer" data="text" id="infV2Q1"></p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -893,7 +832,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Сигма увеличивает число на экране на 1, а выполняя вторую, делит это число на b.
                 Программа для исполнителя Сигма — это последовательность номеров команд. Известно, что программа 12111
-                переводит число 63 в число 11. Определите значение b <input type="text" class="answer" data="text" id="infV2Q2">.</p>
+                переводит число 63 в число 11. Определите значение b <input type="text" class="answer" data="text" id="infV2Q2"></p>
         </li>
         <li>
             <p>У исполнителя Омега две команды, которым присвоены номера:</p>
@@ -902,7 +841,7 @@
             <p>(b — неизвестное натуральное число; b &ge; 2).</p>
             <p>Выполняя первую из них, Омега увеличивает число на экране на 4, а выполняя вторую, умножает это число на
                 b. Программа для исполнителя Омега — это последовательность номеров команд. Известно, что программа
-                12111 переводит число 9 в число 77. Определите значение b <input type="text" class="answer" data="text" id="infV2Q3">.
+                12111 переводит число 9 в число 77. Определите значение b <input type="text" class="answer" data="text" id="infV2Q3">
             </p>
         </li>
         <li>
@@ -911,7 +850,7 @@
             <p>2 прибавь 3</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая увеличивает его на 3. Составьте алгоритм
                 получения из числа 1 числа 25, содержащий не более 5 команд. В ответе запишите только номера команд
-                <input type="text" class="answer" data="text" id="infV2Q4">.</p>
+                <input type="text" class="answer" data="text" id="infV2Q4"></p>
         </li>
         <li>
             <p>У исполнителя Сигма две команды, которым присвоены номера:</p>
@@ -920,18 +859,13 @@
             <p>(b — неизвестное натуральное число).</p>
             <p>Первая из них возводит число на экране во вторую степень, вторая прибавляет к числу b. Программа для
                 исполнителя — это последовательность номеров команд. Известно, что программа 12212 переводит число 2 в
-                число 37. Определите значение b <input type="text" class="answer" data="text" id="infV2Q5">.</p>
+                число 37. Определите значение b <input type="text" class="answer" data="text" id="infV2Q5"></p>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('infV2')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('informatics')">Назад</div>
-    </p>
 </div>
 <div id="infV3" class="page">
-    <p>
     <ol>
         <li>
             <p>
@@ -939,7 +873,6 @@
                 для обозначения логической операции "и" — символ "&".
                 В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
             </p>
-            <p>
             <table class="inputData">
                 <tr>
                     <td>Запрос</td>
@@ -968,7 +901,6 @@
                 для обозначения логической операции "и" — символ "&".
                 В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
             </p>
-            <p>
             <table class="inputData">
                 <tr>
                     <td>Запрос</td>
@@ -997,7 +929,6 @@
                 для обозначения логической операции "и" — символ "&".
                 В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
             </p>
-            <p>
             <table class="inputData">
                 <tr>
                     <td>Запрос</td>
@@ -1026,7 +957,6 @@
                 для обозначения логической операции "и" — символ "&".
                 В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
             </p>
-            <p>
             <table class="inputData">
                 <tr>
                     <td>Запрос</td>
@@ -1055,7 +985,6 @@
                 для обозначения логической операции "и" — символ "&".
                 В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.
             </p>
-            <p>
             <table class="inputData">
                 <tr>
                     <td>Запрос</td>
@@ -1080,15 +1009,10 @@
             </p>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('infV3')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('informatics')">Назад</div>
-    </p>
 </div>
 <div id="infV4" class="page">
-    <p>
     <ol>
         <li>
             <p>
@@ -1299,7 +1223,6 @@
                 Между населёнными пунктами А, В, С, D построены дороги, протяжённость которых (в километрах) приведена в
                 таблице:
             </p>
-            <p>
             <table class="inputData">
                 <thead>
                 <tr>
@@ -1349,7 +1272,6 @@
                 Между населёнными пунктами А, В, С, D, Е, F построены дороги, протяжённость которых (в километрах)
                 приведена в таблице:
             </p>
-            <p>
             <table class="inputData">
                 <thead>
                 <tr>
@@ -1423,15 +1345,10 @@
             </p>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('infV4')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('informatics')">Назад</div>
-    </p>
 </div>
 <div id="infV5" class="page">
-    <p>
     <ol>
         <li>
             Переведите двоичное число 1100110 в десятичную систему счисления.
@@ -1460,15 +1377,10 @@
             <input type="text" class="answer" data="text" id="infV5Q5">
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('infV5')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('informatics')">Назад</div>
-    </p>
 </div>
 <div id="physicsV1" class="page">
-    <p>
     <ol>
     <li>
         <p>Внутренняя энергия тела зависит</p>
@@ -1657,15 +1569,10 @@
         </div>
     </li>
     </ol>
-    <p>
     <div class="button" onclick="check('physicsV1')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physics')">Назад</div>
-    </p>
 </div>
 <div id="physicsV2" class="page">
-    <p>
     <ol>
         <li>
             Для каждого физического понятия подберите соответствующий пример
@@ -1851,15 +1758,10 @@
             </p>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('physicsV2')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physics')">Назад</div>
-    </p>
 </div>
 <div id="physicsV3" class="page">
-    <p>
     <ol>
         <li>
             <p>
@@ -2242,15 +2144,10 @@
             </div>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('physicsV3')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physics')">Назад</div>
-    </p>
 </div>
 <div id="physicsV4" class="page">
-    <p>
     <ol>
         <li>
             <p>
@@ -2649,12 +2546,8 @@
             </p>
         </li>
     </ol>
-    <p>
     <div class="button" onclick="check('physicsV4')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physics')">Назад</div>
-    </p>
 </div>
 <div id="physicsV5" class="page">
     <ol>
@@ -2671,12 +2564,8 @@
             Чему равен КПД этой тепловой машины? Ответ выразите в процентах.
             <input type="text" class="answer" data="text" id="physicsV5Q5"></li>
     </ol>
-    <p>
     <div class="button" onclick="check('physicsV5')">Проверить</div>
-    </p>
-    <p>
     <div class="button" onclick="openPage('physics')">Назад</div>
-    </p>
 </div>
 
 <div id="testPassedMessage" class="messageBoundingBox" onclick="hideMe(this)">

@@ -1,3 +1,6 @@
+window.addEventListener("load", () => {
+    init();
+});
 var answers = {
     'mathV1': {
         'mathV1Q1' : '1',
@@ -217,7 +220,6 @@ function check(id){
             answerElement.style.backgroundColor = "lightpink";
         }
     }
-    // console.log(numberOfCorrectAnswers);
     if (numberOfCorrectAnswers === questionCount){
         document.getElementById("testPassedMessage").style.visibility="visible";
         document.getElementById("testPassedMessage").style.backgroundColor='lightgreen';
@@ -225,4 +227,12 @@ function check(id){
         document.getElementById("testFailedMessage").style.visibility="visible";
         document.getElementById("testFailedMessage").style.backgroundColor='lightpink';
     }
+}
+
+function update() {
+    caches.keys().then(function(names) {
+        for (let name of names)
+            caches.delete(name);
+    });
+    window.location.reload();
 }
